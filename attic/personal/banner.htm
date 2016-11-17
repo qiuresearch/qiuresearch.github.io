@@ -1,0 +1,52 @@
+<html>
+<!--  Created with the CoffeeCup HTML Editor  -->
+<!--        http://www.coffeecup.com/         -->
+<!--       Brewed on 4/2/02 9:48:44 PM        -->
+<head>
+  <title>Banner of Xiangyun's Homepage</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+startday = new Date();
+clockStart = startday.getTime();
+function initStopwatch() { 
+var myTime = new Date(); 
+return((myTime.getTime() - clockStart)/1000); 
+}
+function getSecs() { 
+var tSecs = Math.round(initStopwatch()); 
+var iSecs = tSecs % 60;
+var iMins = Math.round((tSecs-30)/60);   
+var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins);
+document.forms[0].timespent.value = sMins+":"+sSecs;
+window.setTimeout('getSecs()',1000); 
+}
+// End -->
+</script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#FF00FF" background="images/bj3.jpg"
+      style="background-repeat:no-repeat;background-position:left bottom" onLoad="window.setTimeout('getSecs()',1)">
+	  
+	  
+<!--
+	  <img src="myalbum/qxy_icon.bmp" width="154" height="162" alt="" border="0" align="">
+-->
+<center>
+      <img src="images/fish.bmp" width="406" height="61" alt="" border="0" align="">
+</center>
+<!--   Just wait to get a logo for myself and put it here
+      <DIV style="position:absolute;top:0px;left:8.0%;height:24px;overflow:hidden" >  
+<img src="images/home.gif" width="154" height="162" alt="" border="0" align="">
+      </DIV>
+	  -->
+	    
+      <DIV style="position:absolute;top:0px;left:86%;height:55px;overflow:hidden" >  
+         <FORM>
+            <FONT SIZE="2" FACE="Arial" color="0000FF">Time elapsed: </FONT>
+            <INPUT size="5" name="timespent" align="middle">
+         </FORM>
+      </DIV>
+</body>
+</html>

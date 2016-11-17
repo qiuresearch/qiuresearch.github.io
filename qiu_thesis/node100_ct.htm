@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contents of Additional corrections to the RA-PDF data</TITLE>
+<META NAME="description" CONTENT="Contents of Additional corrections to the RA-PDF data">
+<META NAME="keywords" CONTENT="thesis_xq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis_xq.css">
+
+<LINK REL="previous" HREF="node99_mn.htm">
+<LINK REL="up" HREF="node96_mn.htm">
+<LINK REL="next" HREF="node101_mn.htm">
+</HEAD>
+ 
+<BODY bgcolor="#ffffff" text="#000000" link="#9944EE" vlink="#0000ff" alink="#00ff00">
+
+<H2><A NAME="SECTION001044000000000000000">
+Additional corrections to the RA-PDF data</A>
+</H2>
+
+<P>
+The RA-PDF data collection is much quicker (three to four orders of
+magnitude faster) and requires a simpler experimental setup. However,
+the data analysis becomes more difficult, in addition to the extra
+steps to integrate the image plate data.  The characteristics of the
+image plate detector requires some additional corrections, as well as
+the high background levels. We will focus on two aspects, the lack of
+energy resolution and the energy dependent response.
+
+<P>
+<DL>
+<DT><STRONG>Estimation of standard deviations</STRONG></DT>
+<DD>Proper estimation of the
+   standard deviations (ESD) and their propagation along the data
+   corrections are rather important, as the experimental PDFs are
+   commonly used in least square regression programs for structure
+   refinement&nbsp;[<A HREF="node101_ct.htm#toby_aca92" TARGET="contents">197</A>,<A HREF="node101_ct.htm#toby_aca03" TARGET="contents">198</A>]. For X-ray photon counting
+   detectors, the ESD of the observed count (after dead time
+   correction) is simply its square root when the count is large (more
+   than a few hundreds). However, the IP detector is not a photon
+   counter. Quite a few experimental factors contribute to the
+   relative uncertainties of IP response, such as the read-out system,
+   and the non-uniformity of the IP,
+   etc.&nbsp;[<A HREF="node101_ct.htm#amemi_jsr95" TARGET="contents">49</A>,<A HREF="node101_ct.htm#amemi_nima88" TARGET="contents">52</A>]. To complicate the situation,
+   in the published literatures, the ESD is calculated with respect to
+   the noise level of the IP system under
+   study&nbsp;[<A HREF="node101_ct.htm#bourg_jac94" TARGET="contents">54</A>,<A HREF="node101_ct.htm#ito_nima91" TARGET="contents">55</A>]. Fig.&nbsp;<A HREF="node100_ct.htm#fig_ch2_ipesd">A.2</A> shows
+   the ESD of the IP response as a function of exposure level. It was
+   found that the relative ESD of the IP response is rather close to
+   an ideal photon counter at low exposure levels, while it saturates
+   to a little less than 1% at high exposure levels. The IP response
+   relative to the noise is found to be close to 1-2 per incident
+   photon at the high energies of our interest. Therefore, based on
+   the specifications of the IP system in our experiment (Mar345,
+   sensitivity of 1 X-ray photon per ADC-unit at 8 keV, intrinsic
+   noise 1-2 photon equivalents), we approximate the ESD of each pixel
+   count to be the larger value between its square root and its one
+   hundredth.
+
+<DIV ALIGN="CENTER"><A NAME="fig_ch2_ipesd"></A><A NAME="6907"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure A.2:</STRONG>
+Estimated
+   relative standard deviations of the IP response among areas of
+   <SPAN CLASS="MATH"><B><I>N</I>&#215;<I>N</I></B></SPAN> pixels as a function of photon number absorbed in the
+   area. The scale of <SPAN CLASS="MATH"><B><I>N</I></B></SPAN> is shown in the upper part. Open circles are
+   for the drum scanner and crosses for BAS2000. Dashed lines
+   represent the relative standard deviation of the photon number
+   absorbed in the area. Taken from [<A HREF="node101_ct.htm#ito_nima91" TARGET="contents">55</A>].</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><SPAN CLASS="MATH"><B>&nbsp;</B></SPAN>
+   <IMG
+ WIDTH="523" HEIGHT="350" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="\includegraphics[width=0.94\textwidth,angle=0.8]{esd_ipresponse.ps}">
+
+<P>
+
+<P></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Once the ESD of each pixel is determined, we can propagate the ESD
+   through the integration from the two dimensional raw image and
+   geometric corrections. However, program FIT2D does not
+   generate/propagate ESDs, and only gives the two column data:
+   intensity versus the scattering angle 2<SPAN CLASS="MATH"><B><IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN>. Thus we need to
+   correctly retrace the procedure done in FIT2D to obtain proper
+   ESDs. The steps are the following. The integrated data from FIT2D
+   are the averaged intensities among the pixels within each bin grid
+   corrected by the geometric factor. As each pixel has the same area,
+   the geometric factor is simply <!-- MATH
+ $\cos^3(2\theta)$
+ -->
+<SPAN CLASS="MATH"><B>cos<SUP>3</SUP>(2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$">)</B></SPAN>. So the first step
+   is to multiply the intensities by <!-- MATH
+ $\cos^3(2\theta)$
+ -->
+<SPAN CLASS="MATH"><B>cos<SUP>3</SUP>(2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$">)</B></SPAN> to get the
+   averaged total counts. Then, we need to compute the number of
+   pixels in each bin grid. For the scattering angle bin width of
+   <!-- MATH
+ $\delta 2\theta$
+ -->
+<SPAN CLASS="MATH"><B><IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img196.png"
+ ALT="$ \delta$">2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN>, the area for this bin on the IP is approximately
+   <!-- MATH
+ $2\pi d^2\sin(2\theta)/\cos^3(2\theta)\cdot \delta 2\theta$
+ -->
+<SPAN CLASS="MATH"><B>2<IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img61.png"
+ ALT="$ \pi$"><I>d</I><SUP>2</SUP>sin(2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$">)/cos<SUP>3</SUP>(2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$">)<SUP> . </SUP><IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img196.png"
+ ALT="$ \delta$">2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN>, where
+   <SPAN CLASS="MATH"><B><I>d</I></B></SPAN> is the sample to detector distance.  Dividing the area by each
+   pixel size gives the number of pixels. Given the integrated count
+   <SPAN CLASS="MATH"><B><I>c</I></B></SPAN>, pixel area <SPAN CLASS="MATH"><B><I>A</I><SUB>pixel</SUB></B></SPAN>, we obtain
+
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{equation}
+ESD = \frac{\sqrt{c \cdot \cos^3(2\theta)}}{\sqrt{2\pi
+d^2\sin(2\theta)/\cos^3(2\theta)\cdot \delta 2\theta / A_{pixel}
+/\cos^3(2\theta)} },
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<B><I>ESD</I> = <IMG
+ WIDTH="375" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.png"
+ ALT="$\displaystyle {\frac{{\sqrt{c \cdot \cos^3(2\theta)}}}{{\sqrt{2\pi
+d^2\sin(2\theta)/\cos^3(2\theta)\cdot \delta 2\theta / A_{pixel}
+/\cos^3(2\theta)} }}}$">,</B>
+</TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(A.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE>
+</DIV>
+noting that <!-- MATH
+ $\sqrt{c \cdot \cos^3(2\theta)}$
+ -->
+<SPAN CLASS="MATH"><B><IMG
+ WIDTH="111" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.png"
+ ALT="$ \sqrt{{c \cdot \cos^3(2\theta)}}$"></B></SPAN> should be replaced by
+<!-- MATH
+ $0.01 \cdot c \cdot \cos^3(2\theta)$
+ -->
+<SPAN CLASS="MATH"><B>0.01<SUP> . </SUP><I>c</I><SUP> . </SUP>cos<SUP>3</SUP>(2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$">)</B></SPAN> if the latter is larger due to
+the 1% saturation of relative uncertainties of the IP.
+
+<P>
+</DD>
+<DT><STRONG>Oblique incident angle</STRONG></DT>
+<DD>This correction accounts for the
+   angular dependence of the scattered photon effective path length in
+   the IP phosphor layer&nbsp;[<A HREF="node101_ct.htm#zales_jac98" TARGET="contents">60</A>], as a direct result of its
+   incomplete absorption of the scattered photons. This correction
+   becomes very significant at high X-ray energies and large incident
+   angles (both present in the RA-PDF experiments). Two parameters are
+   used here. The scattered photon absorption coefficient of the IP
+   phosphor layer and the incident angle (equal to 2<SPAN CLASS="MATH"><B><IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN>). The X-ray
+   energy used in our experiments is highly penetrating with the
+   absorption coefficient less than 1%.
+
+<P>
+</DD>
+<DT><STRONG>Compton intensities at high <!-- MATH
+ $\boldmath Q$
+ -->
+<SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> and fluorescence</STRONG></DT>
+<DD>The image plate counts only give the detected X-ray intensities,
+   with no knowledge of the energy of the X-ray. The lack of energy
+   resolution makes it impossible to distinguish between elastic,
+   Compton, and fluorescent photons. This poses rather serious
+   problems to PDF analysis. Early use of image plates to collect
+   diffraction data reached <SPAN CLASS="MATH"><B><I>Q</I><SUB>max</SUB></B></SPAN> less than 13.0
+   &#197;<SPAN CLASS="MATH"><B><SUP>-1</SUP></B></SPAN>&nbsp;[<A HREF="node101_ct.htm#mezou_n02" TARGET="contents">199</A>,<A HREF="node101_ct.htm#mezou_rsi02" TARGET="contents">57</A>,<A HREF="node101_ct.htm#krame_jncs03" TARGET="contents">58</A>]. In the low <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN>
+   region, elastic scattering is usually the strongest signal, thus
+   removal of the parasitic Compton and fluorescence intensities
+   doesn't introduce much error into the analysis.  However, elastic
+   scattering decays exponentially with <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN>; Compton intensity
+   increases with <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN>; and fluorescent intensity is constant. As a
+   consequence, in the high <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> region (<SPAN CLASS="MATH"><B><I>Q</I><SUB>max</SUB></B></SPAN><SPAN CLASS="MATH"><B><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \geq$"> 30.0</B></SPAN> &#197;<SPAN CLASS="MATH"><B><SUP>-1</SUP></B></SPAN>), the
+   situation is quite different. For example, even the case of Ni
+   (Z=28) atoms, the Compton scattering is about 4 times as large as
+   the elastic scattering at <SPAN CLASS="MATH"><B><I>Q</I> = 30</B></SPAN> &#197;<SPAN CLASS="MATH"><B><SUP>-1</SUP></B></SPAN>. This ratio increases with
+   decreasing Z values. The fluorescent intensities can be effectively
+   suppressed by going to higher incident X-ray energies for low Z
+   elements or just below the edge for high Z elements.  However, for
+   the medium to high Z elements, the currently routinely achievable
+   highest energy X-rays still give rather significant fluorescent
+   intensities. Therefore, the extraction of elastic signal in the
+   high <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> region is not a trivial task. Small errors on the
+   estimation of Compton or fluorescent intensities would result in
+   significant deviations to the elastic signal.  Another complication
+   is the statistical uncertainty of the extracted elastic
+   intensities, as the uncertainty of both Compton and fluorescent
+   intensities will be added to it. To achieve the same counting
+   statistics as when measuring elastic scattering separately, the
+   total counts from the image plate would have to be <SPAN CLASS="MATH"><B><IMG
+ WIDTH="20" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \sim$"> <I>n</I><SUP>2</SUP></B></SPAN> times
+   as many (if elastic scattering accounts for <SPAN CLASS="MATH"><B>1/<I>n</I></B></SPAN> of the total
+   intensities).
+
+<P>
+</DD>
+<DT><STRONG>Energy dependence of the IP response</STRONG></DT>
+<DD>Due to the detection
+   mechanism of the image plate, X-rays with the same number of
+   photons but different energies will result in different
+   counts. Though elastic scattering has the same energy at all <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN>
+   values, the energy of Compton scattering decreases with increasing
+   <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> and the fluorescence intensities usually comprise of several
+   characteristic energy lines. The high <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> region data again are
+   sensitive to this effect due to the dominating Compton and/or
+   fluorescent intensities. This energy dependent detection efficiency
+   is not a simple linear function, and in fact is difficult to
+   measure accurately. In program PDFgetX2, either a linear or
+   quadratic empirical formula is used as the energy dependence of the
+   image plate detection efficiency while ensuring the detection
+   efficiency decreases with increasing X-ray energy.
+
+<P>
+</DD>
+</DL>
+
+<P>
+The resulted PDF, <SPAN CLASS="MATH"><B><I>G</I>(<I>r</I>)</B></SPAN>, is in a compatible file format for the PDF
+refinement program PDFFIT&nbsp;[<A HREF="node101_ct.htm#proff_jac99" TARGET="contents">11</A>]. Please refer to the
+user's guide of the program PDFgetX2&nbsp;[<A HREF="node101_ct.htm#qiu_manual04" TARGET="contents">195</A>] for details.
+
+<P>
+
+<P>
+
+
+<HR>
+<ADDRESS>
+Xiangyun Qiu
+2005-02-18
+</ADDRESS>
+</BODY>
+</HTML>

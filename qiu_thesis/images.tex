@@ -1,0 +1,1626 @@
+\batchmode
+
+\documentclass[letterpaper,12pt,twoside]{book}
+\RequirePackage{ifthen}
+
+
+
+\usepackage{graphicx}  
+\usepackage{epsfig}    
+\usepackage{dcolumn}   
+\usepackage{bm}        
+\usepackage{amssymb} 
+\usepackage{setspace}
+\usepackage{html}  
+
+\setcounter{topnumber}{4}%% the maximum number of floats at the top
+\setcounter{bottomnumber}{4}%% the maximum number of floats at the bottom
+\setcounter{totalnumber}{8}%% the maximum number of floats on one page
+
+%
+\renewcommand{\textfraction}{0.1}%% the minmum text fraction of a text page
+%
+\renewcommand{\floatpagefraction}{0.7}%% the minmum float fraction of a float page
+%
+\renewcommand{\topfraction}{0.9}%% the maximum float fraction at the top
+%
+\renewcommand{\bottomfraction}{0.8}%% the maximum float fraction at the bottom
+
+\graphicspath{{fig_ch1/},{fig_ch2/},{fig_ch3/},{fig_ch4/},{fig_ch5/},{fig_ch6/}}
+%
+\providecommand{\alf}{$\alpha$-AlF$_3$}%
+\providecommand{\bivo}{Bi$_4$V$_2$O$_{11}$}%
+\providecommand{\bivtio}{Bi$_4$V$_{1.7}$Ti$_{0.3}$O$_{10.85}$}
+%
+\providecommand{\lsmox}{La$_{2-2x}$Sr$_{1+2x}$Mn$_2$O$_7$}%
+\providecommand{\lcmox}{La$_{1-x}$Ca$_x$MnO$_3$}%
+\providecommand{\camno}{CaMnO$_3$}
+\newcounter{fraction}%
+\providecommand{\lcmo}[1]{%%
+\setcounter{fraction}{100}\addtocounter{fraction}{-#1}%%
+La$_{0.\arabic{fraction}}$Ca$_{0.#1}$MnO$_3$\  }%
+\providecommand{\lsmn}[1]{%%
+\setcounter{fraction}{100}\addtocounter{fraction}{-#1}%%
+La$_{0.\arabic{fraction}}$Sr$_{0.#1}$MnO$_3$\  }
+%
+\providecommand{\znsete}{ZnSe$_{0.5}$Te$_{0.5}$}%
+\providecommand{\tisb}{Ti$_2$Sb}%
+\providecommand{\znsb}{Zn$_4$Sb$_3$}
+
+%
+\providecommand{\mn}[1]{Mn$^{#1}$}
+%
+\providecommand{\dyz}{$d_{yz}$}%
+\providecommand{\dzx}{$d_{zx}$}%
+\providecommand{\eg}{e$_g$}%
+\providecommand{\ttwog}{t$_{2g}$}%
+\providecommand{\tIIg}{t$_{2g}$}
+%
+\providecommand{\RAA}{\AA$^{-1}$}%
+\providecommand{\mut}{$\mu$t}%
+\providecommand{\etal}{{\it et al.\ }}%
+\providecommand{\degree}{$^\circ$C }
+%
+\providecommand{\tmi}{T$_{mi}$}%
+\providecommand{\tc}{T$_{c}$}%
+\providecommand{\tn}{T$_{N}$}%
+\providecommand{\tcm}{T$_{c}^m$}%
+\providecommand{\tjt}{T$_{JT}$}%
+\providecommand{\ejt}{E$_{JT}$}%
+\providecommand{\sub}[1]{$_{#1}$}%
+\renewcommand{\sb}[1]{$_{#1}$}%
+\providecommand{\tor}{T$_{R}$}%
+\providecommand{\pdfgetx}{PDFgetX2}
+%
+\providecommand{\tth}{2$\theta$}%
+\providecommand{\rhoeff}{$\rho_{eff}$}%
+\providecommand{\rhoz}{$\rho_{0}$}%
+\providecommand{\rhor}{$\rho$($r$)}%
+\providecommand{\sigeff}{$\sigma_{eff}$}%
+\providecommand{\rhofit}{$\rho_{fit}$}%
+\providecommand{\qmax}{$Q_{max}$}%
+\providecommand{\qsig}{$Q_{sig}$}%
+\providecommand{\rmin}{$r_{min}$}%
+\providecommand{\rmax}{$r_{max}$}%
+\providecommand{\savg}{$S_{avg}$}%
+\providecommand{\sint}{$S_{int}$}%
+\providecommand{\slim}{$S_{disp}$}%
+\providecommand{\gint}{$G_{int}$}%
+\providecommand{\glow}{$G_{low}$}
+%
+\providecommand{\rwp}{R$_{wp}$}%
+\providecommand{\chiII}{$\chi^2$}%
+\providecommand{\uiso}{U$_{iso}$}
+%
+\providecommand{\ioq}{$I(Q)$}%
+\providecommand{\soq}{$S(Q)$}%
+\providecommand{\foq}{$F(Q)$}%
+\providecommand{\gr}{$G(r)$}
+%
+\providecommand{\thtoq}{$Q = \frac{4\pi}{\lambda}\sin{\theta}$}%
+\providecommand{\sqtofq}{$F(Q) = Q(S(Q)-1)$}%
+\providecommand{\sqtogr}{$G(r) = \frac{2}{\pi}\int_0^{\infty}Q[S(Q)-1]\sin Qr\>\mathrm{d}Q$}%
+\providecommand{\sqtogrequ}{
+\begin{equation}
+G(r) = \frac{2}{\pi}\int_0^{\infty}Q[S(Q)-1]\sin Qr\>\mathrm{d}Q.
+\end{equation} }
+%
+\providecommand{\strutogrlong}{
+\begin{eqnarray}
+  G_{c}(r) & = & \frac{1}{r} \sum_{i}\sum_{j} \left [
+  \frac{b_{i}b_{j}}{\langle b \rangle ^{2}} \delta (r - r_{ij}) \right
+  ] - 4 \pi r \rho_{0} \nonumber \\& = & 4 \pi r [ \rho(r) - \rho_{0}
+  ], \label{eq;igr}
+\end{eqnarray}
+where $r_{ij}$\  is the distance between atoms $i$\  and $j$; the value
+$b_i$\  is the scattering length for atom $i$; $\langle b \rangle$\  is
+the average scattering length over all atoms; and $\rho_{0}$\  is the
+number density}
+%
+\providecommand{\myfigwidth}{0.9}%
+\providecommand{\shellcom}[1]{{\it #1}}%
+\providecommand{\partitle}[1]{\emph{#1}}%
+\providecommand{\myurl}[1]{\begin{center} #1 \end{center}}%
+\providecommand{\nb}[1]{{\bf Note[#1]}}%
+\providecommand{\ud}[1]{{\bf Change[#1]}}%
+\providecommand{\todo}[1]{{\bf To-Do[#1]}}%
+\providecommand{\doublecheck}{{\bf [Xiangyun, please double check this is right]}}
+\setlength{\oddsidemargin}{0.5in}%%creates a left margin of 1.5in (1in+.5in)
+\setlength{\evensidemargin}{0.0in}%%creates a left margin of 1.5in (1in+.5in)
+\setlength{\textwidth}{6in}%%adjusts page width to 6in
+\setlength{\textheight}{9in}\setlength{\topmargin}{0in}\setlength{\headheight}{0in}\setlength{\headsep}{0in}\setlength{\topskip}{0in}\setlength{\footskip}{0.5in}
+\pagestyle{plain}
+
+
+
+\usepackage[dvips]{color}
+
+
+\pagecolor[gray]{.7}
+
+\usepackage[latin1]{inputenc}
+
+
+
+\makeatletter
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\newcommand\lthtmlhboxmathA{\adjustnormalsize\setbox\sizebox=\hbox\bgroup\kern.05em }%
+\newcommand\lthtmlhboxmathB{\adjustnormalsize\setbox\sizebox=\hbox to\hsize\bgroup\hfill }%
+\newcommand\lthtmlvboxmathA{\adjustnormalsize\setbox\sizebox=\vbox\bgroup %
+ \let\ifinner=\iffalse \let\)\liih@math }%
+\newcommand\lthtmlboxmathZ{\@next\next\@currlist{}{\def\next{\voidb@x}}%
+ \expandafter\box\next\egroup}%
+\newcommand\lthtmlmathtype[1]{\gdef\lthtmlmathenv{#1}}%
+\newcommand\lthtmllogmath{\lthtmltypeout{l2hSize %
+:\lthtmlmathenv:\the\ht\sizebox::\the\dp\sizebox::\the\wd\sizebox.\preveqno}}%
+\newcommand\lthtmlfigureA[1]{\let\@savefreelist\@freelist
+       \lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmlpictureA{\bgroup\catcode`\_=8 \lthtmlpictureB}%
+\newcommand\lthtmlpictureB[1]{\lthtmlmathtype{#1}\egroup
+       \let\@savefreelist\@freelist \lthtmlhboxmathB}%
+\newcommand\lthtmlpictureZ[1]{\hfill\lthtmlfigureZ}%
+\newcommand\lthtmlfigureZ{\lthtmlboxmathZ\lthtmllogmath\copy\sizebox
+       \global\let\@freelist\@savefreelist}%
+\newcommand\lthtmldisplayA{\bgroup\catcode`\_=8 \lthtmldisplayAi}%
+\newcommand\lthtmldisplayAi[1]{\lthtmlmathtype{#1}\egroup\lthtmlvboxmathA}%
+\newcommand\lthtmldisplayB[1]{\edef\preveqno{(\theequation)}%
+  \lthtmldisplayA{#1}\let\@eqnnum\relax}%
+\newcommand\lthtmldisplayZ{\lthtmlboxmathZ\lthtmllogmath\lthtmlsetmath}%
+\newcommand\lthtmlinlinemathA{\bgroup\catcode`\_=8 \lthtmlinlinemathB}
+\newcommand\lthtmlinlinemathB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA
+  \vrule height1.5ex width0pt }%
+\newcommand\lthtmlinlineA{\bgroup\catcode`\_=8 \lthtmlinlineB}%
+\newcommand\lthtmlinlineB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA}%
+\newcommand\lthtmlinlineZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetinline}
+\newcommand\lthtmlinlinemathZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetmath}
+\newcommand\lthtmlindisplaymathZ{\egroup %
+  \centerinlinemath\lthtmllogmath\lthtmlsetmath}
+\def\lthtmlsetinline{\hbox{\vrule width.1em \vtop{\vbox{%
+  \kern.1em\copy\sizebox}\ifdim\dp\sizebox>0pt\kern.1em\else\kern.3pt\fi
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\lthtmlsetmath{\hbox{\vrule width.1em\kern-.05em\vtop{\vbox{%
+  \kern.1em\kern0.8 pt\hbox{\hglue.17em\copy\sizebox\hglue0.8 pt}}\kern.3pt%
+  \ifdim\dp\sizebox>0pt\kern.1em\fi \kern0.8 pt%
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\centerinlinemath{%
+  \dimen1=\ifdim\ht\sizebox<\dp\sizebox \dp\sizebox\else\ht\sizebox\fi
+  \advance\dimen1by.5pt \vrule width0pt height\dimen1 depth\dimen1 
+ \dp\sizebox=\dimen1\ht\sizebox=\dimen1\relax}
+
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+\providecommand{\Beta}{\textrm{B}}
+\providecommand{\Mu}{\textrm{M}}
+\providecommand{\Kappa}{\textrm{K}}
+\providecommand{\Rho}{\textrm{R}}
+\providecommand{\Epsilon}{\textrm{E}}
+\providecommand{\Chi}{\textrm{X}}
+\providecommand{\Iota}{\textrm{J}}
+\providecommand{\omicron}{\textrm{o}}
+\providecommand{\Zeta}{\textrm{Z}}
+\providecommand{\Eta}{\textrm{H}}
+\providecommand{\Omicron}{\textrm{O}}
+\providecommand{\Nu}{\textrm{N}}
+\providecommand{\Tau}{\textrm{T}}
+\providecommand{\Alpha}{\textrm{A}}
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8348}%
+$ \alpha$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9109}%
+$ \Delta$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9210}%
+$ \Gamma$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9739}%
+$ \leq$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline10195}%
+$ \sqrt{{2}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{8}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11330}%
+$ \geq$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11333}%
+$ \sim$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11370}%
+$ \lambda$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11371}%
+$ {\frac{{h}}{{p}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11385}%
+$ \vec{{r}}\,$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11392}%
+$\displaystyle {\frac{{1}}{{r}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11393}%
+$\displaystyle \sum_{{i}}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11394}%
+$\displaystyle \sum_{{j}}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11395}%
+$\displaystyle \left[\vphantom{
+\frac{b_{i}b_{j}}{\langle b \rangle ^{2}} \delta (r - r_{ij}) }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11396}%
+$\displaystyle {\frac{{b_{i}b_{j}}}{{\langle b \rangle ^{2}}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11397}%
+$\displaystyle \delta$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11398}%
+$\displaystyle \left.\vphantom{
+\frac{b_{i}b_{j}}{\langle b \rangle ^{2}} \delta (r - r_{ij}) }\right]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11399}%
+$\displaystyle \pi$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11400}%
+$\displaystyle \rho_{{0}}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11404}%
+$\displaystyle \rho$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11412}%
+$ \langle$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11413}%
+$ \rangle$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11415}%
+$ \rho_{{0}}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11417}%
+$ \rho$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11420}%
+$ \int$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11421}%
+$ \vec{{r'}}\,$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11432}%
+$ \vec{{Q}}\,$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11437}%
+$\scriptstyle \vec{{Q}}\,$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11438}%
+$\scriptstyle \vec{{r}}\,$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11470}%
+$\displaystyle \int_{{-\infty}}^{{+\infty}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11471}%
+$\displaystyle {\frac{{b_i b_j}}{{\langle b \rangle ^2}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11473}%
+$\displaystyle {\frac{{\sin(Qr_{ij})}}{{Qr_{ij}}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11474}%
+$\displaystyle \vec{{r_{ij}}}\,$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11475}%
+$\displaystyle {\frac{{1}}{{2}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11476}%
+$\displaystyle \int_{0}^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay11480}%
+$\displaystyle {\frac{{\sin(Qr_{ij})}}{{Q}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11482}%
+$ {\frac{{2}}{{\pi}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11483}%
+$ \int_{0}^{{\infty}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11515}%
+$ {\frac{{12.0398}}{{\lambda(\AA)}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11517}%
+$ {\frac{{81.81}}{{\lambda^2(\AA)}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11519}%
+$ {\frac{{150.4}}{{\lambda^2(\AA)}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11526}%
+$ {\frac{{4\pi}}{{\lambda}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11527}%
+$ \theta$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11546}%
+$ \mu$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11565}%
+$ \ge$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11574}%
+\includegraphics[width=0.94\textwidth]{phospher_energylevel.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11620}%
+\includegraphics[width=0.94\textwidth]{edep_ipresponse.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11635}%
+\includegraphics[width=0.94\textwidth]{ni_ip.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11677}%
+\includegraphics[width=0.80\textwidth]{ni220fqgrfit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11699}%
+$ \overline{{3}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11720}%
+\includegraphics[width=0.88\textwidth]{alf3fqgrfit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11760}%
+\includegraphics[width=0.82\textwidth]{bivo_bivtio_fqgr.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11778}%
+$ \gamma$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11800}%
+$ \approx$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11824}%
+$ \sigma$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11831}%
+\includegraphics[width=0.96\textwidth]{alf3_ipssdfqgr.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11845}%
+\includegraphics[width=0.94\textwidth]{ssdip_mod.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11940}%
+\includegraphics[width=0.9\textwidth]{perov.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline11950}%
+$ \cong$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap11992}%
+\includegraphics[width=0.8\textwidth]{mrdata_jins94.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12032}%
+$ \pi$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12054}%
+$ {\frac{{5Zq}}{{3a^5}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12068}%
+\includegraphics[width=0.96\textwidth]{3d_orbitals.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12088}%
+\includegraphics[width=0.30\textwidth]{JT-mode-Q1.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12089}%
+\includegraphics[width=0.30\textwidth]{JT-mode-Q2.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12090}%
+\includegraphics[width=0.30\textwidth]{JT-mode-Q3.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12135}%
+$ \phi$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12171}%
+\includegraphics[angle=0.4,width=0.9\textwidth]{semi-covalent-diagram.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12225}%
+\includegraphics[width=0.9\textwidth]{lacamno3_phasedigram.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12241}%
+$\scriptstyle \prime$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12253}%
+\includegraphics[width=0.96\textwidth]{typeA-orbitalorder.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12261}%
+\includegraphics[width=0.96\textwidth]{LaMnO3_pbnm.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12272}%
+$ \gtrsim$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12337}%
+\includegraphics[width=0.48\textwidth]{LaMnO3-A_dta.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12338}%
+\includegraphics[width=0.48\textwidth]{LaMnO3-B_dta.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12366}%
+$\displaystyle {\frac{{2}}{{\pi}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12367}%
+$\displaystyle \int_{0}^{{\infty}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12374}%
+\includegraphics[width=0.90\textwidth]{gdat.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12394}%
+\includegraphics[keepaspectratio=1,width=0.48\textwidth]{300K_fqgr.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12395}%
+\includegraphics[keepaspectratio=1,width=0.48\textwidth]{20K_fqgr.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12406}%
+\includegraphics[width=0.48\textwidth]{650K_fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12407}%
+\includegraphics[width=0.48\textwidth]{730K_fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12408}%
+\includegraphics[width=0.48\textwidth]{880K_fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12409}%
+\includegraphics[width=0.48\textwidth]{1150K_fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12433}%
+\includegraphics[width=0.48\textwidth,keepaspectratio=1]{20K_fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12434}%
+\includegraphics[width=0.48\textwidth,keepaspectratio=1]{300K_fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12435}%
+\includegraphics[width=0.48\textwidth,keepaspectratio=1]{603K_fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12436}%
+\includegraphics[width=0.48\textwidth,keepaspectratio=1]{805K_fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12443}%
+$\scriptstyle {\frac{{1}}{{2}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12454}%
+\includegraphics[width=0.96\textwidth]{fqmisspeak.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12462}%
+$ \chi^{2}_{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12471}%
+\includegraphics[width=0.48\textwidth]{650KH1_riet.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12472}%
+\includegraphics[width=0.48\textwidth]{730KH1_riet.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12473}%
+\includegraphics[width=0.48\textwidth]{880KH1_riet.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12474}%
+\includegraphics[width=0.48\textwidth]{1150KH1_riet.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12482}%
+\includegraphics[width=0.48\textwidth,keepaspectratio=1]{20K_rietfit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12483}%
+\includegraphics[width=0.48\textwidth,keepaspectratio=1]{300K_rietfit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12484}%
+\includegraphics[width=0.48\textwidth,keepaspectratio=1]{603K_rietfit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12485}%
+\includegraphics[width=0.48\textwidth,keepaspectratio=1]{805K_rietfit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12493}%
+\includegraphics[width=0.96\textwidth]{300KH1_riet.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12494}%
+\includegraphics[width=0.96\textwidth]{301KH1_riet.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12519}%
+\includegraphics[width=0.48\textwidth]{lowrpdfa.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12520}%
+\includegraphics[width=0.48\textwidth]{lowrpdfb.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12545}%
+\includegraphics[width=0.77\textwidth]{peakpar_pwida.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12546}%
+\includegraphics[width=0.77\textwidth]{peakpar_pwidb.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12575}%
+$ {\frac{{1}}{{2}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12597}%
+$ \bullet$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12599}%
+$ \blacksquare$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12609}%
+$ \blacktriangle$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12613}%
+\includegraphics[width=0.46\textwidth]{abc_volumea.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12614}%
+\includegraphics[width=0.46\textwidth]{abc_volumeb.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12643}%
+\includegraphics[width=0.46\textwidth]{mn-oblena.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12644}%
+\includegraphics[width=0.46\textwidth]{mn-oblenb.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12658}%
+\includegraphics[width=0.46\textwidth]{atomsuisoa.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12659}%
+\includegraphics[width=0.46\textwidth]{atomsuisob.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12663}%
+$\displaystyle {\frac{{a-b}}{{a+b}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12670}%
+$\displaystyle \Delta$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12671}%
+$\displaystyle {\frac{{1}}{{N}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12672}%
+$\displaystyle \sum_{{i=1}}^{{N}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12673}%
+$\displaystyle \langle$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12674}%
+$\displaystyle \rangle$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12683}%
+$\displaystyle \Gamma$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12684}%
+$\displaystyle {\frac{{b_{A-O}}}{{\sqrt{2}b_{Mn-O}}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12702}%
+\includegraphics[width=0.46\textwidth]{latstraina.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12703}%
+\includegraphics[width=0.46\textwidth]{latstrainb.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12716}%
+$ \varphi$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12719}%
+$ \theta_{1}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12721}%
+$ \theta_{2}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12724}%
+$\displaystyle \theta_{1}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12725}%
+$\displaystyle {\frac{{2 - 5 \cos{\varphi_1}^2}}{{2 + \cos{\varphi_1}^2}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12727}%
+$\displaystyle \theta_{2}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12728}%
+$\displaystyle {\frac{{1 - 4 \cos{\varphi_2}^2}}{{3}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12733}%
+$ \varphi_{1}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12734}%
+$ \varphi_{2}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12762}%
+\includegraphics[width=0.46\textwidth]{octtilta.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12763}%
+\includegraphics[width=0.46\textwidth]{octtiltb.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12780}%
+$ \sqrt{{6}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12785}%
+$ \Psi_{g}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12787}%
+$ \Psi_{e}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12791}%
+$\displaystyle \Psi_{g}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12792}%
+$\displaystyle \phi_{{x^2-y^2}}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12793}%
+$\displaystyle \phi_{{3z^2-r^2}}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay12795}%
+$\displaystyle \Psi_{e}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12807}%
+$ \phi_{{x^2-y^2}}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12809}%
+$ \phi_{{3z^2-r^2}}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12824}%
+\includegraphics[width=0.46\textwidth]{octdistorta.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12825}%
+\includegraphics[width=0.46\textwidth]{octdistortb.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12873}%
+\includegraphics[width=0.90\textwidth]{varyrangefit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12896}%
+\includegraphics[width=0.90\textwidth]{cluster-radius_v1.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap12927}%
+\includegraphics[width=0.88\textwidth]{ouaniso.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline12986}%
+$ \infty$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13002}%
+\includegraphics[height=0.7\textheight]{lsmno_cryststru.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13050}%
+\includegraphics[width=0.98\textwidth,clip=1]{bilayerphased.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13072}%
+\includegraphics[width=0.88\textwidth]{magnetic_diagram.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline13082}%
+$\scriptstyle \sigma^{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13094}%
+\includegraphics[width=0.88\textwidth]{CEtypeMag.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13144}%
+\includegraphics[width=0.88\textwidth]{AtypeMag.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13190}%
+\includegraphics[width=0.60\textwidth]{54fit.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13208}%
+\includegraphics[width=0.80\textwidth]{4KH1_riet.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13209}%
+\includegraphics[width=0.80\textwidth]{300KH1_riet.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13237}%
+\includegraphics[width=0.49\textwidth]{lowrpdf.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13238}%
+\includegraphics[width=0.48\textwidth]{54_2pkheight.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline13267}%
+$ \bigcirc$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline13269}%
+$ \triangle$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13284}%
+\includegraphics[width=0.49\textwidth]{54_o3therm.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13285}%
+\includegraphics[width=0.48\textwidth]{54_abc.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13325}%
+\includegraphics[width=0.96\textwidth]{lsmo_mnoblenvolume.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13427}%
+\includegraphics[width=0.80\textwidth, keepaspectratio=1]{fqgrfitplot.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13458}%
+\includegraphics[width=0.80\textwidth]{exp_modpl2.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13481}%
+\includegraphics[width=0.80\textwidth]{exp_modpl1.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13491}%
+\includegraphics[width=0.80\textwidth]{pkheightpl.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13517}%
+\includegraphics[width=0.80\textwidth]{latabplot.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13534}%
+\includegraphics[width=0.80\textwidth]{mn-oblenpl.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13546}%
+\includegraphics[width=0.80\textwidth, keepaspectratio=1]{Othermpl.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13602}%
+\includegraphics[width=0.9\textwidth]{Ti2Sb_cryst.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13613}%
+\includegraphics[width=0.9\textwidth,keepaspectratio=1,angle=0]{tisb_ti2net.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13629}%
+\includegraphics[width=0.9\textwidth]{tisb_ti2ss.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13685}%
+\includegraphics[width=0.78\textwidth]{nxfq-bw.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13695}%
+\includegraphics[width=0.9\textwidth]{nxbondpos.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13703}%
+\includegraphics[width=0.9\textwidth,keepaspectratio=1,angle=0]{nxgrfit-bw.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13784}%
+\includegraphics[width=0.9\textwidth]{flowcell.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13795}%
+\includegraphics[width=0.9\textwidth]{cuo-cu-iq.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13807}%
+\includegraphics[width=0.9\textwidth]{cuo-cu-gr.eps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\appendix
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13909}%
+\includegraphics[width=0.94\textwidth]{rapdf_setup.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay13916}%
+$\displaystyle {\frac{{\Delta Q}}{{Q}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay13917}%
+$\displaystyle \approx$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay13918}%
+$\displaystyle {\frac{{\Delta\lambda}}{{\lambda}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay13919}%
+$\displaystyle {\frac{{\cos^2 (\theta)\cos(2\theta)}}{{1+\sin^2(2\theta)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay13920}%
+$\displaystyle {\frac{{\Delta d}}{{d}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay13921}%
+$\displaystyle {\frac{{\Delta r}}{{r}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline13927}%
+$ {\frac{{\Delta\lambda}}{{\lambda}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline13933}%
+$ {\frac{{\Delta d}}{{d}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline13935}%
+$ {\frac{{1.0}}{{200.0}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline13942}%
+$ {\frac{{\Delta r}}{{r}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap13998}%
+\includegraphics[width=0.94\textwidth,angle=0.8]{esd_ipresponse.ps}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline14006}%
+$ \delta$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay14018}%
+$\displaystyle {\frac{{\sqrt{c \cdot \cos^3(2\theta)}}}{{\sqrt{2\pi
+d^2\sin(2\theta)/\cos^3(2\theta)\cdot \delta 2\theta / A_{pixel}
+/\cos^3(2\theta)} }}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline14020}%
+$ \sqrt{{c \cdot \cos^3(2\theta)}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline16128}%
+$ \bf0\le x\le 0.30)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline16133}%
+$ \bf0\leq x\leq 0.3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline16204}%
+$\scriptstyle \delta$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline14813}%
+$_{3}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline14820}%
+$_{3+\delta}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline16289}%
+$ \le$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline16353}%
+$ \bf _{2-2x}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline16355}%
+$ \bf   _{1+2x}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline16357}%
+$ \bf _2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline16359}%
+$ \bf _7$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+
+\end{document}

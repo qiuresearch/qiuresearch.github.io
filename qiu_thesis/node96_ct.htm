@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contents of Processing the data</TITLE>
+<META NAME="description" CONTENT="Contents of Processing the data">
+<META NAME="keywords" CONTENT="thesis_xq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis_xq.css">
+
+<LINK REL="previous" HREF="node95_mn.htm">
+<LINK REL="up" HREF="node92_mn.htm">
+<LINK REL="next" HREF="node97_mn.htm">
+</HEAD>
+ 
+<BODY bgcolor="#ffffff" text="#000000" link="#9944EE" vlink="#0000ff" alink="#00ff00">
+
+<H1><A NAME="SECTION001040000000000000000">
+Processing the data</A>
+</H1>
+
+<P>
+Here the data processing refers to the procedure to obtain PDFs from
+the RA-PDF data (for more detail see Chapter 5
+of&nbsp;[<A HREF="node101_ct.htm#egami_b_utbp03" TARGET="contents">5</A>]. The conventional way to obtain PDFs starts
+from the SPEC file format data collected with a solid solid detector
+(SSD), and is described in detail in the tutorial of program
+PDFgetX2&nbsp;[<A HREF="node101_ct.htm#qiu_jac04" TARGET="contents">41</A>,<A HREF="node101_ct.htm#qiu_manual04" TARGET="contents">195</A>]. A simplified version is
+described in the following.  The raw data from our SSD detector are in
+SPEC data file format. The program PDFgetX2&nbsp;[<A HREF="node101_ct.htm#qiu_jac04" TARGET="contents">41</A>] was used
+to preprocess the raw data to obtain the intensity versus <SPAN CLASS="MATH"><B>2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN>
+two column data.  In the preprocessing, the measured scattering
+intensities were first corrected for detector dead time (e.g., 0.84&nbsp;
+<SPAN CLASS="MATH"><B><IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$ \mu$"><I>s</I></B></SPAN>), then normalized by the corresponding incident beam
+intensities (monitor counts collected by one ion chamber right before
+the sample). Then the two scans were merged together to yield the
+whole range. The same procedure was repeated on the background
+scattering data.  After the preprocessing, the background data is
+subtracted from the sample data to obtain the sample only scattering
+intensity versus <SPAN CLASS="MATH"><B>2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN>. Following applied corrections are the
+sample absorption, polarization, and Compton scattering to obtain the
+elastic scattering only. The last step is to normalize the elastic
+scattering by the <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> dependent average scattering power of the
+material to get the total structure factor <SPAN CLASS="MATH"><B><I>S</I>(<I>Q</I>)</B></SPAN>, which is then
+transformed to obtain the experimental <SPAN CLASS="MATH"><B><I>G</I>(<I>r</I>)</B></SPAN> with the formula: <!-- MATH
+ $G(r) = \frac{2}{\pi}\int_0^{\infty}Q[S(Q)-1]\sin Qr\>\mathrm{d}Q$
+ -->
+<SPAN CLASS="MATH"><B><I>G</I>(<I>r</I>) = <IMG
+ WIDTH="17" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$ {\frac{{2}}{{\pi}}}$"><IMG
+ WIDTH="32" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$ \int_{0}^{{\infty}}$"><I>Q</I>[<I>S</I>(<I>Q</I>) - 1]sin&nbsp;<I>Qr</I>d<I>Q</I></B></SPAN>.
+
+<P>
+However, the data coming from the image plate are two dimensional
+images, and thus need to be integrated first to give the multiple
+column ASCII data. One column should be the intensity, while there
+should also be one column being either 2<SPAN CLASS="MATH"><B><IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN> or <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN>. The integrated
+data can then be fed to program PDFgetX2 to obtain the PDF as
+described above.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html1530" HREF="node97_mn.htm" TARGET="main"><SMALL>Obtain calibration parameters</SMALL></A>
+<LI><A NAME="tex2html1531" HREF="node98_mn.htm" TARGET="main"><SMALL>Integrate the IP raw data</SMALL></A>
+<LI><A NAME="tex2html1532" HREF="node99_mn.htm" TARGET="main"><SMALL>Normalization by the monitor counts</SMALL></A>
+<LI><A NAME="tex2html1533" HREF="node100_mn.htm" TARGET="main"><SMALL>Additional corrections to the RA-PDF data</SMALL></A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<HR>
+<ADDRESS>
+Xiangyun Qiu
+2005-02-18
+</ADDRESS>
+</BODY>
+</HTML>

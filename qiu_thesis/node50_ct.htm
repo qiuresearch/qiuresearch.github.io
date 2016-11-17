@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contents of Real space PDF refinement</TITLE>
+<META NAME="description" CONTENT="Contents of Real space PDF refinement">
+<META NAME="keywords" CONTENT="thesis_xq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis_xq.css">
+
+<LINK REL="next" HREF="node51_mn.htm">
+<LINK REL="previous" HREF="node49_mn.htm">
+<LINK REL="up" HREF="node45_mn.htm">
+<LINK REL="next" HREF="node51_mn.htm">
+</HEAD>
+ 
+<BODY bgcolor="#ffffff" text="#000000" link="#9944EE" vlink="#0000ff" alink="#00ff00">
+
+<H2><A NAME="SECTION00665000000000000000">
+Real space PDF refinement</A>
+</H2> 
+
+<DIV ALIGN="CENTER"><A NAME="fig_ch3_4pdffita"></A><A NAME="2426"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+(upleft) The PDFFIT refinement results
+  of sample LaMnO<SPAN CLASS="MATH"><B><SUB>3</SUB></B></SPAN>(A) data at 650&nbsp;K, (upright) 730&nbsp;K, (downleft)
+  880&nbsp;K, (downright) 1150&nbsp;K. Denotations are the following, the
+  experimental <SPAN CLASS="MATH"><B><I>G</I>(<I>r</I>)</B></SPAN> is shown as solid dots, and the calculated PDF
+  from refined structural model is shown as solid line.  The
+  difference curve is shown offset below.  The dashed lines show the
+  estimated standard deviations due to finite counting statistics at
+  2<SPAN CLASS="MATH"><B><IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img55.png"
+ ALT="$ \sigma$"></B></SPAN> level.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><SPAN CLASS="MATH"><B>&nbsp;</B></SPAN>
+<IMG
+ WIDTH="266" HEIGHT="230" ALIGN="BOTTOM" BORDER="0"
+ SRC="img81.png"
+ ALT="\includegraphics[width=0.48\textwidth]{650K_fit.ps}">
+  <IMG
+ WIDTH="265" HEIGHT="231" ALIGN="BOTTOM" BORDER="0"
+ SRC="img82.png"
+ ALT="\includegraphics[width=0.48\textwidth]{730K_fit.ps}">
+  <IMG
+ WIDTH="266" HEIGHT="230" ALIGN="BOTTOM" BORDER="0"
+ SRC="img83.png"
+ ALT="\includegraphics[width=0.48\textwidth]{880K_fit.ps}">
+  <IMG
+ WIDTH="265" HEIGHT="231" ALIGN="BOTTOM" BORDER="0"
+ SRC="img84.png"
+ ALT="\includegraphics[width=0.48\textwidth]{1150K_fit.ps}"></TD></TR>
+</TABLE>
+</DIV>
+PDFFIT&nbsp;[<A HREF="node101_ct.htm#proff_jac99" TARGET="contents">11</A>], a real space non-linear least square
+regression refinement program, was used to fit structural models to
+all experimental PDFs. The real space distance <SPAN CLASS="MATH"><B><I>r</I></B></SPAN> range of the
+experimental PDF used is 1.5 to 20.0 &#197;&nbsp;<A NAME="tex2html25" HREF="footnode_mn.htm#foot2430" TARGET="footer"><SUP><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN></SUP></A>. The initial structure
+model for the orthorhombic phase has space group <SPAN CLASS="MATH"><B><I>Pbnm</I></B></SPAN>, with
+asymmetric cell made up of La (-0.0078, 0.049, 0.25), Mn (0.00, 0.50,
+0.00), O1 (0.075, 0.49, 0.25), O2 (0.73, 0.31, 0.04). The high
+temperature rhombohedral <SPAN CLASS="MATH"><B><I>R</I></B></SPAN> phase has space group <!-- MATH
+ $R\overline{3}c$
+ -->
+<SPAN CLASS="MATH"><B><I>R</I><IMG
+ WIDTH="14" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$ \overline{{3}}$"><I>c</I></B></SPAN>
+with its asymmetric cell comprising of La (0.0, 0.0, 0.25), Mn (0.00,
+0.00, 0.00), O (0.44, 0.0, 0.25). Necessary constraints are properly
+set up manually to maintain the <SPAN CLASS="MATH"><B><I>Pbnm</I></B></SPAN> or <!-- MATH
+ $R\overline{3}c$
+ -->
+<SPAN CLASS="MATH"><B><I>R</I><IMG
+ WIDTH="14" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$ \overline{{3}}$"><I>c</I></B></SPAN> space group
+symmetry. This also means that special atomic positions are not
+refined. It is noteworthy that constraints can be set based on the
+atomic environments regardless of the space group, as PDFFIT assumes
+no inherent symmetry of the refined structure. Refined structure
+parameters include lattice constants, non-special atomic fractional
+coordinates, and isotropic thermal displacement
+parameters. Additionally, finite instrument resolution factor is
+modeled as the <SPAN CLASS="MATH"><B><I>Q</I><SUB>sig</SUB></B></SPAN>, the full width at half maximum (FWHM) of the
+instrumental resolution function; the renormalization factor (scale
+factor) is also refined to account for small but non-negligible
+systematic errors during data analysis.  All refinement agreements are
+rather good with R<SPAN CLASS="MATH"><B><SUB>wp</SUB></B></SPAN> values less than 0.10. Examples of the PDF
+refinement are shown in Fig.&nbsp;<A HREF="node50_ct.htm#fig_ch3_4pdffita">3.12</A>
+and&nbsp;<A HREF="node50_ct.htm#fig_ch3_4pdffitb">3.13</A> for sample LaMnO<SPAN CLASS="MATH"><B><SUB>3</SUB></B></SPAN>(A) and (B), respectively.
+
+<DIV ALIGN="CENTER"><A NAME="fig_ch3_4pdffitb"></A><A NAME="2440"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Examples of PDF refinement results at
+   20&nbsp;K, 300&nbsp;K, 603&nbsp;K, 805&nbsp;K of sample LaMnO<SPAN CLASS="MATH"><B><SUB>3</SUB></B></SPAN>(B). Denotations are the
+   following, the experimental <SPAN CLASS="MATH"><B><I>G</I>(<I>r</I>)</B></SPAN> is shown as solid dots, and the
+   calculated PDF from refined structural model is shown as solid
+   line.  The difference curve is shown offset below.  The dashed
+   lines show the estimated standard deviations due to finite counting
+   statistics at 2<SPAN CLASS="MATH"><B><IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img55.png"
+ ALT="$ \sigma$"></B></SPAN> level.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><SPAN CLASS="MATH"><B>&nbsp;</B></SPAN>
+<IMG
+ WIDTH="266" HEIGHT="238" ALIGN="BOTTOM" BORDER="0"
+ SRC="img85.png"
+ ALT="\includegraphics[width=0.48\textwidth,keepaspectratio=1]{20K_fit.ps}">
+   <IMG
+ WIDTH="265" HEIGHT="238" ALIGN="BOTTOM" BORDER="0"
+ SRC="img86.png"
+ ALT="\includegraphics[width=0.48\textwidth,keepaspectratio=1]{300K_fit.ps}">
+   <IMG
+ WIDTH="266" HEIGHT="238" ALIGN="BOTTOM" BORDER="0"
+ SRC="img87.png"
+ ALT="\includegraphics[width=0.48\textwidth,keepaspectratio=1]{603K_fit.ps}">
+   <IMG
+ WIDTH="265" HEIGHT="238" ALIGN="BOTTOM" BORDER="0"
+ SRC="img88.png"
+ ALT="\includegraphics[width=0.48\textwidth,keepaspectratio=1]{805K_fit.ps}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+In the difference curves shown in Fig.&nbsp;<A HREF="node50_ct.htm#fig_ch3_4pdffita">3.12</A>, sine
+wave like fluctuations are somehow apparent. A clearer plot is shown
+in Fig.&nbsp;<A HREF="node50_ct.htm#fig_ch3_fqmisspeak">3.14</A>(a).  This is found to originate from
+the missing low <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> Bragg peaks in <SPAN CLASS="MATH"><B><I>F</I>(<I>Q</I>)</B></SPAN>, which was directly sine
+Fourier transformed to obtain the <SPAN CLASS="MATH"><B><I>G</I>(<I>r</I>)</B></SPAN>. From
+Fig.&nbsp;<A HREF="node50_ct.htm#fig_ch3_fqmisspeak">3.14</A>(b), three peaks (first one is a doublet)
+are missing from the experimental <SPAN CLASS="MATH"><B><I>F</I>(<I>Q</I>)</B></SPAN> with positions at 1.57, 1.61,
+and 1.77 &#197;<SPAN CLASS="MATH"><B><SUP>-1</SUP></B></SPAN>. With the known peak positions and the relative peak
+intensities estimated from the structure factors, the analytical
+formula of <!-- MATH
+ $s*\exp^{\frac{1}{2}(0.018 r)^2} \cdot (200\sin(1.57r)\cdot
+1.57 + 83\sin(1.61r)\cdot 1.61 + 38\sin(1.77r)\cdot 1.77)$
+ -->
+<SPAN CLASS="MATH"><B><I>s</I>*exp<SUP><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$\scriptstyle {\frac{{1}}{{2}}}$">(0.018r)<SUP>2</SUP> . </SUP>(200 sin(1.57<I>r</I>)<SUP> . </SUP>1.57 + 83 sin(1.61<I>r</I>)<SUP> . </SUP>1.61 + 38 sin(1.77<I>r</I>)<SUP> . </SUP>1.77)</B></SPAN> was fit to
+the difference curve. <SPAN CLASS="MATH"><B><I>r</I></B></SPAN> is the real space distance. <SPAN CLASS="MATH"><B><I>s</I></B></SPAN> is the scale
+factor as the only fitting parameter. The fit is shown in
+Fig.&nbsp;<A HREF="node50_ct.htm#fig_ch3_fqmisspeak">3.14</A>(c). The excellent agreement of the fit
+strongly indicates the missing Bragg peaks are the origin of the
+fluctuations in the difference curves. Subtraction of the fitted sine
+waves resulted in a much improved refinement as expected, which can be
+seen in Fig.&nbsp;<A HREF="node50_ct.htm#fig_ch3_fqmisspeak">3.14</A>(d).
+
+<DIV ALIGN="CENTER"><A NAME="fig_ch3_fqmisspeak"></A><A NAME="2452"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Demonstration of the consequence of missing Bragg peaks
+   at low <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> region of the experimental <SPAN CLASS="MATH"><B><I>F</I>(<I>Q</I>)</B></SPAN> on later PDF refinement
+   (see text for details).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><SPAN CLASS="MATH"><B>&nbsp;</B></SPAN>
+<IMG
+ WIDTH="532" HEIGHT="435" ALIGN="BOTTOM" BORDER="0"
+ SRC="img90.png"
+ ALT="\includegraphics[width=0.96\textwidth]{fqmisspeak.ps}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<HR>
+<ADDRESS>
+Xiangyun Qiu
+2005-02-18
+</ADDRESS>
+</BODY>
+</HTML>

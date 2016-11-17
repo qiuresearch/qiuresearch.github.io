@@ -1,0 +1,1395 @@
+This is TeX, Version 3.14159 (Web2C 7.3.1) (format=latex 2003.2.18)  18 FEB 2005 03:10
+**./images.tex
+(./images.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, i
+talian, nohyphenation, loaded.
+
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk12.clo
+File: bk12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/usr/share/texmf/tex/latex/config/graphics.cfg)
+Package graphics Info: Driver file: dvips.def on input line 80.
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (/usr/share/texmf/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+) (/usr/share/texmf/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+(/usr/share/texmf/tex/latex/tools/array.sty
+Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
+\col@sep=\dimen107
+\extrarowheight=\dimen108
+\NC@list=\toks15
+\extratabsurround=\skip43
+\backup@length=\skip44
+)) (/usr/share/texmf/tex/latex/tools/bm.sty
+Package: bm 1999/07/05 v1.0g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 195.
+) (/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks16
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)) (/usr/share/texmf/tex/latex/misc/setspace.sty
+Package: setspace 1998/11/26 6.4 Contributed and Supported LaTeX2e package
+Package: `setspace' 6.4 <1998/11/26>
+) (/usr/share/texmf/tex/latex/html/html.sty
+Package: html 1999/07/19 v1.38 hypertext commands for latex2html (nd, hws, rrm)
+
+\c@lpart=\count88
+\c@lchapter=\count89
+\c@lsection=\count90
+\c@lsubsection=\count91
+\c@lsubsubsection=\count92
+\c@lparagraph=\count93
+\c@lsubparagraph=\count94
+\c@lsubsubparagraph=\count95
+\ptrfile=\write3
+)
+\c@fraction=\count96
+(/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+(/usr/share/texmf/tex/latex/config/color.cfg)
+Package color Info: Driver file: dvips.def on input line 125.
+(/usr/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (/usr/share/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+(/usr/share/texmf/tex/latex/base/latin1.def
+File: latin1.def 2001/07/10 v0.99a Input encoding file 
+))
+\sizebox=\box26
+\lthtmlwrite=\write4
+(images.aux (/u24/xiangyun/thesis/title.aux) (/u24/xiangyun/thesis/abstract.aux
+) (/u24/xiangyun/thesis/acknowledge.aux) (/u24/xiangyun/thesis/ch1_intro.aux) (
+/u24/xiangyun/thesis/ch2_rapdf.aux) (/u24/xiangyun/thesis/ch3_lamno.aux) (/u24/
+xiangyun/thesis/ch4_lsmno.aux) (/u24/xiangyun/thesis/ch5_rpapp.aux) (/u24/xiang
+yun/thesis/ch6_concl.aux) (/u24/xiangyun/thesis/apa_rapdf.aux))
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 250.
+LaTeX Font Info:    ... okay on input line 250.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 250.
+LaTeX Font Info:    ... okay on input line 250.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 250.
+LaTeX Font Info:    ... okay on input line 250.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 250.
+LaTeX Font Info:    ... okay on input line 250.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 250.
+LaTeX Font Info:    ... okay on input line 250.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 250.
+LaTeX Font Info:    ... okay on input line 250.
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=686.56499pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=0.0pt plus 1.0pt
+
+latex2htmlLength oddsidemargin=36.135pt
+
+latex2htmlLength evensidemargin=0.0pt
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 274.
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 274.
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+l2hSize :tex2html_wrap_inline8348:7.75pt::0.0pt::8.13745pt.
+[1
+
+
+
+]
+l2hSize :tex2html_wrap_inline9109:8.2pt::0.0pt::10.37909pt.
+[2
+
+
+]
+l2hSize :tex2html_wrap_inline9210:8.2pt::0.0pt::7.92912pt.
+[3
+
+
+]
+l2hSize :tex2html_wrap_inline9739:8.25pt::8.25pt::9.92088pt.
+[4
+
+
+]
+l2hSize :tex2html_wrap_inline10195:11.38661pt::11.38661pt::16.4625pt.
+[5
+
+
+]
+l2hSize :tex2html_wrap_inline11330:8.25pt::8.25pt::9.92088pt.
+[6
+
+
+]
+l2hSize :tex2html_wrap_inline11333:7.75pt::0.0pt::9.92088pt.
+[7
+
+
+]
+l2hSize :tex2html_wrap_inline11370:8.33331pt::0.0pt::7.44162pt.
+[8
+
+
+]
+l2hSize :tex2html_wrap_inline11371:10.78033pt::10.78033pt::7.88573pt.
+[9
+
+
+]
+l2hSize :tex2html_wrap_inline11385:8.55331pt::0.0pt::8.20897pt.
+[10
+
+
+]
+l2hSize :tex2html_wrap_indisplay11392:16.35141pt::16.35141pt::8.86246pt.
+[11
+
+
+]
+l2hSize :tex2html_wrap_indisplay11393:16.70006pt::16.70006pt::17.9209pt.
+[12
+
+
+]
+l2hSize :tex2html_wrap_indisplay11394:17.14433pt::17.14433pt::17.9209pt.
+[13
+
+
+]
+l2hSize :tex2html_wrap_indisplay11395:17.90013pt::17.90013pt::8.12088pt.
+[14
+
+
+]
+l2hSize :tex2html_wrap_indisplay11396:16.9514pt::16.9514pt::22.06668pt.
+[15
+
+
+]
+l2hSize :tex2html_wrap_indisplay11397:8.83331pt::8.83331pt::6.2416pt.
+[16
+
+
+]
+l2hSize :tex2html_wrap_indisplay11398:17.90013pt::17.90013pt::8.12088pt.
+[17
+
+
+]
+l2hSize :tex2html_wrap_indisplay11399:8.25pt::8.25pt::7.6833pt.
+[18
+
+
+]
+l2hSize :tex2html_wrap_indisplay11400:8.25pt::8.25pt::11.39795pt.
+[19
+
+
+]
+l2hSize :tex2html_wrap_indisplay11404:8.25pt::8.25pt::6.64789pt.
+[20
+
+
+]
+l2hSize :tex2html_wrap_inline11412:9.5pt::9.5pt::5.2542pt.
+[21
+
+
+]
+l2hSize :tex2html_wrap_inline11413:9.5pt::9.5pt::5.2542pt.
+[22
+
+
+]
+l2hSize :tex2html_wrap_inline11415:8.25pt::8.25pt::11.39795pt.
+[23
+
+
+]
+l2hSize :tex2html_wrap_inline11417:8.25pt::8.25pt::6.64789pt.
+[24
+
+
+]
+l2hSize :tex2html_wrap_inline11420:10.16673pt::10.16673pt::8.58754pt.
+[25
+
+
+]
+l2hSize :tex2html_wrap_inline11421:11.29776pt::0.0pt::11.01453pt.
+[26
+
+
+]
+l2hSize :tex2html_wrap_inline11432:12.08664pt::12.08664pt::11.89351pt.
+[27
+
+
+]
+l2hSize :tex2html_wrap_inline11437:8.25778pt::8.25778pt::8.68985pt.
+[28
+
+
+]
+l2hSize :tex2html_wrap_inline11438:7.75pt::0.0pt::6.07602pt.
+[29
+
+
+]
+l2hSize :tex2html_wrap_indisplay11470:18.50017pt::18.50017pt::28.19888pt.
+[30
+
+
+]
+l2hSize :tex2html_wrap_indisplay11471:16.9514pt::16.9514pt::22.06668pt.
+[31
+
+
+]
+l2hSize :tex2html_wrap_indisplay11473:17.61809pt::17.61809pt::48.4462pt.
+[32
+
+
+]
+l2hSize :tex2html_wrap_indisplay11474:9.05331pt::9.05331pt::15.17513pt.
+[33
+
+
+]
+l2hSize :tex2html_wrap_indisplay11475:16.35141pt::16.35141pt::8.86246pt.
+[34
+
+
+]
+l2hSize :tex2html_wrap_indisplay11476:17.11124pt::17.11124pt::21.58768pt.
+[35
+
+
+]
+l2hSize :tex2html_wrap_indisplay11480:17.61809pt::17.61809pt::48.4462pt.
+[36
+
+
+]
+l2hSize :tex2html_wrap_inline11482:10.38034pt::10.38034pt::8.15564pt.
+[37
+
+
+]
+l2hSize :tex2html_wrap_inline11483:10.4445pt::10.4445pt::17.58766pt.
+[38
+
+
+]
+
+LaTeX Warning: Command \r invalid in math mode on input line 516.
+
+l2hSize :tex2html_wrap_inline11515:10.67493pt::10.67493pt::30.84903pt.
+[39
+
+
+]
+
+LaTeX Warning: Command \r invalid in math mode on input line 522.
+
+l2hSize :tex2html_wrap_inline11517:10.67493pt::10.67493pt::25.0905pt.
+[40
+
+
+]
+
+LaTeX Warning: Command \r invalid in math mode on input line 528.
+
+l2hSize :tex2html_wrap_inline11519:10.67493pt::10.67493pt::25.0905pt.
+[41
+
+
+]
+l2hSize :tex2html_wrap_inline11526:10.38034pt::10.38034pt::12.4057pt.
+[42
+
+
+]
+l2hSize :tex2html_wrap_inline11527:8.33331pt::0.0pt::6.38954pt.
+[43
+
+
+]
+l2hSize :tex2html_wrap_inline11546:8.25pt::8.25pt::7.6569pt.
+[44
+
+
+]
+l2hSize :tex2html_wrap_inline11565:8.25pt::8.25pt::9.92088pt.
+[45
+
+
+]
+File: fig_ch2/phospher_energylevel.ps Graphic file (type eps)
+<fig_ch2/phospher_energylevel.ps>
+l2hSize :tex2html_wrap11574:325.7412pt::0.0pt::349.0pt.
+[46
+
+
+]
+File: fig_ch2/edep_ipresponse.ps Graphic file (type eps)
+<fig_ch2/edep_ipresponse.ps>
+l2hSize :tex2html_wrap11620:276.26306pt::0.0pt::349.0pt.
+[47
+
+
+]
+File: fig_ch2/ni_ip.eps Graphic file (type eps)
+<fig_ch2/ni_ip.eps>
+l2hSize :tex2html_wrap11635:381.25682pt::0.0pt::349.0pt.
+[48
+
+
+]
+File: fig_ch2/ni220fqgrfit.ps Graphic file (type eps)
+<fig_ch2/ni220fqgrfit.ps>
+l2hSize :tex2html_wrap11677:415.10959pt::0.0pt::349.0pt.
+[49
+
+
+]
+l2hSize :tex2html_wrap_inline11699:10.13322pt::0.0pt::6.46246pt.
+[50
+
+
+]
+File: fig_ch2/alf3fqgrfit.ps Graphic file (type eps)
+<fig_ch2/alf3fqgrfit.ps>
+l2hSize :tex2html_wrap11720:456.62537pt::0.0pt::349.0pt.
+[51
+
+
+]
+File: fig_ch2/bivo_bivtio_fqgr.ps Graphic file (type eps)
+<fig_ch2/bivo_bivtio_fqgr.ps>
+l2hSize :tex2html_wrap11760:429.29169pt::0.0pt::349.0pt.
+[52
+
+
+]
+l2hSize :tex2html_wrap_inline11778:8.25pt::8.25pt::7.33496pt.
+[53
+
+
+]
+l2hSize :tex2html_wrap_inline11800:7.75pt::0.0pt::9.92088pt.
+[54
+
+
+]
+l2hSize :tex2html_wrap_inline11824:7.75pt::0.0pt::7.69649pt.
+[55
+
+
+]
+File: fig_ch2/alf3_ipssdfqgr.ps Graphic file (type eps)
+<fig_ch2/alf3_ipssdfqgr.ps>
+l2hSize :tex2html_wrap11831:251.11714pt::0.0pt::349.0pt.
+[56
+
+
+]
+File: fig_ch2/ssdip_mod.ps Graphic file (type eps)
+<fig_ch2/ssdip_mod.ps>
+l2hSize :tex2html_wrap11845:267.51024pt::0.0pt::349.0pt.
+[57
+
+
+]
+File: fig_ch3/perov.ps Graphic file (type eps)
+<fig_ch3/perov.ps>
+l2hSize :tex2html_wrap11940:392.62405pt::0.0pt::349.0pt.
+[58
+
+
+]
+l2hSize :tex2html_wrap_inline11950:8.25pt::8.25pt::9.92088pt.
+[59
+
+
+]
+File: fig_ch3/mrdata_jins94.eps Graphic file (type eps)
+<fig_ch3/mrdata_jins94.eps>
+l2hSize :tex2html_wrap11992:226.55591pt::0.0pt::349.0pt.
+[60
+
+
+]
+l2hSize :tex2html_wrap_inline12032:7.75pt::0.0pt::7.6833pt.
+[61
+
+
+]
+l2hSize :tex2html_wrap_inline12054:11.24219pt::11.24219pt::17.64465pt.
+[62
+
+
+]
+File: fig_ch3/3d_orbitals.ps Graphic file (type eps)
+<fig_ch3/3d_orbitals.ps>
+l2hSize :tex2html_wrap12068:262.3522pt::0.0pt::349.0pt.
+[63
+
+
+]
+File: fig_ch3/JT-mode-Q1.eps Graphic file (type eps)
+<fig_ch3/JT-mode-Q1.eps>
+l2hSize :tex2html_wrap12088:116.74622pt::0.0pt::349.0pt.
+[64
+
+
+]
+File: fig_ch3/JT-mode-Q2.eps Graphic file (type eps)
+<fig_ch3/JT-mode-Q2.eps>
+l2hSize :tex2html_wrap12089:116.74622pt::0.0pt::349.0pt.
+[65
+
+
+]
+File: fig_ch3/JT-mode-Q3.eps Graphic file (type eps)
+<fig_ch3/JT-mode-Q3.eps>
+l2hSize :tex2html_wrap12090:116.23288pt::0.0pt::349.0pt.
+[66
+
+
+]
+l2hSize :tex2html_wrap_inline12135:8.83331pt::8.83331pt::7.5416pt.
+[67
+
+
+]
+File: fig_ch3/semi-covalent-diagram.eps Graphic file (type eps)
+<fig_ch3/semi-covalent-diagram.eps>
+l2hSize :tex2html_wrap12171:292.22633pt::0.0pt::349.0pt.
+[68
+
+
+]
+File: fig_ch3/lacamno3_phasedigram.eps Graphic file (type eps)
+<fig_ch3/lacamno3_phasedigram.eps>
+l2hSize :tex2html_wrap12225:217.61353pt::0.0pt::349.0pt.
+[69
+
+
+]
+l2hSize :tex2html_wrap_inline12241:7.75pt::0.0pt::2.89308pt.
+[70
+
+
+]
+File: fig_ch3/typeA-orbitalorder.eps Graphic file (type eps)
+<fig_ch3/typeA-orbitalorder.eps>
+l2hSize :tex2html_wrap12253:327.4784pt::0.0pt::349.0pt.
+[71
+
+
+]
+File: fig_ch3/LaMnO3_pbnm.eps Graphic file (type eps)
+<fig_ch3/LaMnO3_pbnm.eps>
+l2hSize :tex2html_wrap12261:418.8034pt::0.0pt::349.0pt.
+[72
+
+
+]
+l2hSize :tex2html_wrap_inline12272:9.25496pt::9.25496pt::9.92088pt.
+[73
+
+
+]
+File: fig_ch3/LaMnO3-A_dta.ps Graphic file (type eps)
+<fig_ch3/LaMnO3-A_dta.ps>
+l2hSize :tex2html_wrap12337:158.26181pt::0.0pt::349.0pt.
+[74
+
+
+]
+File: fig_ch3/LaMnO3-B_dta.ps Graphic file (type eps)
+<fig_ch3/LaMnO3-B_dta.ps>
+l2hSize :tex2html_wrap12338:158.26181pt::0.0pt::349.0pt.
+[75
+
+
+]
+l2hSize :tex2html_wrap_indisplay12366:16.35141pt::16.35141pt::10.0833pt.
+[76
+
+
+]
+l2hSize :tex2html_wrap_indisplay12367:17.11124pt::17.11124pt::21.58768pt.
+[77
+
+
+]
+File: fig_ch3/gdat.ps Graphic file (type eps)
+<fig_ch3/gdat.ps>
+l2hSize :tex2html_wrap12374:181.26653pt::0.0pt::349.0pt.
+[78
+
+
+]
+File: fig_ch3/300K_fqgr.ps Graphic file (type eps)
+<fig_ch3/300K_fqgr.ps>
+l2hSize :tex2html_wrap12394:240.22662pt::0.0pt::349.0pt.
+[79
+
+
+]
+File: fig_ch3/20K_fqgr.ps Graphic file (type eps)
+<fig_ch3/20K_fqgr.ps>
+l2hSize :tex2html_wrap12395:242.19167pt::0.0pt::349.0pt.
+[80
+
+
+]
+File: fig_ch3/650K_fit.ps Graphic file (type eps)
+<fig_ch3/650K_fit.ps>
+l2hSize :tex2html_wrap12406:146.02731pt::0.0pt::349.0pt.
+[81
+
+
+]
+File: fig_ch3/730K_fit.ps Graphic file (type eps)
+<fig_ch3/730K_fit.ps>
+l2hSize :tex2html_wrap12407:146.02731pt::0.0pt::349.0pt.
+[82
+
+
+]
+File: fig_ch3/880K_fit.ps Graphic file (type eps)
+<fig_ch3/880K_fit.ps>
+l2hSize :tex2html_wrap12408:146.02731pt::0.0pt::349.0pt.
+[83
+
+
+]
+File: fig_ch3/1150K_fit.ps Graphic file (type eps)
+<fig_ch3/1150K_fit.ps>
+l2hSize :tex2html_wrap12409:146.02731pt::0.0pt::349.0pt.
+[84
+
+
+]
+File: fig_ch3/20K_fit.ps Graphic file (type eps)
+<fig_ch3/20K_fit.ps>
+l2hSize :tex2html_wrap12433:150.5772pt::0.0pt::349.0pt.
+[85
+
+
+]
+File: fig_ch3/300K_fit.ps Graphic file (type eps)
+<fig_ch3/300K_fit.ps>
+l2hSize :tex2html_wrap12434:150.5772pt::0.0pt::349.0pt.
+[86
+
+
+]
+File: fig_ch3/603K_fit.ps Graphic file (type eps)
+<fig_ch3/603K_fit.ps>
+l2hSize :tex2html_wrap12435:150.5772pt::0.0pt::349.0pt.
+[87
+
+
+]
+File: fig_ch3/805K_fit.ps Graphic file (type eps)
+<fig_ch3/805K_fit.ps>
+l2hSize :tex2html_wrap12436:150.5772pt::0.0pt::349.0pt.
+[88
+
+
+]
+l2hSize :tex2html_wrap_inline12443:8.25pt::8.25pt::6.65413pt.
+[89
+
+
+]
+File: fig_ch3/fqmisspeak.ps Graphic file (type eps)
+<fig_ch3/fqmisspeak.ps>
+l2hSize :tex2html_wrap12454:274.7175pt::0.0pt::349.0pt.
+[90
+
+
+]
+l2hSize :tex2html_wrap_inline12462:10.01027pt::10.01027pt::12.69864pt.
+[91
+
+
+]
+File: fig_ch3/650KH1_riet.ps Graphic file (type eps)
+<fig_ch3/650KH1_riet.ps>
+l2hSize :tex2html_wrap12471:107.83983pt::0.0pt::349.0pt.
+[92
+
+
+]
+File: fig_ch3/730KH1_riet.ps Graphic file (type eps)
+<fig_ch3/730KH1_riet.ps>
+l2hSize :tex2html_wrap12472:107.83983pt::0.0pt::349.0pt.
+[93
+
+
+]
+File: fig_ch3/880KH1_riet.ps Graphic file (type eps)
+<fig_ch3/880KH1_riet.ps>
+l2hSize :tex2html_wrap12473:107.83983pt::0.0pt::349.0pt.
+[94
+
+
+]
+File: fig_ch3/1150KH1_riet.ps Graphic file (type eps)
+<fig_ch3/1150KH1_riet.ps>
+l2hSize :tex2html_wrap12474:107.83983pt::0.0pt::349.0pt.
+[95
+
+
+]
+File: fig_ch3/20K_rietfit.ps Graphic file (type eps)
+<fig_ch3/20K_rietfit.ps>
+l2hSize :tex2html_wrap12482:151.86128pt::0.0pt::349.0pt.
+[96
+
+
+]
+File: fig_ch3/300K_rietfit.ps Graphic file (type eps)
+<fig_ch3/300K_rietfit.ps>
+l2hSize :tex2html_wrap12483:151.86128pt::0.0pt::349.0pt.
+[97
+
+
+]
+File: fig_ch3/603K_rietfit.ps Graphic file (type eps)
+<fig_ch3/603K_rietfit.ps>
+l2hSize :tex2html_wrap12484:151.86128pt::0.0pt::349.0pt.
+[98
+
+
+]
+File: fig_ch3/805K_rietfit.ps Graphic file (type eps)
+<fig_ch3/805K_rietfit.ps>
+l2hSize :tex2html_wrap12485:151.86128pt::0.0pt::349.0pt.
+[99
+
+
+]
+File: fig_ch3/300KH1_riet.ps Graphic file (type eps)
+<fig_ch3/300KH1_riet.ps>
+l2hSize :tex2html_wrap12493:215.69171pt::0.0pt::349.0pt.
+[100
+
+
+]
+File: fig_ch3/301KH1_riet.ps Graphic file (type eps)
+<fig_ch3/301KH1_riet.ps>
+l2hSize :tex2html_wrap12494:215.69171pt::0.0pt::349.0pt.
+[101
+
+
+]
+File: fig_ch3/lowrpdfa.ps Graphic file (type eps)
+<fig_ch3/lowrpdfa.ps>
+l2hSize :tex2html_wrap12519:196.02054pt::0.0pt::349.0pt.
+[102
+
+
+]
+File: fig_ch3/lowrpdfb.ps Graphic file (type eps)
+<fig_ch3/lowrpdfb.ps>
+l2hSize :tex2html_wrap12520:197.52069pt::0.0pt::349.0pt.
+[103
+
+
+]
+File: fig_ch3/peakpar_pwida.ps Graphic file (type eps)
+<fig_ch3/peakpar_pwida.ps>
+l2hSize :tex2html_wrap12545:207.65825pt::0.0pt::349.0pt.
+[104
+
+
+]
+File: fig_ch3/peakpar_pwidb.ps Graphic file (type eps)
+<fig_ch3/peakpar_pwidb.ps>
+l2hSize :tex2html_wrap12546:210.50789pt::0.0pt::349.0pt.
+[105
+
+
+]
+l2hSize :tex2html_wrap_inline12575:10.38034pt::10.38034pt::7.23758pt.
+[106
+
+
+]
+l2hSize :tex2html_wrap_inline12597:7.75pt::0.0pt::6.58754pt.
+[107
+
+
+]
+l2hSize :tex2html_wrap_inline12599:8.09999pt::0.0pt::9.92088pt.
+[108
+
+
+]
+l2hSize :tex2html_wrap_inline12609:7.75pt::0.0pt::9.25421pt.
+[109
+
+
+]
+File: fig_ch3/abc_volumea.ps Graphic file (type eps)
+<fig_ch3/abc_volumea.ps>
+l2hSize :tex2html_wrap12613:226.67766pt::0.0pt::349.0pt.
+[110
+
+
+]
+File: fig_ch3/abc_volumeb.ps Graphic file (type eps)
+<fig_ch3/abc_volumeb.ps>
+l2hSize :tex2html_wrap12614:226.67766pt::0.0pt::349.0pt.
+[111
+
+
+]
+File: fig_ch3/mn-oblena.ps Graphic file (type eps)
+<fig_ch3/mn-oblena.ps>
+l2hSize :tex2html_wrap12643:227.11273pt::0.0pt::349.0pt.
+[112
+
+
+]
+File: fig_ch3/mn-oblenb.ps Graphic file (type eps)
+<fig_ch3/mn-oblenb.ps>
+l2hSize :tex2html_wrap12644:226.67766pt::0.0pt::349.0pt.
+[113
+
+
+]
+File: fig_ch3/atomsuisoa.ps Graphic file (type eps)
+<fig_ch3/atomsuisoa.ps>
+l2hSize :tex2html_wrap12658:246.35727pt::0.0pt::349.0pt.
+[114
+
+
+]
+File: fig_ch3/atomsuisob.ps Graphic file (type eps)
+<fig_ch3/atomsuisob.ps>
+l2hSize :tex2html_wrap12659:245.77348pt::0.0pt::349.0pt.
+[115
+
+
+]
+l2hSize :tex2html_wrap_indisplay12663:16.9514pt::16.9514pt::28.81787pt.
+[116
+
+
+]
+l2hSize :tex2html_wrap_indisplay12670:8.7pt::8.7pt::10.37909pt.
+[117
+
+
+]
+l2hSize :tex2html_wrap_indisplay12671:16.35141pt::16.35141pt::13.64996pt.
+[118
+
+
+]
+l2hSize :tex2html_wrap_indisplay12672:22.16672pt::22.16672pt::17.9209pt.
+[119
+
+
+]
+l2hSize :tex2html_wrap_indisplay12673:9.5pt::9.5pt::5.2542pt.
+[120
+
+
+]
+l2hSize :tex2html_wrap_indisplay12674:9.5pt::9.5pt::5.2542pt.
+[121
+
+
+]
+l2hSize :tex2html_wrap_indisplay12683:8.7pt::8.7pt::7.92912pt.
+[122
+
+
+]
+l2hSize :tex2html_wrap_indisplay12684:16.9514pt::16.9514pt::51.82794pt.
+[123
+
+
+]
+File: fig_ch3/latstraina.ps Graphic file (type eps)
+<fig_ch3/latstraina.ps>
+l2hSize :tex2html_wrap12702:256.01942pt::0.0pt::349.0pt.
+[124
+
+
+]
+File: fig_ch3/latstrainb.ps Graphic file (type eps)
+<fig_ch3/latstrainb.ps>
+l2hSize :tex2html_wrap12703:256.01942pt::0.0pt::349.0pt.
+[125
+
+
+]
+l2hSize :tex2html_wrap_inline12716:8.25pt::8.25pt::8.28464pt.
+[126
+
+
+]
+l2hSize :tex2html_wrap_inline12719:8.83331pt::8.83331pt::10.81322pt.
+[127
+
+
+]
+l2hSize :tex2html_wrap_inline12721:8.83331pt::8.83331pt::10.81322pt.
+[128
+
+
+]
+l2hSize :tex2html_wrap_indisplay12724:8.83331pt::8.83331pt::10.81322pt.
+[129
+
+
+]
+l2hSize :tex2html_wrap_indisplay12725:18.12836pt::18.12836pt::66.33296pt.
+[130
+
+
+]
+l2hSize :tex2html_wrap_indisplay12727:8.83331pt::8.83331pt::10.81322pt.
+[131
+
+
+]
+l2hSize :tex2html_wrap_indisplay12728:18.12836pt::18.12836pt::66.33296pt.
+[132
+
+
+]
+l2hSize :tex2html_wrap_inline12733:8.25pt::8.25pt::13.0347pt.
+[133
+
+
+]
+l2hSize :tex2html_wrap_inline12734:8.25pt::8.25pt::13.0347pt.
+[134
+
+
+]
+File: fig_ch3/octtilta.ps Graphic file (type eps)
+<fig_ch3/octtilta.ps>
+l2hSize :tex2html_wrap12762:361.52496pt::0.0pt::349.0pt.
+[135
+
+
+]
+File: fig_ch3/octtiltb.ps Graphic file (type eps)
+<fig_ch3/octtiltb.ps>
+l2hSize :tex2html_wrap12763:361.52496pt::0.0pt::349.0pt.
+[136
+
+
+]
+l2hSize :tex2html_wrap_inline12780:11.38661pt::11.38661pt::16.4625pt.
+[137
+
+
+]
+l2hSize :tex2html_wrap_inline12785:8.7pt::8.7pt::14.55832pt.
+[138
+
+
+]
+l2hSize :tex2html_wrap_inline12787:8.7pt::8.7pt::14.16943pt.
+[139
+
+
+]
+l2hSize :tex2html_wrap_indisplay12791:8.7pt::8.7pt::14.55832pt.
+[140
+
+
+]
+l2hSize :tex2html_wrap_indisplay12792:8.83331pt::8.83331pt::32.25928pt.
+[141
+
+
+]
+l2hSize :tex2html_wrap_indisplay12793:8.83331pt::8.83331pt::35.59961pt.
+[142
+
+
+]
+l2hSize :tex2html_wrap_indisplay12795:8.7pt::8.7pt::14.16943pt.
+[143
+
+
+]
+l2hSize :tex2html_wrap_inline12807:8.83331pt::8.83331pt::32.25928pt.
+[144
+
+
+]
+l2hSize :tex2html_wrap_inline12809:8.83331pt::8.83331pt::35.59961pt.
+[145
+
+
+]
+File: fig_ch3/octdistorta.ps Graphic file (type eps)
+<fig_ch3/octdistorta.ps>
+l2hSize :tex2html_wrap12824:254.0979pt::0.0pt::349.0pt.
+[146
+
+
+]
+File: fig_ch3/octdistortb.ps Graphic file (type eps)
+<fig_ch3/octdistortb.ps>
+l2hSize :tex2html_wrap12825:254.0979pt::0.0pt::349.0pt.
+[147
+
+
+]
+File: fig_ch3/varyrangefit.ps Graphic file (type eps)
+<fig_ch3/varyrangefit.ps>
+l2hSize :tex2html_wrap12873:239.45006pt::0.0pt::349.0pt.
+[148
+
+
+]
+File: fig_ch3/cluster-radius_v1.ps Graphic file (type eps)
+<fig_ch3/cluster-radius_v1.ps>
+l2hSize :tex2html_wrap12896:260.39032pt::0.0pt::349.0pt.
+[149
+
+
+]
+File: fig_ch3/ouaniso.ps Graphic file (type eps)
+<fig_ch3/ouaniso.ps>
+l2hSize :tex2html_wrap12927:243.35397pt::0.0pt::349.0pt.
+[150
+
+
+]
+l2hSize :tex2html_wrap_inline12986:7.75pt::0.0pt::12.58755pt.
+[151
+
+
+]
+File: fig_ch4/lsmno_cryststru.eps Graphic file (type eps)
+<fig_ch4/lsmno_cryststru.eps>
+l2hSize :tex2html_wrap13002:480.59338pt::0.0pt::349.0pt.
+[152
+
+
+]
+File: fig_ch4/bilayerphased.ps Graphic file (type eps)
+<fig_ch4/bilayerphased.ps>
+l2hSize :tex2html_wrap13050:258.66074pt::0.0pt::349.0pt.
+[153
+
+
+]
+File: fig_ch4/magnetic_diagram.ps Graphic file (type eps)
+<fig_ch4/magnetic_diagram.ps>
+l2hSize :tex2html_wrap13072:395.01741pt::0.0pt::349.0pt.
+[154
+
+
+]
+l2hSize :tex2html_wrap_inline13082:7.75pt::0.0pt::9.89865pt.
+[155
+
+
+]
+File: fig_ch4/CEtypeMag.eps Graphic file (type eps)
+<fig_ch4/CEtypeMag.eps>
+l2hSize :tex2html_wrap13094:195.45015pt::0.0pt::349.0pt.
+[156
+
+
+]
+File: fig_ch4/AtypeMag.eps Graphic file (type eps)
+<fig_ch4/AtypeMag.eps>
+l2hSize :tex2html_wrap13144:195.11995pt::0.0pt::349.0pt.
+[157
+
+
+]
+File: fig_ch4/54fit.ps Graphic file (type eps)
+<fig_ch4/54fit.ps>
+l2hSize :tex2html_wrap13190:302.01926pt::0.0pt::349.0pt.
+[158
+
+
+]
+File: fig_ch4/4KH1_riet.ps Graphic file (type eps)
+<fig_ch4/4KH1_riet.ps>
+l2hSize :tex2html_wrap13208:179.74109pt::0.0pt::349.0pt.
+[159
+
+
+]
+File: fig_ch3/300KH1_riet.ps Graphic file (type eps)
+<fig_ch3/300KH1_riet.ps>
+l2hSize :tex2html_wrap13209:179.74109pt::0.0pt::349.0pt.
+[160
+
+
+]
+File: fig_ch4/lowrpdf.ps Graphic file (type eps)
+<fig_ch4/lowrpdf.ps>
+l2hSize :tex2html_wrap13237:309.61813pt::0.0pt::349.0pt.
+[161
+
+
+]
+File: fig_ch4/54_2pkheight.ps Graphic file (type eps)
+<fig_ch4/54_2pkheight.ps>
+l2hSize :tex2html_wrap13238:309.53561pt::0.0pt::349.0pt.
+[162
+
+
+]
+l2hSize :tex2html_wrap_inline13267:8.83333pt::8.83333pt::12.58755pt.
+[163
+
+
+]
+l2hSize :tex2html_wrap_inline13269:8.83333pt::8.83333pt::11.25421pt.
+[164
+
+
+]
+File: fig_ch4/54_o3therm.ps Graphic file (type eps)
+<fig_ch4/54_o3therm.ps>
+l2hSize :tex2html_wrap13284:309.61813pt::0.0pt::349.0pt.
+[165
+
+
+]
+File: fig_ch4/54_abc.ps Graphic file (type eps)
+<fig_ch4/54_abc.ps>
+l2hSize :tex2html_wrap13285:307.01866pt::0.0pt::349.0pt.
+[166
+
+
+]
+File: fig_ch4/lsmo_mnoblenvolume.ps Graphic file (type eps)
+<fig_ch4/lsmo_mnoblenvolume.ps>
+l2hSize :tex2html_wrap13325:164.86446pt::0.0pt::349.0pt.
+[167
+
+
+]
+File: fig_ch4/fqgrfitplot.ps Graphic file (type eps)
+<fig_ch4/fqgrfitplot.ps>
+l2hSize :tex2html_wrap13427:415.10959pt::0.0pt::349.0pt.
+[168
+
+
+]
+File: fig_ch4/exp_modpl2.ps Graphic file (type eps)
+<fig_ch4/exp_modpl2.ps>
+l2hSize :tex2html_wrap13458:233.72119pt::0.0pt::349.0pt.
+[169
+
+
+]
+File: fig_ch4/exp_modpl1.ps Graphic file (type eps)
+<fig_ch4/exp_modpl1.ps>
+l2hSize :tex2html_wrap13481:233.72119pt::0.0pt::349.0pt.
+[170
+
+
+]
+File: fig_ch4/pkheightpl.ps Graphic file (type eps)
+<fig_ch4/pkheightpl.ps>
+l2hSize :tex2html_wrap13491:236.7348pt::0.0pt::349.0pt.
+[171
+
+
+]
+File: fig_ch4/latabplot.ps Graphic file (type eps)
+<fig_ch4/latabplot.ps>
+l2hSize :tex2html_wrap13517:236.7348pt::0.0pt::349.0pt.
+[172
+
+
+]
+File: fig_ch4/mn-oblenpl.ps Graphic file (type eps)
+<fig_ch4/mn-oblenpl.ps>
+l2hSize :tex2html_wrap13534:236.7348pt::0.0pt::349.0pt.
+[173
+
+
+]
+File: fig_ch4/Othermpl.ps Graphic file (type eps)
+<fig_ch4/Othermpl.ps>
+l2hSize :tex2html_wrap13546:238.18152pt::0.0pt::349.0pt.
+[174
+
+
+]
+File: fig_ch2/Ti2Sb_cryst.eps Graphic file (type eps)
+<fig_ch2/Ti2Sb_cryst.eps>
+l2hSize :tex2html_wrap13602:392.62405pt::0.0pt::349.0pt.
+[175
+
+
+]
+File: fig_ch5/tisb_ti2net.eps Graphic file (type eps)
+<fig_ch5/tisb_ti2net.eps>
+l2hSize :tex2html_wrap13613:236.9111pt::0.0pt::349.0pt.
+[176
+
+
+]
+File: fig_ch5/tisb_ti2ss.eps Graphic file (type eps)
+<fig_ch5/tisb_ti2ss.eps>
+l2hSize :tex2html_wrap13629:237.41272pt::0.0pt::349.0pt.
+[177
+
+
+]
+File: fig_ch5/nxfq-bw.ps Graphic file (type eps)
+<fig_ch5/nxfq-bw.ps>
+l2hSize :tex2html_wrap13685:447.29958pt::0.0pt::349.0pt.
+[178
+
+
+]
+File: fig_ch5/nxbondpos.ps Graphic file (type eps)
+<fig_ch5/nxbondpos.ps>
+l2hSize :tex2html_wrap13695:412.9351pt::0.0pt::349.0pt.
+[179
+
+
+]
+File: fig_ch5/nxgrfit-bw.ps Graphic file (type eps)
+<fig_ch5/nxgrfit-bw.ps>
+l2hSize :tex2html_wrap13703:218.56685pt::0.0pt::349.0pt.
+[180
+
+
+]
+File: fig_ch5/flowcell.eps Graphic file (type eps)
+<fig_ch5/flowcell.eps>
+l2hSize :tex2html_wrap13784:179.40738pt::0.0pt::349.0pt.
+[181
+
+
+]
+File: fig_ch5/cuo-cu-iq.eps Graphic file (type eps)
+<fig_ch5/cuo-cu-iq.eps>
+l2hSize :tex2html_wrap13795:283.07597pt::0.0pt::349.0pt.
+[182
+
+
+]
+File: fig_ch5/cuo-cu-gr.eps Graphic file (type eps)
+<fig_ch5/cuo-cu-gr.eps>
+l2hSize :tex2html_wrap13807:360.4507pt::0.0pt::349.0pt.
+[183
+
+
+]
+File: fig_ch2/rapdf_setup.ps Graphic file (type eps)
+<fig_ch2/rapdf_setup.ps>
+l2hSize :tex2html_wrap13909:113.35196pt::0.0pt::349.0pt.
+[184
+
+
+]
+l2hSize :tex2html_wrap_indisplay13916:16.81808pt::16.81808pt::22.0851pt.
+[185
+
+
+]
+l2hSize :tex2html_wrap_indisplay13917:8.25pt::8.25pt::9.92088pt.
+[186
+
+
+]
+l2hSize :tex2html_wrap_indisplay13918:16.9514pt::16.9514pt::19.63318pt.
+[187
+
+
+]
+l2hSize :tex2html_wrap_indisplay13919:18.12836pt::18.12836pt::76.95767pt.
+[188
+
+
+]
+l2hSize :tex2html_wrap_indisplay13920:16.9514pt::16.9514pt::18.88458pt.
+[189
+
+
+]
+l2hSize :tex2html_wrap_indisplay13921:16.81808pt::16.81808pt::18.40056pt.
+[190
+
+
+]
+l2hSize :tex2html_wrap_inline13927:10.78033pt::10.78033pt::15.02936pt.
+[191
+
+
+]
+l2hSize :tex2html_wrap_inline13933:10.78033pt::10.78033pt::14.44461pt.
+[192
+
+
+]
+l2hSize :tex2html_wrap_inline13935:10.38034pt::10.38034pt::22.3489pt.
+[193
+
+
+]
+l2hSize :tex2html_wrap_inline13942:10.69144pt::10.69144pt::14.14276pt.
+[194
+
+
+]
+File: fig_ch2/esd_ipresponse.ps Graphic file (type eps)
+<fig_ch2/esd_ipresponse.ps>
+l2hSize :tex2html_wrap13998:224.1943pt::0.0pt::349.0pt.
+[195
+
+
+]
+l2hSize :tex2html_wrap_inline14006:8.33331pt::0.0pt::6.2416pt.
+[196
+
+
+]
+l2hSize :tex2html_wrap_indisplay14018:20.06004pt::20.06004pt::233.46138pt.
+[197
+
+
+]
+l2hSize :tex2html_wrap_inline14020:11.72003pt::11.72003pt::67.60861pt.
+[198
+
+
+]
+l2hSize :tex2html_wrap_inline16128:9.5pt::9.5pt::74.54562pt.
+[199
+
+
+]
+l2hSize :tex2html_wrap_inline16133:8.25pt::8.25pt::63.22623pt.
+[200
+
+
+]
+l2hSize :tex2html_wrap_inline16204:7.75pt::0.0pt::4.64868pt.
+[201
+
+
+]
+l2hSize :tex2html_wrap_inline14813:8.25pt::8.25pt::5.33759pt.
+[202
+
+
+]
+l2hSize :tex2html_wrap_inline14820:8.25pt::8.25pt::16.00995pt.
+[203
+
+
+]
+l2hSize :tex2html_wrap_inline16289:8.25pt::8.25pt::9.92088pt.
+[204
+
+
+]
+l2hSize :tex2html_wrap_inline16353:8.25pt::8.25pt::22.67108pt.
+[205
+
+
+]
+l2hSize :tex2html_wrap_inline16355:8.25pt::8.25pt::22.67108pt.
+[206
+
+
+]
+l2hSize :tex2html_wrap_inline16357:8.25pt::8.25pt::5.98756pt.
+[207
+
+
+]
+l2hSize :tex2html_wrap_inline16359:8.25pt::8.25pt::5.98756pt.
+[208
+
+
+] (images.aux) ) 
+Here is how much of TeX's memory you used:
+ 2262 strings out of 20880
+ 27921 string characters out of 196184
+ 68514 words of memory out of 350001
+ 5000 multiletter control sequences out of 10000+15000
+ 11063 words of font info for 41 fonts, out of 400000 for 1000
+ 14 hyphenation exceptions out of 10000
+ 25i,8n,24p,507b,227s stack positions out of 3000i,100n,1500p,50000b,4000s
+
+Output written on images.dvi (208 pages, 48092 bytes).

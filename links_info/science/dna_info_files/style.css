@@ -1,0 +1,45 @@
+A:link, A:visited, A:active  {color: #228B22; text-decoration: none}
+A:hover {color: #FFAC2D; text-decoration: none}
+BODY {color: black; background: white; margin: 0pt; font-size: 12pt/14pt; font-family: arial}
+IMG {border: 0pt}
+TD {vertical-align: top}
+
+#people IMG {padding-right: 3px}
+#people TD {vertical-align: bottom}
+
+.captionnames {font-weight: normal}
+.border1 {border: 1pt solid black}
+.footer {text-align: right; font-weight: bold; font-size: 10pt; border-top: solid 1pt #FFAC2D; border-top: solid 1pt #FFAC2D}
+.heading1 {font-size: 14pt; font-weight: bold; color: #FFAC2D}
+.heading2 {font-size: 14pt; font-weight: bold}
+.heading3 {font-size: 12pt; font-weight: bold; margin-top: 15px; margin-bottom: 15px}
+.heading4 {font-size: 12pt; font-weight: bold; padding-top: 15px; padding-bottom: 15px}
+.home {padding-bottom: 15pt; padding-top: 10pt}
+.homeleft {font-size: 14pt; font-weight: bold; padding-right: 25px; padding-top: 10px; padding-bottom: 15px}
+.homeright {padding-top: 10px; padding-bottom: 15px}
+.homeright A:active, .homeright A:link, .homeright A:visited {color: #6C6C6C}
+.homeright A:hover {color: #FFAC2D}
+.indent {padding-left: 25pt}
+.main {width: 506px; text-align: left; border-right: solid 1pt #228B22;}
+.main P {margin-right: 15px; margin-top: 15px; margin-bottom: 15px;}
+.news_item {padding-top: 5px; padding-bottom: 5px}
+.nomargin {margin: 0pt}
+.orange {color: #FFAC2D}
+.page {width: 681px; margin-left: auto; margin-right: auto; margin-top: 0px; margin-bottom: 0px}
+.rowspace TR TD {padding-bottom: 15px}
+.title A:active, .title A:hover, .title A:link, .title A:visited
+	{font-size: 24pt; font-family: "arial black"; font-style: italic; color: #FFAC2D}
+
+
+.bold {font-weight: bold}
+.italic {font-style: italic}
+
+.six {font-size: 6pt}
+.seven {font-size: 7pt}
+.eight {font-size: 8pt}
+.nine {font-size: 9pt}
+.ten {font-size: 10pt}
+.eleven {font-size: 11pt}
+.twelve {font-size: 12pt}
+.thirteen {font-size: 13pt}
+.fourteen {font-size: 14pt}

@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contents of The atomic pair distribution function technique</TITLE>
+<META NAME="description" CONTENT="Contents of The atomic pair distribution function technique">
+<META NAME="keywords" CONTENT="thesis_xq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis_xq.css">
+
+<LINK REL="next" HREF="node8_mn.htm">
+<LINK REL="previous" HREF="node6_mn.htm">
+<LINK REL="up" HREF="node4_mn.htm">
+<LINK REL="next" HREF="node8_mn.htm">
+</HEAD>
+ 
+<BODY bgcolor="#ffffff" text="#000000" link="#9944EE" vlink="#0000ff" alink="#00ff00">
+
+<H1><A NAME="SECTION00430000000000000000">
+The atomic pair distribution function technique</A>
+</H1>
+
+<P>
+As suggested by its name, the atomic pair distribution function (PDF),
+<SPAN CLASS="MATH"><I>G</I>(<I>r</I>)</SPAN>, tells the probability of finding <SPAN  CLASS="textit">atomic pairs</SPAN> separated by the
+real space distance <SPAN CLASS="MATH"><I>r</I></SPAN>. It should be stressed that the PDF of
+interest is radially averaged and is a one dimensional function. To
+obtain the <SPAN CLASS="MATH"><I>G</I>(<I>r</I>)</SPAN> for a given a structure, we first sit on one atom <SPAN CLASS="MATH"><I>i</I></SPAN>,
+then look out for neighbors. A peak is assigned for every atom <SPAN CLASS="MATH"><I>j</I></SPAN>
+found at the position corresponding to the inter-atomic distance
+<SPAN CLASS="MATH"><I>r</I><SUB>ij</SUB></SPAN>, and zero everywhere else. Then we repeat the same procedure
+over all atoms, and average all obtained curves to get the total <SPAN CLASS="MATH"><I>G</I>(<I>r</I>)</SPAN> of the structure. Another way to get the <SPAN CLASS="MATH"><I>G</I>(<I>r</I>)</SPAN> is to first obtain the
+atomic radial density function <!-- MATH
+ $n(\vec{r})$
+ -->
+<SPAN CLASS="MATH"><I>n</I>(<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)</SPAN> with an arbitrary
+origin. The convolution of <!-- MATH
+ $n(\vec{r})$
+ -->
+<SPAN CLASS="MATH"><I>n</I>(<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)</SPAN> with itself results in the
+PDF. The mathematical definition of the PDF is
+
+<BR>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq_igr"></A><!-- MATH
+ \begin{eqnarray}
+G_{c}(r) & = & \frac{1}{r} \sum_{i}\sum_{j} \left [
+  \frac{b_{i}b_{j}}{\langle b \rangle ^{2}} \delta (r - r_{ij}) \right
+  ] - 4 \pi r \rho_{0} \nonumber \\& = & 4 \pi r [ \rho(r) - \rho_{0}
+  ],
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><I>G</I><SUB>c</SUB>(<I>r</I>)</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="18" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$\displaystyle {\frac{{1}}{{r}}}$"><IMG
+ WIDTH="32" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="$\displaystyle \sum_{{i}}^{}$"><IMG
+ WIDTH="32" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.png"
+ ALT="$\displaystyle \sum_{{j}}^{}$"><IMG
+ WIDTH="17" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$\displaystyle \left[\vphantom{
+\frac{b_{i}b_{j}}{\langle b \rangle ^{2}} \delta (r - r_{ij}) }\right.$"><IMG
+ WIDTH="39" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$\displaystyle {\frac{{b_{i}b_{j}}}{{\langle b \rangle ^{2}}}}$"><IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$\displaystyle \delta$">(<I>r</I> - <I>r</I><SUB>ij</SUB>)<IMG
+ WIDTH="17" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$\displaystyle \left.\vphantom{
+\frac{b_{i}b_{j}}{\langle b \rangle ^{2}} \delta (r - r_{ij}) }\right]$"> - 4<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$\displaystyle \pi$"><I>r</I><IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$\displaystyle \rho_{{0}}^{}$"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>4<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$\displaystyle \pi$"><I>r</I>[<IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$\displaystyle \rho$">(<I>r</I>) - <IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$\displaystyle \rho_{{0}}^{}$">],</TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <SPAN CLASS="MATH"><I>r</I><SUB>ij</SUB></SPAN> is the distance between atoms <SPAN CLASS="MATH"><I>i</I></SPAN> and <SPAN CLASS="MATH"><I>j</I></SPAN>; the value
+<SPAN CLASS="MATH"><I>b</I><SUB>i</SUB></SPAN> is the scattering length for atom <SPAN CLASS="MATH"><I>i</I></SPAN>; <!-- MATH
+ $\langle b \rangle$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \langle$"><I>b</I><IMG
+ WIDTH="12" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \rangle$"></SPAN> is
+the average scattering length over all atoms; and <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$ \rho_{{0}}^{}$"></SPAN> is the
+number density. The
+<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ \rho$"></SPAN>(<SPAN CLASS="MATH"><I>r</I></SPAN>) here is equivalent to the spherical average of <!-- MATH
+ $\int n(\vec{r'})\cdot
+n(\vec{r}-\vec{r'})d\vec{r'}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$ \int$"><I>n</I>(<IMG
+ WIDTH="21" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \vec{{r'}}\,$">)<SUP> . </SUP><I>n</I>(<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$"> - <IMG
+ WIDTH="21" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \vec{{r'}}\,$">)<I>d</I><IMG
+ WIDTH="21" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \vec{{r'}}\,$"></SPAN>. Though less intuitive than the radial
+density function <!-- MATH
+ $n(\vec{r})$
+ -->
+<SPAN CLASS="MATH"><I>n</I>(<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)</SPAN>, the PDF, <SPAN CLASS="MATH"><I>G</I>(<I>r</I>)</SPAN>, is the directly
+measurable quantity from powder diffraction experiments.
+
+<P>
+The path from a powder diffraction experiment to the <SPAN CLASS="MATH"><I>G</I>(<I>r</I>)</SPAN> can be
+conceptually understood in the following way. We will first
+concentrate on one single grain, then do the spherical
+averaging. Given the radial density function <!-- MATH
+ $n(\vec{r})$
+ -->
+<SPAN CLASS="MATH"><I>n</I>(<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)</SPAN> of the
+scatterer, from the kinematic scattering theory in the Born
+approximation, the scattered wave at momentum transfer <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$"></SPAN> takes
+the form of <!-- MATH
+ $F(\vec{Q})=\int
+n(\vec{r})e^{i\vec{Q}\cdot\vec{r}}d\vec{r}$
+ -->
+<SPAN CLASS="MATH"><I>F</I>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">) = <IMG
+ WIDTH="17" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$ \int$"><I>n</I>(<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)<I>e</I><SUP>i<IMG
+ WIDTH="18" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$\scriptstyle \vec{{Q}}\,$"><SUP> . </SUP><IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img29.png"
+ ALT="$\scriptstyle \vec{{r}}\,$"></SUP><I>d</I><IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$"></SPAN>, which is actually the
+Fourier transform of <!-- MATH
+ $n(\vec{r})$
+ -->
+<SPAN CLASS="MATH"><I>n</I>(<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)</SPAN>. Well known as the phase problem in
+crystallography, the measurable quantity is the scattered intensity
+<!-- MATH
+ $I(\vec{Q})=|F(\vec{Q})|^2$
+ -->
+<SPAN CLASS="MATH"><I>I</I>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">) = | <I>F</I>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">)|<SUP>2</SUP></SPAN>, where the phase information is lost. We
+cannot directly and uniquely recover the atomic density function
+<!-- MATH
+ $n(\vec{r})$
+ -->
+<SPAN CLASS="MATH"><I>n</I>(<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)</SPAN>. Now, we can rewrite the <!-- MATH
+ $I(\vec{Q})$
+ -->
+<SPAN CLASS="MATH"><I>I</I>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">)</SPAN> as <!-- MATH
+ $F(\vec{Q})\cdot
+F^*(\vec{Q})$
+ -->
+<SPAN CLASS="MATH"><I>F</I>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">)<SUP> . </SUP><I>F</I><SUP>*</SUP>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">)</SPAN>, where <!-- MATH
+ $F^*(\vec{Q})$
+ -->
+<SPAN CLASS="MATH"><I>F</I><SUP>*</SUP>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">)</SPAN> is in fact the Fourier transform
+of the real function <!-- MATH
+ $n(-\vec{r})$
+ -->
+<SPAN CLASS="MATH"><I>n</I>(- <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)</SPAN>. Then based on the convolution
+theorem, the Fourier transform of <!-- MATH
+ $I(\vec{Q})$
+ -->
+<SPAN CLASS="MATH"><I>I</I>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">)</SPAN> is the convolution of
+the Fourier transforms of <!-- MATH
+ $F(\vec{Q})$
+ -->
+<SPAN CLASS="MATH"><I>F</I>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">)</SPAN> and <!-- MATH
+ $F^*(\vec{Q})$
+ -->
+<SPAN CLASS="MATH"><I>F</I><SUP>*</SUP>(<IMG
+ WIDTH="23" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ \vec{{Q}}\,$">)</SPAN>. This is
+<!-- MATH
+ $\int n(\vec{r'})\cdot n(\vec{r'}-\vec{r})d\vec{r'}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$ \int$"><I>n</I>(<IMG
+ WIDTH="21" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \vec{{r'}}\,$">)<SUP> . </SUP><I>n</I>(<IMG
+ WIDTH="21" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \vec{{r'}}\,$"> - <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \vec{{r}}\,$">)<I>d</I><IMG
+ WIDTH="21" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \vec{{r'}}\,$"></SPAN>. Then we do the
+spherical averaging due to the random grain orientation in
+powders. This will result in the one dimensional form of
+<SPAN CLASS="MATH"><I>G</I>(<I>r</I>)</SPAN>. Therefore, the PDF can be obtained by Fourier transforming the
+measured scattering intensities. The measured scattering intensities
+can be expressed as 
+
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{equation}
+S(Q)=\int_{-\infty}^{+\infty} \frac{b_i b_j}{\langle b \rangle ^2}
+\rho(r_{ij})
+\frac{\sin(Qr_{ij})}{Qr_{ij}}d\vec{r_{ij}}=\frac{1}{2}\int_0^\infty
+\frac{b_i b_j}{\langle b \rangle ^2} 4\pi r_{ij}\rho(r_{ij})
+\frac{\sin(Qr_{ij})}{Q}dr_{ij}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<I>S</I>(<I>Q</I>) = <IMG
+ WIDTH="49" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\displaystyle \int_{{-\infty}}^{{+\infty}}$"><IMG
+ WIDTH="39" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$\displaystyle {\frac{{b_i b_j}}{{\langle b \rangle ^2}}}$"><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$\displaystyle \rho$">(<I>r</I><SUB>ij</SUB>)<IMG
+ WIDTH="81" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$\displaystyle {\frac{{\sin(Qr_{ij})}}{{Qr_{ij}}}}$"><I>d</I><IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$\displaystyle \vec{{r_{ij}}}\,$"> = <IMG
+ WIDTH="18" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$\displaystyle {\frac{{1}}{{2}}}$"><IMG
+ WIDTH="38" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.png"
+ ALT="$\displaystyle \int_{0}^{\infty}$"><IMG
+ WIDTH="39" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$\displaystyle {\frac{{b_i b_j}}{{\langle b \rangle ^2}}}$">4<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$\displaystyle \pi$"><I>r</I><SUB>ij</SUB><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$\displaystyle \rho$">(<I>r</I><SUB>ij</SUB>)<IMG
+ WIDTH="81" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.png"
+ ALT="$\displaystyle {\frac{{\sin(Qr_{ij})}}{{Q}}}$"><I>dr</I><SUB>ij</SUB>
+</TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE>
+</DIV>
+from the Debye scattering equation&nbsp;[<A HREF="node101_ct.htm#debye_ap15" TARGET="contents">9</A>]. The PDF can be
+directly obtained via a sine Fourier transform: <!-- MATH
+ $G(r) = \frac{2}{\pi}\int_0^{\infty}Q[S(Q)-1]\sin Qr\>\mathrm{d}Q$
+ -->
+<SPAN CLASS="MATH"><I>G</I>(<I>r</I>) = <IMG
+ WIDTH="17" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$ {\frac{{2}}{{\pi}}}$"><IMG
+ WIDTH="32" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$ \int_{0}^{{\infty}}$"><I>Q</I>[<I>S</I>(<I>Q</I>) - 1]sin&nbsp;<I>Qr</I>d<I>Q</I></SPAN>.
+
+<P>
+The key difference between the PDF method and conventional average
+structure analysis of powder diffraction data is how to treat the
+diffuse scattering intensities in-between and underneath the Bragg
+peaks. The Bragg peaks come from the long range ordered structure,
+while the diffuse scattering intensities come from local/temporal
+deviations from the long range ordered structure. The PDF technique
+takes into account both, as evident from the equations above, while
+conventional average structure analysis only looks at the Bragg
+peaks. Therefore, the PDF method is capable of probing both the local
+and average structure. This combination of local and average studies
+from the same scattering data represents a clear advantage for a wide
+range of applications. For example, with the presence of Bragg peaks
+in the case of crystalline materials, the PDF technique and
+conventional analysis are complementary while the former provides
+additional information about the local structure. However, in the case
+of nano-crystalline and non-crystalline materials, with few or no
+Bragg peaks, only the PDF technique is applicable.
+
+<P>
+Local structural information is intuitively contained in the low-<SPAN CLASS="MATH"><I>r</I></SPAN>
+PDF peaks. Thus, the real space resolution is an important
+experimental factor to resolve closely neighboring peaks. PDF peaks
+are first broadened by the atomic thermal motions. Second, the finite
+measurement range also broadens the peaks coming from the termination
+effects&nbsp;[<A HREF="node101_ct.htm#qiu_jac04b" TARGET="contents">10</A>]. High real space resolution requires usually
+extended <SPAN CLASS="MATH"><I>Q</I></SPAN> range (<SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \geq$"></SPAN> 25.0 &#197;<SPAN CLASS="MATH"><SUP>-1</SUP></SPAN>) data to be collected, and low
+temperatures if possible. Other than identifying low-<SPAN CLASS="MATH"><I>r</I></SPAN> peak
+positions (existing atomic pair distances), extracting the peak width
+and area reveals further details about the local distortions and
+number of neighboring atoms as well. The average structural
+information is usually recovered from the PDF structure model
+refinements using the non-linear least square regression fitting
+program PDFFIT&nbsp;[<A HREF="node101_ct.htm#proff_jac99" TARGET="contents">11</A>]. The agreement between the average
+structure and experimental <SPAN CLASS="MATH"><I>G</I>(<I>r</I>)</SPAN> provides a good check for the possible
+existence of local disorder, and hypothetical distorted structure
+models can then be fit to improve the agreement. Knowledge of the
+detailed local and average structures often serves as the basis of
+many theoretical calculations of material properties. For example, the
+bond valence sum can be computed to investigate the strength of
+chemical bondings. Electronic band structure calculations can be
+carried out if necessary to check whether the obtained structure gives
+macroscopic properties consistent with other types of
+measurements. For more details about the PDF technique, please turn to
+a recent book by Egami and Billinge&nbsp;[<A HREF="node101_ct.htm#egami_b_utbp03" TARGET="contents">5</A>].
+
+<P>
+
+<HR>
+<ADDRESS>
+Xiangyun Qiu
+2005-02-18
+</ADDRESS>
+</BODY>
+</HTML>

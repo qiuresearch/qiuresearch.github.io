@@ -1,0 +1,42 @@
+
+body { font-family: Verdana, Palatino, Garamond, Arial, Georgia, Times, Geneva, Tahoma;
+       font-style: normal; line-height: normal;
+       font-weight: normal; font-variant: normal; text-transform: none;
+       color: #000000; text-decoration: none; background-color: #FFFFFF}
+
+      <!-- 005980: GW Blue; FFEE99: GW Buff A68519: GW Metallic Gold; E6B800: GW Bright Gold -->
+      <!-- used to be #eaeaea, A2D6FF -->
+
+h1 { font-weight: bold;}
+
+h2 { font-weight: bold;}
+
+p { font-style: normal; text-indent: 5em}
+
+blockquote {}
+
+ul {}
+
+ol {}
+
+li {}
+
+<!-- the order of "visited; hover; a" is important -->
+a:visited {text-decoration: none}
+a:hover { text-decoration: underline; background-color: none; text-transform: none}
+a { font-style: normal; line-height: normal; font-weight: normal;
+    font-variant: normal; text-transform: none; text-decoration: none;
+    color: navy}
+
+.MainMenu {height: 30pt; color: white; background-color: #005980;
+           onmouseover="this.style.backgroundColor='green'; this.style.color='white';" 
+	   onmouseout ="this.style.backgroundColor='#005980'; this.style.color='white';"}
+
+div.SectionTitle {background-color:green; color:white;
+font-size:larger; font-weight:bold}
+
+.mypubname { text-decoration: underline }
+
+.JournalTitle {font-weight: bold}
+
+.PaperTitle { font-style: italic; color: blue; background: none}

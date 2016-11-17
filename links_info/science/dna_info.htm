@@ -1,0 +1,1976 @@
+<!DOCTYPE HTML PUBLIC "-/W3C/DTD HTML 4.01 Transitional/EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Kohler Research Group</title>
+
+
+	
+	<link rel="stylesheet" type="text/css" href="dna_info_files/style.css"></head><body bgcolor="#ffffff">
+
+<table class="page" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td rowspan="2" width="175">
+			<img src="dna_info_files/dna-vertical.gif" height="500" width="132">
+		</td>
+		<td class="main" width="506">
+			<span class="title"><a href="http://www.chemistry.ohio-state.edu/%7Ekohler/index.html" title="KRG Home">KOHLER RESEARCH GROUP</a></span>
+
+			<p class="heading3">
+				Literature Recipes For Calculating Extinction Coefficients and Other Physical Properties of Short Oligonucleotides and DNA.<br>
+				Web Pages for Order Custom Oligonucleotides and Polynucleotides.
+			</p>
+
+			<p>
+				Compiled by Carlos E. Crespo-Hernández<br>
+				Draft: 12/8/02
+			</p>
+
+			<p class="heading3">Preface</p>
+			
+			<p>The
+following report is intended as a general guide on the calculation of
+various useful physical properties of the DNA biopolymers. Emphasis was
+given to the available methods for calculated the extinction
+coefficient (EC) and concentration (C) of oligonicleotides, and single
+and double stranded DNA at 260 nm. In addition, web pages to order
+custom-made oligonucleotides and to automatically determined the
+physical properties of oligonicleotides, such as ECs, MW, C, and
+melting temperature were included.</p>
+			
+			<p class="heading3">A. The Schepartz Lab Biopolymer Calculator</p>
+			
+			<p>recommended by Science Magazine, 22 May, 1998</p>
+			
+			<p>Taken from: <a style="" href="http://paris.chem.yale.edu/extinct.html">http://paris.chem.yale.edu/extinct.html</a></p>
+			
+			<p class="heading3">Notes on use</p>
+			
+			<p>The
+calculator has been revised as of 7/21/98. Note that I have
+substantially changed the code for calculations, and though I have
+tested most of the functions for accuracy, I can't promise that all the
+functions are working properly-if you notice something funny, please
+email me and let me know. You can compare with the old version at the <a href="http://paris.chem.yale.edu/extinct.old.html">OLD FORM</a>. Thanks.</p>
+			
+			<p>This
+form can be used to calculate the molecular weight, the extinction
+coefficient, the concentration, and the melting temperature of a single
+stranded nucleic acid.</p>
+			
+			<p>New as of 21 July is the ability
+to enter degenerate nucleic acid sequences. Using the standard
+degenerate code (N=ACGT, S=CG, W=AT, M=AC, K=GT, R=AG, Y=CT, V=ACG,
+H=ACT, D=AGT, B=GCT, replacing T with U for RNA), enter your sequence
+normally, and click on the degenerate DNA check box. All the numbers
+calculated, including mass, extinction coefficient, concentrations, and
+melting are for an average of the possibilities (ie W means a 50/50
+ratio of A and T).</p>
+			
+			<p>Additionally, you can enter a protein
+sequence, and the form will calculate the molecular weight (using
+average isotopic mass), extinction coefficient, the concentration, and
+the formal charge. The calculator will accept X as an unknown amino
+acid, and will provide a mass based on the average of all 20 amino
+acids, not average statistical weighting in proteins. Charge and
+absorbance are not altered.</p>
+			
+			<p>For both sets, either nucleotide or amino acid composition and percentages are calculated.</p>
+			
+			<p>All
+numbers on the form are calculated independently, so if you are only
+interested in one set of numbers, the other default values will not
+affect your results.</p>
+			
+			<p><em>The numbers on calculated by
+this page are believed to be accurate, but you should know that
+anything you find on the web is not guaranteed. We use them and believe
+them, but that's not to say there aren't errors. Please <a href="mailto:rodgers@paris.chem.yale.edu">let me know</a> if you find any.</em></p>
+			
+			<p>The
+source code (written in perl) and html scripts for this program can be
+obtained free for academic users and at a modest price for companies.
+Contact <a href="mailto:rodgers@paris.chem.yale.edu">rodgers@paris.chem.yale.edu</a> for information.</p>
+
+			<p>References:</p>
+			
+			<p>CRC Handbook of Biochemistry and Molecular Biology, 3rd ed.<br> G.P. Fasman, ed. Nucleic Acids, Volume I, p.581</p>
+			
+			<p>Molecular Cloning, A Laboratory Manual, 2nd ed.<br> J. Sambrook, E.F. Fritsch, T. Maniatis, ed. Volume II, p.11.46</p>
+			
+			<p>The Encyclopedia of Molecular Biology, 1st ed.<br> J. Kendrew, ed. Hybridization, p. 503-506</p>
+			
+			<p>Also see references for <a href="http://www.genosys.co.uk/tec_mel.htm">melting temperatures</a> or <a href="http://www.genosys.co.uk/tec_qua.htm">extinction coefficients</a>, both at Genosys (http://www.sigma-genosys.co.uk/oligos/frameset.html).</p>
+
+			<p class="heading3">B. Oligo Extinction Coefficient Calculator</p>
+			
+			<p>Taken from: <a href="http://www.scripps.edu/mb/gottesfeld/ExtCoeff.html">http://www.scripps.edu/mb/gottesfeld/ExtCoeff.html</a></p>
+			
+			<p>This
+form can be used in two different ways. You can either enter your
+sequence (lower/upper case, spaces OK) or enter the number of each
+nucleotide (in addition to the absorbance, pathlength*, sample volume
+of stock measured, total volume in cuvette*, and total volume of your
+stock). If you choose to enter the number of each nucleotide, be sure
+that the sequence textbox is empty (the 'Clear Form' button will ensure
+this). Also, make sure to choose whether your oligo is DNA (the
+default) or RNA. Finally, the date does not appear upon loading,
+however it will show up once you click the 'Calculate' button.</p>
+			
+			<p>*Defaults have been set for these values, but they can be changed.</p>
+			
+			<hr align="center" size="2" width="100%">
+			
+			<form>
+				<input checked="checked" name="oligoType" value="DNA" type="radio">DNA &nbsp;
+				<input name="oligoType" value="RNA" type="radio">RNA &nbsp; &nbsp; &nbsp;
+				Date:
+				<input size="10" name="today" type="text">
+			
+				<table border="0" cellpadding="0">
+					<tbody><tr>
+						<td>
+							Name of Oligo:
+						</td>
+						<td>
+							<input size="50" name="oligoName" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Sequence:
+						</td>
+						<td>
+							<input size="50" name="oligo" type="text">
+						</td>
+					</tr>
+				</tbody></table>
+			
+				<table border="0" cellpadding="0">
+					<tbody><tr>
+						<td>
+							Absorbance at 260 nm:
+						</td> 
+						<td>
+							<input size="6" name="absorbance" type="text">
+						</td>
+					</tr> 
+					<tr> 
+						<td>
+							Pathlength* (cm):
+						</td> 
+						<td>
+							<input size="6" name="pathlength" value="1" type="text">
+						</td> 
+					</tr> 
+					<tr> 
+						<td>
+							Volume of stock measured (uL):
+						</td>
+						<td>
+							<input size="6" name="sampleVolume" type="text">
+						</td>
+					</tr> 
+					<tr> 
+						<td>
+							Total volume in cuvette* (uL):
+						</td>
+						<td>
+							<input size="6" name="totalVolume" value="1000" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Total stock volume (uL):
+						</td>
+						<td>
+							<input size="6" name="totalStockVol" type="text">
+						</td>
+						<td>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody></table>
+			
+				<table border="0" cellpadding="0">
+					<tbody><tr>
+						<td>
+							Number of As:
+						</td>
+						<td>
+							<input size="4" name="numAs" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Number of Cs:
+						</td>
+						<td>
+							<input size="4" name="numCs" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Number of Gs:
+						</td>
+						<td>
+							<input size="4" name="numGs" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Number of Ts:
+						</td>
+						<td>
+							<input size="4" name="numTs" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Number of Us:
+						</td>
+						<td>
+							<input size="4" name="numUs" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input value="Clear Form" name="reset" type="reset">
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody></table>
+			
+			<hr align="center" size="2" width="100%">
+			
+				<table border="0" cellpadding="0">
+					<tbody><tr>
+						<td>
+							Total oligo length:
+						</td>
+						<td>
+							<input size="10" name="numNts" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Total oligo mass (Da):
+						</td>
+						<td>
+							<input size="10" name="totalMW" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Millimolar extinction coefficient<sup>§</sup> (mM<sup>-1</sup> cm<sup>-1</sup>):
+						</td>
+						<td>
+							<input size="10" name="milliMolarExtCoeff" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Stock Concentration (uM or pmol uL<sup>-1</sup>):
+						</td>
+						<td>
+							<input size="10" name="stockConc" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Total pmols in stock:
+						</td>
+						<td>
+							<input size="10" name="totalPmols" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Total mass in stock (ug):
+						</td>
+						<td>
+							<input size="10" name="totalMass" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							T<sub>m</sub><sup></sup> of DNA oligo (°C):
+						</td>
+						<td>
+							<input size="10" name="Tm" type="text">
+						</td>
+					</tr>
+				</tbody></table>
+			</form>
+			
+			<p>
+				<sup>§</sup>Extinction coefficients for individual NMPs are based on:<br> A = 15.4 mM<sup>-1</sup> cm<sup>-1</sup><br>
+				C = 7.4 mM<sup>-1</sup> cm<sup>-1</sup><br>
+				G = 11.8 mM<sup>-1</sup> cm<sup>-1</sup><br>
+				T = 9.6 mM<sup>-1</sup> cm<sup>-1</sup><br>
+				U = 9.9 mM<sup>-1</sup> cm<sup>-1</sup>
+			</p>
+			<p>
+				<sup></sup>T<sub>m</sub> calculation for DNA oligo is based on the following equation:
+			</p>
+			<p>
+				T<sub>m</sub> = 81.5° + 0.41°(%GC) - 675°/length of oligo
+			</p>
+
+			<p class="heading3">C. Calculation procedure for extinction (absorption) coefficient of DNA</p>
+			
+			<p>Taken from: <a href="http://www.owczarzy.net/emethod.htm">http://www.owczarzy.net/emethod.htm</a></p>
+			
+			<p>
+				Method is based on paper <em>Cantor C.R., Warshaw M.M., Shapiro, H, Biopolymers, 9, 1059-1077 (1970)</em>. The data are also shown at <i>Handbook
+of Biochemistry and Molecular Biology, Volume 1: Nucleic Acids, Fasman,
+G.D. editor, page 589, 3rd edition, CRC Press, 1975.</i> Extinction
+coefficient at 260 nm, 25 degrees of Celsius and neutral pH for the
+single-strand DNA is determined by the nearest-neighbor method. For
+example, the extinction coefficient of oligomer 5'-ATGCTTC-3' is <br><img src="dna_info_files/equation1.gif">
+			</p>
+			
+			<table align="center" border="1" cellpadding="0" cellspacing="0">
+				<col align="center">
+				<col align="center">
+				<tbody><tr>
+					<td colspan="2" align="center">
+						The following table contains extinction coefficients [l/(mmol.cm)]:
+					</td>
+				</tr>
+				<tr class="bold"><td>stack or monomer</td><td>extinction coefficient</td></tr>
+				<tr><td>pdA</td><td>15.4</td></tr>
+				<tr><td>pdC</td><td>7.4</td></tr>
+				<tr><td>pdG</td><td>11.5</td></tr>
+				<tr><td>pdT</td><td>8.7</td></tr>
+				<tr><td>dApdA</td><td>13.7</td></tr>
+				<tr><td>dApdC</td><td>10.6</td></tr>
+				<tr><td>dApdG</td><td>12.5</td></tr>
+				<tr><td>dApdT</td><td>11.4</td></tr>
+				<tr><td>dCpdA</td><td>10.6</td></tr>
+				<tr><td>dCpdC</td><td>7.3</td></tr>
+				<tr><td>dCpdG</td><td>9.0</td></tr>
+				<tr><td>dCpdT</td><td>7.6</td></tr>
+				<tr><td>dGpdA</td><td>12.6</td></tr>
+				<tr><td>dGpdC</td><td>8.8</td></tr>
+				<tr><td>dGpdG</td><td>10.8</td></tr>
+				<tr><td>dGpdT</td><td>10.0</td></tr>
+				<tr><td>dTpdA</td><td>11.7</td></tr>
+				<tr><td>dTpdC</td><td>8.1</td></tr>
+				<tr><td>dTpdG</td><td>9.5</td></tr>
+				<tr><td>dTpdT</td><td>8.4</td></tr>
+			</tbody></table>
+			
+			
+			<p>The errors are probably no more than 4%.</p>
+			
+			<p class="heading3">D. Extinction coefficients for common polynucleotides</p>
+			
+			<p>Taken from: <a href="http://www1.amershambiosciences.com/">http://www1.amershambiosciences.com</a></p>
+			
+			<table class="eight" align="center" border="1" cellpadding="0" cellspacing="0">
+				<col>
+				<col>
+				<col align="center">
+				<col align="center">
+				<col align="center">
+				<col align="center">
+				<tbody><tr class="bold" align="center">
+					<td width="130">
+						Product
+					</td>
+					<td width="110">
+						Code number
+					</td>
+					<td width="40">
+						l-max
+					</td>
+					<td width="60">
+						e-max
+					</td>
+					<td width="30">
+						pH
+					</td>
+					<td width="40">
+						Ref.
+					</td>
+				</tr>
+				<tr align="center">
+					<td>&nbsp;
+					</td>
+					<td>&nbsp;
+					</td>
+					<td>
+						nm
+					</td>
+					<td>
+						l/mol·cm·bp<br>
+						or base
+					</td>
+					<td>&nbsp;
+					</td>
+					<td>&nbsp;
+					</td>
+				</tr>
+				<tr><td colspan="6">&nbsp;</td></tr>
+				<tr class="bold">
+					<td colspan="6">
+						DNA homopolymers
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dA)
+					</td>
+					<td>
+						27-7836-01, -02, -03
+					</td>
+					<td>
+						257
+					</td>
+					<td>
+						8,600
+					</td>
+					<td>
+						7.0
+					</td>
+					<td>
+						1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dC)
+					</td>
+					<td>
+						27-7838-02
+					</td>
+					<td>
+						274
+					</td>
+					<td>
+						7,400
+					</td>
+					<td>
+						7.0
+					</td>
+					<td>
+						2
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">&nbsp;
+					</td>
+					<td>
+						6,800
+					</td>
+					<td>
+						7.0
+					</td>
+					<td>
+						7
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dT)
+					</td>
+					<td>
+						27-7834-02, -03
+					</td>
+					<td>
+						264
+					</td>
+					<td>
+						8,520
+					</td>
+					<td>
+						7.0
+					</td>
+					<td>
+						2
+					</td>
+				</tr>
+				<tr><td colspan="6">&nbsp;</td></tr>
+				<tr class="bold">
+					<td colspan="6">
+						DNA duplexes
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dA)·Poly(dT)
+					</td>
+					<td>
+						27-7860-02
+					</td>
+					<td>
+						260
+					</td>
+					<td>
+						6,000
+					</td>
+					<td>
+						7.5
+					</td>
+					<td>
+						3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dG)·Poly(dC)
+					</td>
+					<td>
+						27-7890-02
+					</td>
+					<td>
+						253
+					</td>
+					<td>
+						7,400
+					</td>
+					<td>
+						7.5
+					</td>
+					<td>
+						3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dI)·Poly(dC)
+					</td>
+					<td>
+						27-7875-01, -02
+					</td>
+					<td>
+						245
+					</td>
+					<td>
+						5,300
+					</td>
+					<td>
+						8.0
+					</td>
+					<td>
+						4
+					</td>
+				</tr>
+				<tr><td colspan="6">&nbsp;</td></tr>
+				<tr class="bold">
+					<td colspan="6">
+						DNA alternating copolymers
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dA-dT)·Poly(dA-dT)
+					</td>
+					<td>
+						27-7870-01, -02, -03
+					</td>
+					<td>
+						262
+					</td>
+					<td>
+						6,600
+					</td>
+					<td>
+						6.4
+					</td>
+					<td>
+						5
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dI-dC)·Poly(dI-dC)
+					</td>
+					<td>
+						27-7880-01, -02, -03
+					</td>
+					<td>
+						251
+					</td>
+					<td>
+						6,900
+					</td>
+					<td>
+						7.0
+					</td>
+					<td>
+						6
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dG-dC)·Poly(dG-dC)
+					</td>
+					<td>
+						27-7910-01, -02, -03
+					</td>
+					<td>
+						254
+					</td>
+					<td>
+						8,400
+					</td>
+					<td>
+						7.5
+					</td>
+					<td>
+						3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(dA-dC)·Poly(dG-dT)
+					</td>
+					<td>
+						27-7940-01
+					</td>
+					<td>
+						258
+					</td>
+					<td>
+						6,500
+					</td>
+					<td>
+						7.5
+					</td>
+					<td>
+						3
+					</td>
+				</tr>
+				<tr>
+				</tr><tr><td colspan="6">&nbsp;</td></tr>
+				<tr class="bold">
+					<td colspan="6">
+						RNA homopolymers
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(A)
+					</td>
+					<td>
+						27-4110-01, -02
+					</td>
+					<td>
+						258
+					</td>
+					<td>
+						9,800
+					</td>
+					<td>
+						7.0
+					</td>
+					<td>
+						7
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(C)
+					</td>
+					<td>
+						27-4220-02
+					</td>
+					<td>
+						269
+					</td>
+					<td>
+						6,200
+					</td>
+					<td>
+						7.0
+					</td>
+					<td>
+						7
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Poly(U), K+
+					</td>
+					<td>
+						27-4440-02
+					</td>
+					<td>
+						260
+					</td>
+					<td>
+						9,350
+					</td>
+					<td>
+						7.0
+					</td>
+					<td>
+						7
+					</td>
+				</tr>
+				<tr><td colspan="6">&nbsp;</td></tr>
+				<tr>
+			  		<td colspan="6" width="410">
+						Most of the lyophilized polynucleotides are sold as A<sub>260</sub> units. For an approximation of quantity, use the conversion factors (see <a href="javascript:hotlinks('Module','../navigation/','73614','72729','73601','73607','_self')">Spectrophotometric quantitation of DNA or RNA</a>), under Spectrophotometric quantification of DNA or RNA.
+					</td>
+				</tr>
+			</tbody></table>
+			
+			<p>References</p>
+			
+			<ol start="1" type="1">
+			<li>Chamberlin, M. J., <em>Fed. Proc.</em> <b>24</b>, 1446 (1965).</li> 
+			<li>Tso, P. O. <em>et al., Biochemistry</em> <b>5</b>, 4153 (1966).</li> 
+			<li>Wells, R. D. <em>et al., J. Mol. Biol.</em> <b>54</b>, 465 (1970).</li>
+			<li>Inman, R. B. <em>et al., J. Mol. Biol.</em> <b>8</b>, 452 (1964).</li> 
+			<li>Inman, R. B. <em>et al., J. Mol. Biol.</em> <b>5</b>, 172 (1962).</li>
+			<li>Grant, R. C., <em>JACS</em> <b>90</b>, 4474 (1968).</li>
+			<li>Amersham Biosciences, unpublished results.</li>
+			</ol>
+
+			<p class="heading3">E. Calculating oligonucleotide concentrations</p>
+			
+			<p>
+			The molar concentration of a oligonucleotide can be calculated based on the absorbance of the primer at 260 nm (A<sub>260</sub>) and the <b>molar extinction coefficient</b>
+for the oligonucleotide at this wavelength. The molar extinction
+coefficient for the oligonucleotide can be calculated by knowing the
+sequence of the oligonucleotide and then summing the molar extinction
+values for the individual bases which comprise the oligonucleotide. The
+individual bases have the following molar extinction coefficients at
+260 nm: </p>
+			
+			<ul type="disc"> 
+			<li>A 1.0 molar solution of dT has a value of 8,400 absorbance units at 260 nm.</li> 
+			<li>A 1.0 molar solution of dA has a value of 15,200 absorbance units at 260 nm.</li> 
+			<li>A 1.0 molar solution of dG has a value of 12,010 absorbance units at 260 nm.</li> 
+			<li>A 1.0 molar solution of dC has a value of 7050 absorbance units at 260 nm.</li> </ul>
+			
+			<p>
+For example, the oligonucleotide 5' TAGC 3' would have a molar
+extinction coefficient of 42,660 at 260 nm. Likewise, a 10 M solution
+of this oligonucleotide would give an absorbence of 0.427 at 260 nm. </p>
+			
+			<p> Taken from: Henderson JT, Benight AS, Hanlon S, A
+semi-micromethod for the determination of the extinction coefficients
+of duplex and single stranded DNA. Analytical Biochemistry 1992 Feb
+14;201 (1):17-29 </p>
+			<p class="heading3">F. Calculations Amounts Of Nucleic Acids</p>
+			
+			<p>
+			Taken from: <a href="http://omrf.ouhsc.edu/%7Efrank/dnamole.html">http://omrf.ouhsc.edu/~frank/dnamole.html</a>
+			</p>
+			
+			<p>
+				<span class="bold">O.D. Units:</span>
+				<br>The
+"absorbance" of a chemical is a product of its (concentration) x
+(optical path length) x (extinction coefficient, E). Nucleic acids have
+a peak absorbance in the ultraviolet range at about 260 nm. When the
+spectrophotometer has a path length of 1 cm, absorbance = "optical
+density" (O.D.), and O.D. = E x concentration. Extinction coefficients
+vary with the type of nucleic acid. Double stranded DNA (dsDNA) has an
+E = 20 g<sup>-1</sup>cm<sup>-1</sup>L). Depending on the reference you read, the E for single stranded DNA (ssDNA) is 20 or 30 g<sup>-1</sup>cm<sup>-1</sup>L), while E for RNA is 25 g<sup>-1</sup>cm<sup>-1</sup>L).<br><br>Extinction
+coefficients can be used to estimate the concentration of a sample
+dissolved in a known aqueous volume, or to calculate the number of
+grams or moles of nucleic acid according to the following formulas: </p>
+			<p>
+				<span class="bold">Determining Concentrations:</span><br>
+				1 A260 O.D. Unit for dsDNA = 50 µg/ml<br>
+				1 A260 O.D. Unit for ssDNA = 33 or 50 µg/ml<br>
+				1 A260 O.D. Unit for RNA = 40 µg/ml
+			</p>
+			<p>
+				<span class="bold">Examples:</span><br>
+				A 1:50 dilution of dsDNA gives an A<sub>260</sub>
+= 0.063. [DNA] = 0.063x50/20 = 0.16 mg/ml. This is for a 1 cm path
+length. The path length of the 5 µl cuvette is only 0.5 mm = 1/20 cm.
+Therefore multiplication by 20 to give a 1 cm path length and then
+dividing by 20 for the extinction coefficient cancel each other. So for
+that cuvette, [DNA] = (A<sub>260</sub> - A<sub>320</sub>) x dilution factor. The A<sub>320</sub> is used to subtract absorbance due to particles in suspension in this small chamber.
+			</p>
+			<p>
+				<span class="bold">Determining Moles:</span><br>
+				<u>For ssDNA oligonucleotides</u>,
+an estimate of the number of moles can be obtained by using an
+approximate mw of 350 Daltons/nucleotide. Accordingly, 1 O.D. Unit
+ssDNA = 33 x 10<sup>-6</sup>/(350 x length) moles = 94.3/length nmoles
+			</p>
+			
+			<ul style="list-style-type: none; margin-left: 0pt;">
+				<li>An O.D. of 1.0 corresponds roughly to:</li>
+				<ul style="list-style-type: none;">
+					<li>10-mer 10 nmoles</li>
+					<li>20-mer 5 nmoles</li>
+					<li>50-mer 2 nmoles</li>
+					<li>100-mer 1 nmoles</li>
+				</ul>
+				<li>Also, since 1 O.D. Unit = 33µg, then 1 µg = 2.86/length nmoles.</li>
+				<li>A precise estimate of the molecular weight of dephosphorylated oligos can be calculated using the formula:<br></li>
+				<ul style="list-style-type: none;">
+					<li>mw = [(#A's x 312.2)+(#G's x 328.2)+(#C's x 288.2)+(#T's x 302.2) - 61.0]<sup>1</sup><br></li>
+				</ul>
+				<li>For phosphorylated oligos:<br></li>
+				<ul style="list-style-type: none;">
+					<li>mw = [(#A's x 312.2)+(#G's x 328.2)+(#C's x 288.2)+(#T's x 302.2) + 17.0]<sup>1</sup></li>
+				</ul>
+				<br>
+				<li><u>For long (at least 30bp) dsDNA</u></li>
+				<li>approximate mw = 700 Daltons/base pair; mw of 1 kb is about 7x10<sup>5</sup> Daltons (649 Daltons/bp is more accurate, but harder to remember)</li>
+				<li># µg in a pmole = length x 700 g/mole x 10<sup>-12</sup> moles/pmole x 10<sup>6</sup>µg/g</li>
+				<ul style="list-style-type: none;">
+					<li>= length x (7 x 10<sup>-4</sup>) µg/pmole</li>
+				</ul>
+				<br>
+				<li>Multiply pmoles by 2 for pmoles 5' ends for dsDNA.</li>
+				<ul style="list-style-type: none;">
+					<li>ex: 1 kb DNA is about 0.7µg/pmole</li>
+					<li>1 µg of a 1 kb DNA = 1.52 pmol; 3.03 (pmol ends)</li>
+					<li>1 pmole of 1 kb DNA = 0.66 µg</li>
+				</ul>
+				<br>
+				<li><b>MW RNA:</b> length x 350 (341 is more accurate)</li>
+				<br><br>
+				<li><b>1. Other Useful Conversions for Oligonucleotides</b></li>
+				<ul style="list-style-type: none;">
+					<li><u>Oligonucleotide length to molecular weight</u></li>
+					<ul style="list-style-type: none;">
+						<li>350 x length = molecular weight</li>
+					</ul>
+					<li><u>Mass to µmoles</u></li>
+					<ul style="list-style-type: none;">
+						<li>µg / (350 x length) = µmoles</li>
+						<li>(µg x 10<sup>6</sup>) / (350 x length) = pmoles</li>
+					</ul>
+					<li><u>pMoles to µg</u></li>
+					<ul style="list-style-type: none;">
+						<li>pmoles x length x 350 /10<sup>6</sup> = µg</li>
+					</ul>
+					<li><u>µg to pmoles</u></li>
+					<ul style="list-style-type: none;">
+						<li>µg x 10<sup>6</sup>/(length x 350)</li>
+					</ul>
+					<br>
+					<li>
+						<table cellpadding="0" cellspacing="0">
+							<col align="center">
+							<col align="center">
+							<tbody><tr>
+								<td width="154"><u>MW of oligonucleotide</u></td>
+								<td width="300"><u>pMoles 3' ends per microgram of DNA</u></td>
+							</tr>
+							<tr><td>10 x 10<sup>6</sup></td><td>0.05</td></tr>
+							<tr><td>1 x 10<sup>6</sup></td><td>0.50</td></tr>
+							<tr><td>0.1 x 10<sup>6</sup></td><td>5.0</td></tr>
+							<tr><td>0.01x 10<sup>6</sup></td><td>50.0</td></tr>
+						</tbody></table>
+					</li>
+				</ul>
+				<br>
+				<li>Melting Temperature Formulas (14-70 bases):</li>
+				<ul style="list-style-type: none;">
+					<li>Tm = 81.5°C + 16.6(log[Na]) + 0.41(fraction G+C) - 600/L</li>
+					<li>where</li>
+					<li>Na = [monovalent cations] usually 50-60 mM</li>
+					<li>L = primer length</li>
+					<li>fraction G+C = G+C content of primer</li>
+					<li>Also, Tm (approx) = 4°C x(fraction G+C) + 2°C x(fraction A+T)</li>
+				</ul>
+				<br>
+				<li>Oligonucleotide Stock Concentrations for Amplifications:<sup>2</sup></li>
+				<ul style="list-style-type: none;">
+					<li>mls to dissolve oligo = Total ODs (or A260) / (E x molar concentration needed)</li>
+					<li>Count the numbers of each base in the oligo. Compute E</li>
+					<li>= [#A's x (16,000)] + [#G's x (12,000)] + [#C's x (7,000)] + [#T's x (9,600)] + [#I's x (12,000)]</li>
+				</ul>
+				<br>
+				<li>Make
+your oligonucleotide solution more concentrated than needed so that
+when you add it to a working solution, the final concentration will be
+correct.</li>
+				<ul style="list-style-type: none;">
+					<li>Ex: &nbsp;&nbsp;18-mer with 2(A) + 6(G) + 8(C) + 2(T).</li>
+					<li>E = 2(16,000) + 6(12,000) + 8(7,000) + 2(9,600) = 179,200</li>
+					<li>Total ODs in tube = 11</li>
+					<li>Concentrations needed = 5x10<sup>-4</sup> = 0.5 mM</li>
+					<li>mls needed to dissolve = 11/(179,600 x 5x10<sup>-4</sup>) = 0.123 ml</li>
+				</ul>
+				<br>
+				<li>Citations:</li>
+				<ul style="list-style-type: none;">
+					<li>1. Genosys Corp.</li>
+					<li>2. Oligo, Etc catalog, p.14</li>
+				</ul>	
+			</ul>
+				
+			<p class="heading3">2. Spectrophotometric Quantitation of DNA or RNA</p>
+			
+			<p>
+				Spectrophotometric measurements of nucleic acid solutions are typically taken at wavelengths of 260 nm and 280 nm. The A<sub>260</sub> reading is used to determine the concentration of nucleic acid in solution. For a solution with an A<sub>260</sub> = 1.0, the following approximations hold:
+			</p>
+			<p class="indent">
+				1 A<sub>260</sub> unit of dsDNA = 50 µg/ml<br>
+				1 A<sub>260</sub> unit of ssDNA = 37 µg/ml*<br>
+				1 A<sub>260</sub> unit of ssRNA = 40 µg/ml<br>
+			</p>
+			<p>
+				* For oligonucleotides, an A<sub>260</sub>
+of 1.0 represents anywhere from 20 to 33 µg/ml with the actual
+conversion factor dependent on the length and base sequence of the
+oligonucleotide (1). </p>
+			<p> The ratio between measurements at 260 nm and 280 nm
+provides an indication of the purity of a nucleic acid. In solution,
+pure DNA and RNA typically have A<sub>260</sub>/A<sub>280</sub>
+ratios of 1.8 and 2.0, respectively. If the absorbance ratio is
+significantly less than the values above, the nucleic acid is probably
+contaminated with protein or phenol. Accurate quantification of a
+contaminated nucleic acid is not feasible without prior purification,
+and the efficacy of this can be established by the A<sub>260</sub> /A<sub>280</sub> ratio.
+			</p>
+			<p>
+				Most of the lyophilized polynucleotides are sold as A<sub>260</sub> units (2). For an approximation of quantity, use the conversion factors provided above to convert the A<sub>260</sub> units into micrograms ¾ which must be known if a certain concentration is desired.
+			</p>
+			<p>
+				<sup>1</sup> For a more accurate approximation, refer to Borer in the <em>Handbook of Biochemistry and Molecular Biology</em>, 3rd edition (G.D. Fasman, ed.) CRC Press, Cleveland, OH, page 589 (1975).
+			</p>
+			<p>
+				<sup>2</sup>
+Unit definition: One unit is that quantity of oligonucleotide or
+polynucleotide which has an absorbance of 1.0 at a given wavelength
+when dissolved in 1 ml of buffer and measured in a &nbsp;1 cm cuvette
+at 20 °C. The wavelength at which the absorbance is measured is printed
+on the Certificate of Analysis which accompanies the product. For
+nucleic acids, typically an absorbance is taken at 260 nm in 20 mM
+sodium phosphate &nbsp;(pH 7.0), 0.1 M NaCl. </p>
+			<p class="heading3">G. Quantification by UV Absorbance</p>
+			<p>Introduction</p>
+			<p>
+Oligonucleotides are most accurately and conveniently quantified by
+measuring the UV absorbance at 260 nm of a sample with a
+spectrophotometer. According to the Beer-Lambert law: A = eCl </p>
+			<p>
+				A = absorbance ( OD unit )
+			</p>
+			<p>
+				e = molar extinction coefficient ( M-1 cm-1 )
+			</p>
+			<p>
+				C = concentration ( M )
+			</p>
+			<p>
+				l = path length (cm), typically 1 cm
+			</p>
+			<p>
+				The conditions are defined at a specific wavelength, temperature and buffer, all of which influence "e."
+			</p>
+			<p>
+				Definition
+			</p>
+			<p>
+One OD unit is the amount of oligonucleotide which when dissolved in 1
+ml of water results in an absorbance of 1 when measured at 260 nm in a
+1 cm path-length cuvette. For 1 OD, the actual concentration can range
+from 39 µg/ml for a homopolymer of C, to 20 µg/ml for a homopolymer of
+A. </p>
+			<p> Commonly, for practical experiments, 1 OD unit
+represents approximately 33 µg of single-stranded DNA or RNA with an
+equal mixture of the four bases. </p>
+			<p>
+				Calculation of Concentration
+			</p>
+			<p>
+According to the Beer-Lambert, the concentration of an oligo can be
+easily calculated once you know the absorbance of this oligo and its
+molar extinction coefficient. </p>
+			<p>
+				The OD value is obtained thanks to a proprietary robot which handles and calculates the total OD of your oligo.
+			</p>
+			<p>
+The purine and pyrimidine bases of DNA and RNA strongly absorb light
+with maxima near 260 nm. A useful approximation is e = 10,000 OD/mmole
+for each of the four bases. However the bicyclic purines,
+deoxyadenosine and deoxyguanosine, absorb more strongly (higher
+extinction coefficients) than the monocyclic pyrimidines, deoxycytidine
+and deoxythymidine. </p>
+			<p>
+				The precise molar extinction coefficient of each base is listed in Table 1 (units: OD/mmole)
+			</p>
+			<p>
+			TABLE 1
+			</p>
+			
+			<table border="0" cellpadding="0" width="100%">
+				<tbody><tr>
+					<td width="48">
+						A
+					</td>
+					<td width="40">
+						C
+					</td>
+					<td width="48">
+						G
+					</td>
+					<td width="40">
+						T/U
+					</td>
+					<td width="86">
+						N (A,T,G,C)
+					</td>
+					<td width="77">
+						i (Inosine)
+					</td>
+				</tr>
+				<tr>
+					<td width="48">
+						15400
+					</td>
+					<td width="40">
+						7400
+					</td>
+					<td width="48">
+						11500
+					</td>
+					<td width="40">
+						8700
+					</td>
+					<td width="86">
+						10700
+					</td>
+					<td width="77">
+						7200
+					</td>
+				</tr>
+			</tbody></table>
+			
+			
+			<p>
+Base stacking interactions in single strand oligos interfere, however,
+with the proper 'e'value of each base. The extinction coefficient value
+used in our calculation e (OD/mmole), is automatically obtained by the
+Proligo Primers &amp; Probes SPARC workstation and is based on the
+exact nucleotide composition of each oligonucleotide. </p>
+			<p>
+			For example, the extinction coefficient of ACGT is the sum of the pairwise extinction coefficients:
+			</p>
+			<p>
+			e (ACGT) = 2 x (e AC + e CG + e GT) - e C - e G
+			</p>
+			<p>
+			The pairwise values are listed in TABLE 2 (units: OD/mmole)
+			</p>
+			<p>
+			TABLE 2
+			</p>
+			
+			<table border="0" cellpadding="0" width="100%">
+				<tbody><tr>
+					<td width="48">
+						5'3'
+					</td>
+					<td width="43">
+						A
+					</td>
+					<td width="43">
+						C
+					</td>
+					<td width="43">
+						G
+					</td>
+					<td width="84">
+						T/U
+					</td>
+					<td width="36">
+						I
+					</td>
+					<td width="43">
+						N
+					</td>
+				</tr>
+				<tr>
+					<td width="48">
+						A
+					</td>
+					<td width="43">
+						13700
+					</td>
+					<td width="43">
+						10600
+					</td>
+					<td width="43">
+						12500
+					</td>
+					<td width="84">
+						11400
+					</td>
+					<td width="36">
+						9300
+					</td>
+					<td width="43">
+						12000
+					</td>
+				</tr>
+				<tr>
+					<td width="48">
+						C
+					</td>
+					<td width="43">
+						10600
+					</td>
+					<td width="43">
+						7300
+					</td>
+					<td width="43">
+						9000
+					</td>
+					<td width="84">
+						7600
+					</td>
+					<td width="36">
+						7200
+					</td>
+					<td width="43">
+						8600
+					</td>
+				</tr>
+				<tr>
+					<td width="48">
+						G
+					</td>
+					<td width="43">
+						12600
+					</td>
+					<td width="43">
+						8800
+					</td>
+					<td width="43">
+						10800
+					</td>
+					<td width="84">
+						10000/10500
+					</td>
+					<td width="36">
+						8800
+					</td>
+					<td width="43">
+						10500
+					</td>
+				</tr>
+				<tr>
+					<td width="48">
+						T
+					</td>
+					<td width="43">
+						11700
+					</td>
+					<td width="43">
+						8100
+					</td>
+					<td width="43">
+						9500
+					</td>
+					<td width="84">
+						8400
+					</td>
+					<td width="36">
+						8100
+					</td>
+					<td width="43">
+						9400
+					</td>
+				</tr>
+				<tr>
+					<td width="48">
+						I
+					</td>
+					<td width="43">
+						9300
+					</td>
+					<td width="43">
+						7100
+					</td>
+					<td width="43">
+						8800
+					</td>
+					<td width="84">
+						8400
+					</td>
+					<td width="36">
+						6800
+					</td>
+					<td width="43">
+						8400
+					</td>
+				</tr>
+				<tr>
+					<td width="48">
+						N
+					</td>
+					<td width="43">
+						12100
+					</td>
+					<td width="43">
+						8700
+					</td>
+					<td width="43">
+						9400
+					</td>
+					<td width="84">
+						9400
+					</td>
+					<td width="36">
+						8700
+					</td>
+					<td width="43">
+						9900
+					</td>
+				</tr>
+				<tr>
+					<td width="48">
+						U
+					</td>
+					<td width="43">
+						11700
+					</td>
+					<td width="43">
+						8100
+					</td>
+					<td width="43">
+						9500
+					</td>
+					<td width="84">
+						9400
+					</td>
+					<td width="36">
+						8100
+					</td>
+					<td width="43">
+						9400
+					</td>
+				</tr>
+			</tbody></table>
+			
+			<p>
+The measured OD and calculated extinction coefficient are automatically
+converted into oligonucleotide concentration (µM) by the workstation,
+by using the Beer Lambert law. </p>
+			<p> To obtain a concentration in µg/µl, the workstation
+calculates the molecular weight of the oligo according to its sequence
+(cf Table 3 for the molecular weights of each base), by using the
+following formula: </p>
+			<p>
+				Conc. µg/µl = conc. (M) x MW
+			</p>
+			<p>
+				TABLE 3
+			</p>
+			
+			<table border="0" cellpadding="0" width="100%">
+				<tbody><tr>
+					<td width="114">
+					</td>
+					<td width="38">
+						A
+					</td>
+					<td width="38">
+						C
+					</td>
+					<td width="38">
+						G
+					</td>
+					<td width="38">
+						T/U
+					</td>
+					<td width="38">
+						I
+					</td>
+					<td width="38">
+						N
+					</td>
+				</tr>
+				<tr>
+					<td width="114">
+						MW (g/mole)
+					</td>
+					<td width="38">
+						313
+					</td>
+					<td width="38">
+						289
+					</td>
+					<td width="38">
+						329
+					</td>
+					<td width="38">
+						304
+					</td>
+					<td width="38">
+						314
+					</td>
+					<td width="38">
+						309
+					</td>
+				</tr>
+			</tbody></table>		
+
+
+
+
+
+
+
+			<p>
+			CONCLUSION
+			</p>
+			<p>
+				The following information is provided on the label of each oligonucleotide produced by Proligo Primers&amp;Probes:
+			</p>
+			<ul type="circle">
+				<li>Extinction coefficient value (OD/µmole)</li>
+				<li>Concentration in µM</li>
+				<li>Concentration in µg/µl</li>
+			</ul>
+			<p>
+Commonly, for practical experiments, 1 OD unit represents approximately
+33 µg of single-stranded DNA or RNA with an equal mixture of the four
+bases. </p>
+			<p>
+				Go to <u><a href="http://proligo2.proligo.com/Calculation/calculation.html">Oligo Calculation</a></u> now for immediate calculation of the MW, epsilon value, or conversion data between OD - nmoles - mg!
+			</p>
+			<p>
+				Taken from:
+			</p>
+			<p class="ten">
+				<a href="http://www.proligo.com/YouAtWeb/base.nsf/CurrentBaseLink/N25EW8AN775AMOEEN">Proligo webpage</a>
+			</p>
+
+			<p class="heading3">
+				H. Custom Oligos - UV Quantitation of DNA
+			</p>
+			
+			<p>
+				<a href="http://www.sigma-genosys.com/oligo_uvquant.asp">http://www.sigma-genosys.com/oligo_uvquant.asp</a>
+			</p>
+			
+			<p>
+DNA absorbs ultraviolet light due to its highly conjugated nature. DNA
+may thus be easily quantitated in a UV spectrometer. Typically, 1 OD260
+(i.e. a solution having an absorbance of one unit at 260 nm with a path
+length of 1 cm) is said to correspond to a concentration of 30-37 ug
+per ml. This is for single stranded DNA with an equal mixture of each
+of the four bases. RNA or double stranded DNA have values of 40 and 50
+mg per ml, respectively. For work with DNA longer than probes and
+primers, these assumptions are valid because the constituent bases are
+usually fairly evenly represented. With oligos, however, the base
+composition may be highly skewed. For instance, 1 OD of a sequence of
+all cytidines would correspond to 39.4 ug/ml and 1 OD of a sequence of
+all adenosites would correspond to 22.8 ug/ml. Since the composition
+and sequence of the oligo are usually known, this information may be
+used to calculate individualized values for more accurate quantitation.
+</p>
+			
+			<p>
+				Values are calculated by either of two similar methods. The following equations is the simplest:
+			</p>
+			
+			<pre>1.  ug                      1    </pre>
+			<pre>    -- = --------------------------------------------</pre>
+			<pre>    ml         (15400A+7400C+11500G+8700T)</pre>
+			<pre>             -------------------------------</pre>
+			<pre>              1000*(312A+288C+328G+303T-61)</pre>
+			
+			<p>
+A, C, G, and T are simply the number of each base in the oligo. This
+equation simply averages the extinction coefficients (in L/mol-Table 1)
+of each base and divides by the molecular weight (g/mol). </p>
+			
+			<p>
+				Table 1
+			</p>
+			
+			<table width="400">
+				<tbody><tr><td colspan="4">Nucleotide Extinction Coefficients at 260 nm</td></tr>
+				<tr><td>A</td><td>C</td><td>G</td><td>T</td></tr>
+				<tr><td>15,400</td><td>7,400</td><td>11,500</td><td>8,700</td></tr>
+			</tbody></table>
+			
+			<p>
+The previous equation ignores the interactions of adjacent bases and a
+more accurate equation includes nearest neighbor interactions: &nbsp; </p>
+			
+			<pre>2.   ug                           1    </pre><pre>     -- = --------------------------------------------------</pre>
+			<pre>     ml          2*Sum(Eab)-(E2+E3+...+E(n-2)+E(n-1))</pre>
+			<pre>                --------------------------------------</pre>
+			<pre>                   1000*(312A+288C+328G+303T-61)</pre>
+			
+			<p>
+Where sum(Eab) is the sum of the pairwise extinction coefficients
+(Table 2) and the E values are the normal single extinction
+coefficients for each individual base. (Please note that the first and
+last bases'extinction coefficients, E<sub>1 </sub>and E<sub>2</sub>,
+are not subtracted.) The pairwise values can be found in Table 2. Both
+of these equations give good results. The difference between them is
+rarely more than a few ug per mil. </p>
+			
+			<p>
+				Table 2.
+			</p>
+			
+			<table width="90%">
+				<tbody><tr>
+					<td colspan="7" width="496">
+						Pairwise extinction coefficients
+					</td>
+				</tr>
+				<tr>
+					<td colspan="8" width="563">
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" rowspan="2" width="141">
+								</td>
+					<td colspan="5" width="423">
+						3'Base
+					</td>
+				</tr>
+				<tr>
+					<td width="79">
+						A
+					</td>
+					<td width="95">
+						C
+					</td>
+					<td width="70">
+						G
+					</td>
+					<td colspan="2" width="178">
+						T
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" rowspan="4" width="74">
+						5'Base
+					</td>
+					<td width="67">
+						A
+					</td>
+					<td width="79">
+						13,700
+					</td>
+					<td width="95">
+						10,600
+					</td>
+					<td width="70">
+						12,500
+					</td>
+					<td colspan="2" width="178">
+						11,400
+					</td>
+				</tr>
+				<tr>
+					<td width="67">
+						C
+					</td>
+					<td width="79">
+						10,600
+					</td>
+					<td width="95">
+						7,300
+					</td>
+					<td width="70">
+						9,000
+					</td>
+					<td colspan="2" width="178">
+						7,600
+					</td>
+				</tr>
+				<tr>
+					<td width="67">
+						G
+					</td>
+					<td width="79">
+						12,600
+					</td>
+					<td width="95">
+						8,800
+					</td>
+					<td width="70">
+						10,800
+					</td>
+					<td colspan="2" width="178">
+						10,000
+					</td>
+				</tr>
+				<tr>
+					<td width="67">
+						T
+					</td>
+					<td width="79">
+						11,700
+					</td>
+					<td width="95">
+						8,100
+					</td>
+					<td width="70">
+						9,500
+					</td>
+					<td colspan="2" width="178">
+						8,400
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" rowspan="2" width="74">
+						&nbsp;
+					</td>
+					<td colspan="6" width="489">
+						&nbsp;
+					</td>
+				</tr>
+			</tbody></table>
+			
+			<p>
+				Sigma-Genosys uses equation 2 to determine the extinction coefficient of your oligo.
+			</p>
+			
+			<p>
+				Examples
+			</p>
+			
+			<p>
+				For the sequence AGAG, equation (1) gives: &nbsp;
+			</p>
+			
+			<p>
+				Equation 1 Gives:
+			</p>
+			
+			<pre>        ug                         1        </pre>
+			<pre>        -- = ------------------------------------------  </pre>
+			<pre>        ml               (15400*2+11500*2)  </pre>
+			<pre>                      ---------------------  </pre>
+			<pre>                      1000*(312*2+328*2-61)  </pre>
+			<pre>   </pre>
+			<pre>           =     22.7 </pre>
+			<p>
+				Equation 2 Gives:
+			</p>
+			<pre>        ug                        1        </pre>
+			<pre>        -- = ------------------------------------------  </pre>
+			<pre>        ml       2(12500+12600+12500)-(11500+15400)  </pre>
+			<pre>               --------------------------------------  </pre>
+			<pre>                       1000*(312*2+328*2-61)  </pre>
+			<pre>              </pre>
+			<pre>           =     25.4 </pre>
+			
+			<p>
+				Conclusion
+			</p>
+			
+			<p>
+In our example, the results are similar to each other and quite
+different from the all-purpose value of 30 mg/ml. The degree of
+accuracy offered by the above equations may not be needed in normal
+circumstances. Where highly precise quantitation is required, they will
+yield excellent results. </p>
+			
+			<p>
+				Sigma-Genosys Guaranteed Yields
+			</p>
+			
+			<p>
+				Please see the Sigma-Genosys <a href="http://www.sigma-genosys.com/oligo_minyields.asp">Yields</a> tech sheet for a listing of the yield guarantee for various oligos ordered from Sigma- Genosys.
+			</p>
+
+			<p class="heading3">
+				I. <a href="http://www.idtdna.com/program/catalog/Custom_Gene_Synthesis.asp">http://www.idtdna.com/program/catalog/Custom_Gene_Synt hesis.asp</a>
+			</p>
+			
+			<p>
+				Custom Gene Synthesis
+			</p>
+			
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*New Low Price*
+			</p>
+			
+			<p>
+				<em>Synthetic Double-Stranded DNA Cloned into a Plasmid and Sequence Verified</em>
+			</p>
+			
+			<p>
+				IDT’s Gene Synthesis Service Includes:
+			</p>
+			
+			<ol start="1" type="1"> 
+				<li>Design consultation with IDT scientists</li> 
+				<li>Codon optimization</li> 
+				<li>Gene
+assembly (including oligo synthesis, PAGE purification, subunit
+annealing, ligation, cloning, DNA sequencing and mutagenesis when
+necessary)</li>
+			</ol>
+			
+			<p>
+			Specifics:
+			</p>
+			
+			<table border="0" cellpadding="0" width="95%">
+				<tbody><tr>
+					<td width="125">
+						&nbsp;&nbsp;&nbsp;Format:
+					</td>
+					<td>
+						Cloned into a plasmid, usually pUC18 or pUC19
+					</td>
+				</tr>
+				<tr>
+					<td width="125">
+						&nbsp;&nbsp;&nbsp;Product:
+					</td>
+					<td>
+						50 µg of purified plasmid DNA is also provided<br>A bacterial stab containing your custom gene/plasmid is provided
+					</td>
+				</tr>
+				<tr>
+					<td width="125">
+						&nbsp;&nbsp;&nbsp;Quality:
+					</td>
+					<td>
+						Sequence is guaranteed<br>DNA sequencing chromatograms are provided
+					</td>
+				</tr>
+				<tr>
+					<td width="125">
+						&nbsp;&nbsp;&nbsp;Delivery:
+					</td>
+					<td>
+						5-6 weeks, depending on complexity and length
+					</td>
+				</tr>
+				<tr>
+					<td width="125">
+						&nbsp;&nbsp;&nbsp;Confidential:
+					</td>
+					<td>
+						Sequence information is always confidential at IDT<br>
+						Non-disclosure agreements are available through IDT’s legal services upon request
+					</td>
+				</tr>
+			</tbody></table>
+
+			
+			<p class="heading3">
+				J.
+				<a href="http://www.keydna.com/productsAndServices/microplateOligos.asp">http://www.keydna.com/productsAndServices/microplateOligos.</a>
+			</p>
+			
+			<p>
+BioSource International, Inc has expanded capabilities for
+manufacturing microplate-formatted oligos in its Camarillo, California
+facilities. Intensive efforts have been made to ensure the same high
+quality and rapid turnaround that our customers have enjoyed over the
+past 8 years. Highly trained, capable personnel are now carefully
+monitoring orders electronically generated through our website, or
+emailed to <a href="mailto:dna@biosource.com">dna@biosource.com</a>. 
+			</p>
+			
+			<p>
+BioSource continues the tradition of offering a broad range of scales
+of synthesis (0.05-100 micromole), purifications (desalted, cartridge,
+HPLC and PAGE), and all commercially available modifications, reporters
+and quenchers. Microwell plate-formatted oligos can be either dried or
+resuspended to desired concentration and frozen. </p>
+			
+			<p> Certificates accompany each plated-product and
+detail individual oligo molecular weights, total concentration,
+picomoles/OD, extinction coefficients, melting temperatures and
+location confirmation in the plate, in addition to all
+customer-supplied information. </p>
+			
+			<p>
+				Mass spec analysis is performed on random oligos to confirm quality and can be performed on entire plate as requested.
+			</p>
+			
+			<p>
+				Please contact us with inquiries at 1-800-242-0607 or email your orders to <a href="mailto:plates@biosource.com">plates@biosource.com</a>
+			</p>
+
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+
+
+			<p class="heading3">
+				K. <a href="http://musom.marshall.edu/genomics/40new.htm">http://musom.marshall.edu/genomics/40new.htm</a>
+			</p>
+			
+			<p class="bold">
+			MU DNA Core Facility Price List
+			</p>
+			
+			<p class="bold">
+			Custom DNA Synthesis Price List ---Updated December 12, 1999
+			</p>
+			
+			<table align="center" width="100%">
+				<tbody><tr class="bold">
+					<td>Scale</td>
+					<td>Purity</td>
+					<td>Yield</td>
+					<td>Price</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>(µg/20-mer)</td>
+					<td>($/Base)</td>
+				</tr>
+				<tr>
+					<td>40 nMole</td>
+					<td>Crude</td>
+					<td>165-300</td>
+					<td>$0.65</td>
+				</tr>
+				<tr>
+					<td>"</td>
+					<td><a href="http://musom.marshall.edu/oligos/opc.htm">OPC</a></td>
+					<td>35-60</td>
+					<td>Add $10.00/oligo</td>
+				</tr>
+				<tr>
+					<td>0.2 µMole</td>
+					<td>Crude</td>
+					<td>500-750</td>
+					<td>$0.95</td>
+				</tr>
+				<tr>
+					<td>"</td>
+					<td><a href="http://musom.marshall.edu/oligos/opc.htm">OPC</a></td>
+					<td>165-300</td>
+					<td>Add $10.00/oligo</td>
+				</tr>
+				<tr>
+					<td>1.0 µMole</td>
+					<td>Crude</td>
+					<td>2000-3000</td>
+					<td>$1.85</td>
+				</tr>
+				<tr>
+					<td>10.0 µMole*</td>
+					<td>Crude</td>
+					<td>20-30 mg</td>
+					<td>$4.00</td>
+				</tr>
+			</tbody></table>
+			
+			
+			
+			<p>
+				* There will be a $50.00 setup charge for 10.0 µMole scale.
+			</p>
+			
+			<p class="bold">
+				Shipping Rates:
+			</p>
+			
+			<table width="100%">
+				<tbody><tr>
+					<td>Federal Express</td>
+					<td>1-9 Oligos in Order</td>
+					<td>10+ Oligos in Order</td>
+				</tr>
+				<tr>
+					<td>Standard Overnight</td>
+					<td>$10.00</td>
+					<td>Free</td>
+				</tr>
+				<tr>
+					<td>Second Day</td>
+					<td>$6.00</td>
+					<td>Free</td>
+				</tr>
+			</tbody></table>
+			
+			
+			<p>
+			Please contact <a href="mailto:primeran@marshall.edu">Don Primerano</a> for volume discounts and new customer promotions.
+			</p>
+			
+			<p>
+These prices are for the synthesis of oligonucleotides carried out
+using the four standard bases: dA, dC, dG, T, and Inosine. There are no
+set-up charges , hidden charges, or extra charges for mixed sites.
+There is no minimum volume order required. All oligos are fully
+deprotected, lyophilized, and ready for use. You will recieve a custom
+DNA Synthesis report for each oligo ordered. This report includes
+extinction coefficients, Tm, Td, base composition, and quantitation
+value of oligo (expresed in A<sub>260</sub> Units).
+			</p>
+			
+			<div>
+			<hr size="2" width="100%">
+			</div>
+			
+			<p class="heading3">
+				Others web pages for order oligonucleotides
+			</p>
+
+			<p class="heading3">
+				L.
+			</p>
+			
+			
+			<ul>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1363">Amersham Biosciences Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=4727" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=10401">Gene Therapy Systems Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=12312" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1057">Lofstrand Labs Ltd.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=7830">Monomer Sciences Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1234">New England Biolabs Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=5569" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2408">QIAGEN Operon</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=339">Roche Applied Science</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8339">United States Biological</a> <a href="http://biosupplynet.com/cfdocs/products//search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=20234" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=4029">USB Corp.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=4397" class="nine">Product Info</a></li>
+			</ul>
+			
+			<p>
+* All companies listed are featured in the BioSupplyNet database; those
+listed above have multiple links to the web from the BioSupplyNet
+directory. </p>
+			
+			<ul>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2883">Annovis Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=3215" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2547">BioSource International Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=2710" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2267">Calbiochem-Novabiochem Corp.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=7366">Cambio Ltd.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1695">Midland Certified Reagent Co.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=1950" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=3444">Sigma-Aldrich</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=761">Sigma-Genosys</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=4500">Vangard International Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Polynucleotides&amp;FilterSupNum=7079" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=140">Zytex (India) Pvt. Ltd - Arun&amp; Co.</a></li>
+			</ul>
+
+			<p class="heading3">
+			M.
+			</p>
+			
+			
+			<ul>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8346">BioNexus Inc./ABP</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=3312" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=9707">Biosearch Technologies, Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=50331" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=4001">bioWORLD</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=7632" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=9878">Cell &amp; Molecular Technologies Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=436">Chemicon International Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=2730" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=102">DNAengine, Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1644">Epoch Biosciences</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=1411" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=10401">Gene Therapy Systems Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=12312" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=10397">GenoMechanix, LLC</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1057">Lofstrand Labs Ltd.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=7830">Monomer Sciences Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=3186">Paragon BioServices Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8333">Primm Labs Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2408">QIAGEN Operon</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=4031">Rabbit &amp; Rodent Diagnostic Associates</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=4032">Rabbitt &amp; Rodent Diagnostics Associates</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8339">United States Biological</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=20234" class="nine">Product Info</a></li>
+			</ul>
+			
+			<p>
+* All companies listed are featured in the BioSupplyNet database; those
+listed above have multiple links to the web from the BioSupplyNet
+directory. </p>
+			
+			<ul>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=10361">AerBio Ltd.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8255">Ana-Gen Technologies Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2883">Annovis Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=3215" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8688">Bartlett-Williams Scientific Resources</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8428">Bio-Synthesis Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=4157">Bio/Can Scientific Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2547">BioSource International Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=2710" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2852">CHIMERx</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=2972" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=4211">Commonwealth Biotechnologies Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=10422">Dharmacon Research</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2923">DNA International Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8798">EMP Biotech GmbH</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=11087">Entelechon GmbH</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2007">Gene Link Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=3370" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2323">GENSET OLIGOS</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=3053">Integrated DNA Technologies Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8821">INTERACTIVA The Virtual Laboratory</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2352">ISC BioExpress</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=1838" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1043">Life Sciences Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8285">Macromolecular Resources</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1695">Midland Certified Reagent Co.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=1950" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=11733">Molecula Research Laboratories</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=1186">Molecular Biology Resources</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=11134">MWG-Biotech</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=2101">Oligos Etc. Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=9523">Retrogen Inc.</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=761">Sigma-Genosys</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=8884">TriLink BioTechnologies, Inc.</a> <a href="http://biosupplynet.com/cfdocs/products/search.sciquest.com/search/SearchRouter/MainSearch?KeywordAny=Oligonucleotide%20%20Modification&amp;FilterSupNum=82417" class="nine">Product Info</a></li>
+				<li><a href="http://biosupplynet.com/cfdocs/suppliers/supp_det.cfm?supp_id=10601">Xeragon AG</a></li>
+			</ul>
+
+
+			<p class="heading3">
+				O.
+			</p>
+			
+			<p>
+				<a href="http://www1.amershambiosciences.com/aptrix/upp01077.nsf/Content/Products?OpenDocument&amp;parentid=41193">http://www1.a mershambiosciences.com/aptrix/upp01077.nsf/Content/Products?OpenDocument&amp;parentid=41193</a>
+			</p>
+			
+			<p class="heading3">
+				P. 
+			</p>
+			
+			<p>
+				<a href="http://www.genosys.com/oligos/frameset.html">http://www.genosys.com/oligos/frameset.html</a>
+			</p>
+			
+			<p class="heading3">
+				Q.
+			</p>
+			
+			<p>
+				<a href="http://www.idtdna.com/program/catalog/Custom_Gene_Synthesis.asp">http://www.idtdna.com/program/catalog/Custom_Gene_Synt hesis.asp</a>
+			</p>
+			
+			<p class="heading3">
+				R.
+			</p>
+			
+			<p>
+				<a href="http://www.operon.com/">http://www.operon.com/</a>
+			</p>
+			
+			<p class="heading3">
+				S.
+			</p>
+
+			<p>
+				<a href="http://bpf.med.harvard.edu/Pages/techs/O/IDT/IDT_Catalog_July_2000.html">http://bpf.med.harvard.edu/Pages/techs/O/IDT/I DT_Catalog_July_2000.html</a>
+				<br>This page include modification with 2-aminopurine!
+			</p>
+			
+			<p class="heading3">
+				T.
+			</p>
+			
+			<p>
+				<a href="http://proligo2.proligo.com/Ordering/order_frame.html">http://proligo2.proligo.com/Ordering/order_frame.html</a>
+			</p>
+
+
+</td> 	
+</tr> 	
+<tr> 		
+<td class="footer"> 			<a href="http://www.osu.edu/" title="OSU Homepage">The Ohio State University</a> 			<a href="http://www.chemistry.ohio-state.edu/chemistry.osu.edu/" title="OSU Chemistry Homepage">Department of Chemistry</a> 		
+</td> 	
+</tr>
+</tbody></table>
+ 
+</body></html>

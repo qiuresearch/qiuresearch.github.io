@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contents of Collecting RA-PDF data</TITLE>
+<META NAME="description" CONTENT="Contents of Collecting RA-PDF data">
+<META NAME="keywords" CONTENT="thesis_xq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis_xq.css">
+
+<LINK REL="next" HREF="node96_mn.htm">
+<LINK REL="previous" HREF="node94_mn.htm">
+<LINK REL="up" HREF="node92_mn.htm">
+<LINK REL="next" HREF="node96_mn.htm">
+</HEAD>
+ 
+<BODY bgcolor="#ffffff" text="#000000" link="#9944EE" vlink="#0000ff" alink="#00ff00">
+
+<H1><A NAME="SECTION001030000000000000000">
+Collecting RA-PDF data</A>
+</H1>
+This briefly describes some common actions during RA-PDF measurements.
+The RA-PDF data collection mostly involves changing samples and
+controlling the data acquisition system. Operation of data acquisition
+system works varies at different beamlines. However, changing samples
+is essentially the same. As the sample to detector distance is
+obtained from the calibration runs (with Si or LaB<SPAN CLASS="MATH"><B><SUB>6</SUB></B></SPAN>), we need to
+put the sample at the same position as the calibrant. This is usually
+done with the help of the telescope indicating both the center of the
+beam and center of the diffractometer. However, the RA-PDF setup
+requires a very close sample-to-detector distance, e.g. 202 mm. It
+might happen that the telescope view of the sample is blocked by the
+image plate detector. If this is the case, alternative ways of
+ensuring the same sample positions should be implemented, such as a
+monitor screen, identical sample holders etc.. If possible, a small
+telescope can be mounted on the diffractometer for sample
+alignment. When changing the sample, be sure not to bump the beam
+stop.  A significant shift of the beam stop requires realignment of
+the beam stop, and another set of measurements of the background
+scattering.
+
+<P>
+If the X-ray energy needs to be changed and a new sample to detector
+distance becomes necessary, extra attention needs to be paid in order
+not to lose the calibration. This is because the sample to detector
+distance and the X-ray energy are strongly correlated in the
+calibration. ONLY one of them can be unknown to get any sensible
+calibration. You can either change the X-ray energy or move the
+detector first, then you do the calibration, and then you change the
+other one. If only room temperature measurements are performed, moving
+the sample is much simpler than moving the detector because the later
+almost always requires some aligning adjustments of the detector.
+
+<P>
+Beam exposure time depends on the scattering power of the sample and
+the incident beam intensity. The rule of thumb is to keep all the
+counts in the linear response regime of the image plate. In our case,
+the maximum count of in each pixel is 64,000 set by the electronic
+readout device. A reasonable maximum intensity for our data is advised
+not to exceed 60,000 (though a maximum of 131,000 of 17 bits is
+possible with two sets of PMTs). Grainy samples may cause sparse pixel
+saturations even with very short exposure times because of those
+crystals with considerable sizes. Certainly the best solution is to
+have fine powdered samples. As grinding samples may be not possible
+during the experiments, we may try to do more sample rocking, or try
+another section of the sample. However, we should not worry about the
+small number of saturated pixels in our data. First, they can be
+removed during the data processing. Second, the relative error would
+be rather small compared to the total number of pixels, e.g. <SPAN CLASS="MATH"><B><IMG
+ WIDTH="20" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \sim$"></B></SPAN>
+10,000,000 pixels in the Mar345 detector.
+
+<P>
+To properly analyze the RA-PDF data, we need to also measure the
+background and other calibration data if necessary. Here the
+background refers to the sum of the container scattering and the empty
+instrument scattering (mostly air scattering). The background
+intensities will be subtracted from the sample total intensities
+during data analysis. When the background level is rather high, the
+absorption correction due to the existence of the sample in the beam
+(when collecting sample data) becomes necessary. This correction is
+usually rather tricky since it depends on the detailed experimental
+setup. Strictly speaking, different absorption corrections also become
+necessary when the container itself scatters (absorbs) considerably.
+For the most commonly used kapton tape in our lab, the scattering from
+the container itself is small compared to the air scattering, and
+there is no need to distinguish between the container and empty
+instrument scattering. If a glass capillary is used, the scattering
+from it may be very strong. We may need to measure the empty
+instrument separately. As the background scattering is usually slowly
+varying intensities, they can be smoothed during analysis without
+compromising the analysis. Thus, the issue of counting statistics is
+less critical for background measurements.
+
+<P>
+In the end, you should have the data for the sample, data for the
+background, and data for the calibration.
+
+<P>
+
+<HR>
+<ADDRESS>
+Xiangyun Qiu
+2005-02-18
+</ADDRESS>
+</BODY>
+</HTML>

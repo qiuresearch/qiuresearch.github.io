@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contents of Setup of the RA-PDF experiment</TITLE>
+<META NAME="description" CONTENT="Contents of Setup of the RA-PDF experiment">
+<META NAME="keywords" CONTENT="thesis_xq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis_xq.css">
+
+<LINK REL="next" HREF="node95_mn.htm">
+<LINK REL="previous" HREF="node93_mn.htm">
+<LINK REL="up" HREF="node92_mn.htm">
+<LINK REL="next" HREF="node95_mn.htm">
+</HEAD>
+ 
+<BODY bgcolor="#ffffff" text="#000000" link="#9944EE" vlink="#0000ff" alink="#00ff00">
+
+<H1><A NAME="SECTION001020000000000000000">
+Setup of the RA-PDF experiment</A>
+</H1>
+
+<P>
+For practical reasons, the procedure to set up the experiment will
+follow the flight path of the X-rays, which means from upstream to
+downstream. The first thing is to choose the right beam line with
+proper X-ray characteristics for your specific experiment.
+Experimental setup in the early stages is similar to our conventional
+PDF X-ray experiments. The schematic diagram of the RA-PDF
+experimental setup is shown in Fig.&nbsp;<A HREF="node94_ct.htm#fig_ch2_rapdfsetup">A.1</A>.
+
+<DIV ALIGN="CENTER"><A NAME="fig_ch2_rapdfsetup"></A><A NAME="6832"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure A.1:</STRONG>
+Schematic diagram of the rapid acquisition PDF
+   (RA-PDF) experiment layout.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><SPAN CLASS="MATH"><B>&nbsp;</B></SPAN>
+   <IMG
+ WIDTH="522" HEIGHT="180" ALIGN="BOTTOM" BORDER="0"
+ SRC="img184.png"
+ ALT="\includegraphics[width=0.94\textwidth]{rapdf_setup.ps}">
+
+<P>
+
+<P></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<OL>
+<LI>Set the energy. This step doesn't need to be the first, and
+   commonly it's necessary to change the X-ray energy during the
+   experiment. Nonetheless, a few ways to calibrate the energy are
+   briefly explained here. In principle, we can compute the X-ray
+   energy given the monochromator tilting angle and the reflection
+   plane used. However, those calculated values are usually only good
+   approximations due to the various uncertainties in the tilting
+   angle, etc.. One commonly used approach is to scan across the
+   absorption edge of a standard material, such as Pb, or Au K edges,
+   and use their well known absorption edge energy values as
+   references. The other way is to use multiple channel analyzer (MCA)
+   to locate the incident beam energy. One complication of this method
+   is the MCA needs to be calibrated first, usually with a set of
+   standard radiative materials which have characteristic emission
+   lines. A common step after this is to align the center of the slits
+   so that the incident beam passes through the centers. This can be
+   done automatically by monitoring the downstream beam intensities
+   when moving the slits.
+
+<P>
+</LI>
+<LI>Set the slit openings to give you the proper beam size. We
+   have used 0.5<SPAN CLASS="MATH"><B>&#215;</B></SPAN>0.5 mm at both 1ID-D and 6ID-D at APS. The
+   primary considerations for beam size are usually the <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> space
+   resolution and incident X-ray flux. With some approximations,
+   starting from <!-- MATH
+ $Q = \frac{4\pi}{\lambda}\sin{\theta}$
+ -->
+<SPAN CLASS="MATH"><B><I>Q</I> = <IMG
+ WIDTH="24" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$ {\frac{{4\pi}}{{\lambda}}}$">sin<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN>, the resolution function can be expressed as,
+
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{equation}
+\frac{\Delta Q}{Q} \approx \frac{\Delta\lambda}{\lambda} +
+         \frac{\cos^2 (\theta)\cos(2\theta)}{1+\sin^2(2\theta)}\times(
+         \frac{\Delta d}{d} + \frac{\Delta r}{r})
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<B><IMG
+ WIDTH="39" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.png"
+ ALT="$\displaystyle {\frac{{\Delta Q}}{{Q}}}$"> <IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.png"
+ ALT="$\displaystyle \approx$"> <IMG
+ WIDTH="35" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img187.png"
+ ALT="$\displaystyle {\frac{{\Delta\lambda}}{{\lambda}}}$"> + <IMG
+ WIDTH="126" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.png"
+ ALT="$\displaystyle {\frac{{\cos^2 (\theta)\cos(2\theta)}}{{1+\sin^2(2\theta)}}}$">&#215;(<IMG
+ WIDTH="34" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$\displaystyle {\frac{{\Delta d}}{{d}}}$"> + <IMG
+ WIDTH="33" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.png"
+ ALT="$\displaystyle {\frac{{\Delta r}}{{r}}}$">)</B>
+</TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(A.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE>
+</DIV>
+where <SPAN CLASS="MATH"><B><I>d</I></B></SPAN> is the sample to detector distance, <SPAN CLASS="MATH"><B><I>r</I></B></SPAN> is the distance
+    of the pixel from the center of the image plate. In our typical
+    RA-PDF experiments, the maximum 2<SPAN CLASS="MATH"><B><IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN> angle is about 30.0
+    degrees. We can show that the first term
+    <!-- MATH
+ $\frac{\Delta\lambda}{\lambda}$
+ -->
+<SPAN CLASS="MATH"><B><IMG
+ WIDTH="28" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.png"
+ ALT="$ {\frac{{\Delta\lambda}}{{\lambda}}}$"></B></SPAN> is the smallest, usually in the
+    order of 10<SPAN CLASS="MATH"><B><SUP>-4</SUP></B></SPAN> determined by the characteristics of the
+    monochromator(s). The prefactor of the <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> dependent second term
+    varies from 1.0 to 0.65 as 2<SPAN CLASS="MATH"><B><IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN> goes from 0.0 to 30.0 degrees.
+    The typical value of <!-- MATH
+ $\frac{\Delta d}{d}$
+ -->
+<SPAN CLASS="MATH"><B><IMG
+ WIDTH="27" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.png"
+ ALT="$ {\frac{{\Delta d}}{{d}}}$"></B></SPAN> is
+    <!-- MATH
+ $\frac{1.0}{200.0}=0.005$
+ -->
+<SPAN CLASS="MATH"><B><IMG
+ WIDTH="39" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.png"
+ ALT="$ {\frac{{1.0}}{{200.0}}}$"> = 0.005</B></SPAN> with 1 mm thick sample and 200 mm sample
+    to detector distance. <SPAN CLASS="MATH"><B><IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \Delta$"><I>r</I></B></SPAN> can be estimated as the sum of
+    beam dimension and image plate pixel size (0.1<SPAN CLASS="MATH"><B>&#215;</B></SPAN>0.1 mm),
+    while <SPAN CLASS="MATH"><B><I>r</I></B></SPAN> value ranges from 0.0 to 172.5 mm. If we simply take
+    100.0 mm as the mean value of <SPAN CLASS="MATH"><B><I>r</I></B></SPAN>, the <!-- MATH
+ $\frac{\Delta r}{r}$
+ -->
+<SPAN CLASS="MATH"><B><IMG
+ WIDTH="26" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.png"
+ ALT="$ {\frac{{\Delta r}}{{r}}}$"></B></SPAN>
+    becomes comparable to <!-- MATH
+ $\frac{\Delta d}{d}$
+ -->
+<SPAN CLASS="MATH"><B><IMG
+ WIDTH="27" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.png"
+ ALT="$ {\frac{{\Delta d}}{{d}}}$"></B></SPAN> with beam dimension of
+    0.5<SPAN CLASS="MATH"><B>&#215;</B></SPAN>0.5 mm. A much larger beam size than this would make it
+    the limiting factor to the instrument resolution. There are also
+    some other considerations as well, such as the intrinsic beam
+    size, the incident beam intensity, scattering powder of the sample
+    and so on. Around 0.5<SPAN CLASS="MATH"><B>&#215;</B></SPAN>0.5 mm beam size is used in our
+    RA-PDF experiments.
+
+<P>
+</LI>
+<LI>Align the center of the diffractometer with the beam
+   center. This involves two steps. We first locate the center of
+   rotation of the diffractometer usually with help from a
+   telescope. A sharp metal pin is mounted on the goniometer, and the
+   goal is to get the tip of the pin in the same place when any circle
+   of the diffractometer is rotated. Once you have done this, use the
+   motor to adjust position of the diffractometer to set the tip of
+   the pin on the beam center. You can use a monitor or burn paper or
+   fluorescent screen to do it. The easiest way is to place a Silicon
+   diode detector after the pin and do <SPAN CLASS="MATH"><B><I>x</I></B></SPAN>-<SPAN CLASS="MATH"><B><I>y</I></B></SPAN> scanning of the
+   diffractometer. Once this is done, remember the current position of
+   the pin tip in the telescope, or move the telescope so that the pin
+   tip sits in an easy to remember position, e.g. the center
+   cross. This is the beam center and the center of the diffractometer
+   after the alignment.
+
+<P>
+</LI>
+<LI>Put the image plate detector to its approximate position. You
+   will need to adjust it later. In most cases, the only variable here
+   is the sample to detector distance. As the dimension of the image
+   plate (e.g. 345 mm in diameter for Mar345 detector) is fixed,
+   given the energy you will be working at, you can compute the
+   necessary maximum 2<SPAN CLASS="MATH"><B><IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$"></B></SPAN>, and then the sample to detector distance
+   <!-- MATH
+ $d(mm)=172.5/\tan(2\theta)$
+ -->
+<SPAN CLASS="MATH"><B><I>d</I> (<I>mm</I>) = 172.5/tan(2<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.png"
+ ALT="$ \theta$">)</B></SPAN>. For example, if you want to achieve
+   <SPAN CLASS="MATH"><B><I>Q</I><SUB>max</SUB></B></SPAN> of 35.0 &#197;<SPAN CLASS="MATH"><B><SUP>-1</SUP></B></SPAN> at 100 keV with the Mar345 detector, the
+   sample to detector distance needs to be 202.5 mm.
+
+<P>
+</LI>
+<LI>Install the beam stop and align it. Before you open the beam
+   shutter, make sure to have Pb shielding right in the front of the
+   image plate detector. Direct beam WILL damage the IP permanently! 
+   The best way is to put a Silicon diode monitor after the beam stop
+   installed on a translation stage. Through scanning the beam stop
+   positions, you can quickly position the beam stop to fully
+   intercept the incident beam.
+
+<P>
+</LI>
+<LI>Align the image plate detector within a reasonable amount of
+   time. One goal is to set the beam center close to the detector
+   center. The other is to achieve a good orthogonality of the plate
+   plane to the beam direction. This requires the use of a calibrant,
+   for example, fine Si powder. Program FIT2D&nbsp;[<A HREF="node101_ct.htm#hamme_esrf98" TARGET="contents">64</A>]
+   provides an easy-to-use interface to do this job. One important
+   consideration for this purpose is to minimize the uncertainties in
+   later corrections. For example, the oblique incident angle
+   dependence correction assumes that the same <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> values around the
+   ring have the same incident angle to the IP.
+
+<P>
+</LI>
+<LI>Take efforts to reduce the background. The RA-PDF experiment
+   subjects to rather high background levels. Most background
+   intensities come from air scattering. Thus the first step here is
+   to shield out the air scattering before the sample by placing a
+   thick Pb plate with a hole at the center for the incident beam. If
+   there is a considerable gap between the Pb shield and the sample, a
+   collimator right in front of the sample is preferred. During
+   experiments, usually more than 50% incident beam is allowed to
+   pass through the sample. The rather long sample to beam stop
+   distance (<SPAN CLASS="MATH"><B><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \geq$"></B></SPAN> 150 mm) creates a significant amount of air
+   scattering.  The collimation after the sample is in principle hard
+   to implement. One way is to shorten the sample to beam stop
+   distance, however, this would increase the blocked scattering angle
+   by the beam stop. A very effective way would be to use an evacuated
+   second flight path, however, more difficult in practice. The
+   background scattering in practice only becomes an issue for weakly
+   scattering samples.
+
+<P>
+</LI>
+<LI>Install additional equipment required for your
+   experiment. For example, the displex with cryostat needs to be set
+   up for low temperature measurements. In the case of high
+   temperature measurements, the furnace should be installed.
+</LI>
+</OL>
+
+<P>
+Once you are satisfied with the position and tilt of the image plate,
+write down the values you get, such as the sample to detector
+distance, beam center, tilt angle, etc. We are ready now to do some
+real measurements on samples.
+
+<P>
+
+<HR>
+<ADDRESS>
+Xiangyun Qiu
+2005-02-18
+</ADDRESS>
+</BODY>
+</HTML>

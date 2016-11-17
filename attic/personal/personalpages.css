@@ -1,0 +1,42 @@
+body { font-family: Lucida Sans , Trebuchet MS, sans-serif;
+       font-size: 15px; font-style: normal; line-height: normal;
+       font-weight: normal; font-variant: normal; text-transform:
+       none; color: #000000; text-decoration: none; background-color:
+       #FFFFFF}
+
+p { font-family: Lucida Sans , Trebuchet MS, sans-serif; font-size:
+    15px; font-style: normal; line-height: normal; font-weight:
+    normal; font-variant: normal; text-transform: none;
+    text-decoration: none; color: #000000}
+
+blockquote { font-family: Lucida Sans , Helvetica,
+             sans-serif; font-size: 15px; font-style: normal;
+             line-height: normal; font-weight: normal; font-variant:
+             normal; text-transform: none; text-decoration: none;
+             color: #000000}
+
+ul { font-family: Lucida Sans , Helvetica, sans-serif;
+     font-size: 15px; font-style: normal; line-height: normal;
+     font-weight: normal; font-variant: normal; text-transform: none;
+     text-decoration: none; color: #000000}
+
+ol { font-family: Lucida Sans , Helvetica, sans-serif;
+     font-size: 15px; font-style: normal; line-height: normal;
+     font-weight: normal; font-variant: normal; text-transform: none;
+     text-decoration: none; color: #000000}
+
+li { font-family: Lucida Sans , Helvetica, sans-serif;
+     font-size: 15px; font-style: normal; line-height: normal;
+     font-weight: normal; font-variant: normal; text-transform: none;
+     text-decoration: none; color: #000000}
+
+a { font-family: Lucida Sans , Helvetica, sans-serif;
+    font-size: 15px; font-style: normal; line-height: normal;
+    font-weight: normal; font-variant: normal; text-transform: none;
+    text-decoration: none; color: #0000FF}
+
+a:hover { font-family: Lucida Sans , Helvetica, sans-serif;
+          font-size: 15px; font-style: normal; line-height: normal;
+          font-weight: bold; font-variant: normal; text-transform:
+          none; text-decoration: underline; color: #0000FF}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contents of Normalization by the monitor counts</TITLE>
+<META NAME="description" CONTENT="Contents of Normalization by the monitor counts">
+<META NAME="keywords" CONTENT="thesis_xq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis_xq.css">
+
+<LINK REL="next" HREF="node100_mn.htm">
+<LINK REL="previous" HREF="node98_mn.htm">
+<LINK REL="up" HREF="node96_mn.htm">
+<LINK REL="next" HREF="node100_mn.htm">
+</HEAD>
+ 
+<BODY bgcolor="#ffffff" text="#000000" link="#9944EE" vlink="#0000ff" alink="#00ff00">
+
+<H2><A NAME="SECTION001043000000000000000">
+Normalization by the monitor counts</A>
+</H2>
+The last step of this preprocessing before using PDFgetX2 is to
+normalize the data. This is very important because sample and
+background are usually measured with different exposure time. Even
+with the same exposure time, the incident beam intensities most likely
+are still different during the self-decay and re-filling process of
+the synchrotron storage ring, as well as the unpredictable slight
+fluctuations. The normalization constant should be the incident beam
+monitor closest to the sample. There should be no <SPAN  CLASS="textit">beam size
+defining</SPAN> slits/collimation's after this monitor, otherwise its
+reading doesn't reflect the real incident beam intensity on the
+sample. In the case of multiple image plate data being averaged, the
+corresponding total monitor counts should also be averaged, i.e. divided by the number of data files (exposures). Finishing this, we
+are ready to use PDFgetX2 to obtain the PDFs.
+
+<P>
+
+<HR>
+<ADDRESS>
+Xiangyun Qiu
+2005-02-18
+</ADDRESS>
+</BODY>
+</HTML>

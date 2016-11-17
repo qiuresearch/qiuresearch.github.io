@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contents of Integrate the IP raw data</TITLE>
+<META NAME="description" CONTENT="Contents of Integrate the IP raw data">
+<META NAME="keywords" CONTENT="thesis_xq">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis_xq.css">
+
+<LINK REL="next" HREF="node99_mn.htm">
+<LINK REL="previous" HREF="node97_mn.htm">
+<LINK REL="up" HREF="node96_mn.htm">
+<LINK REL="next" HREF="node99_mn.htm">
+</HEAD>
+ 
+<BODY bgcolor="#ffffff" text="#000000" link="#9944EE" vlink="#0000ff" alink="#00ff00">
+
+<H2><A NAME="SECTION001042000000000000000">
+Integrate the IP raw data</A>
+</H2>
+
+<P>
+The goal here is to get a two column data set equivalent to the
+conventional angle dispersive scan, where every data point represents
+the sum of scattering intensities over the same solid angle. In the
+image plate data, different <SPAN CLASS="MATH"><B><I>Q</I></B></SPAN> values have different number of
+corresponding pixels. This necessitates an additional geometric
+correction to properly normalize the data.  The X-ray polarization
+correction should also be done at this step, because it depends not
+only on the distance of the pixel from the beam center, but also on
+the azimuthal angle. Data integration can be done straightforwardly
+with FIT2D with the choices of above corrections. The integrated data
+should be saved in ``CHI'' file format. It's also recommended to save
+it to GSAS&nbsp;[<A HREF="node101_ct.htm#larso_unpub87" TARGET="contents">68</A>] format for later Rietveld analysis.
+
+<P>
+For each sample, we usually take multiple exposures to achieve better
+counting statistics. Since the multiple data sets are measured under
+identical conditions, we directly sum them together to get the total
+counts. To avoid too large values, we divide the total counts by the
+number of exposures .
+
+<P>
+Batch integration is possible with the FIT2D GUI macro functionality.
+This becomes necessary when there are a large number of data files to
+integrate, as is the case for our RA-PDF experiments. A more efficient
+way is to use the keyboard mode in which program FIT2D can be driven
+by command line inputs. In this case, we can put all the commands in a
+macro file, and give the macro file name to FIT2D to achieve the same
+result.  Certainly the macro file should contain information such as
+the needed processing parameters and the related image plate data file
+names.  Many samples are usually measured with the same experiment
+setup, thus only the data file names need to be changed in the macro
+file. In consideration of this, the macro file is designed to take
+parameter values from variables, and the variable values can be passed
+when calling FIT2D. The current version of FIT2D macro file is the
+following for your reference.
+<PRE>
+%!*\ BEGINNING OF mar_integrate.mac MACRO FILE
+%!*\ This is a comment line
+%!*\ 1) Deduce the file sequence and calculate 2theta step size
+DEDUCE
+#START_FILE
+#END_FILE
+CALC
+#SCAN_BINS
+#MAX_ANGLE
+/
+VARIABLE
+#STEP_2THETA
+EXIT
+%!*\ 4) Initialize data and set up experiments
+CREATE DATA
+3450
+3450
+EXCHANGE
+CREATE DATA
+3450
+3450
+GEOMETRY
+KEYBOARD
+#X_BEAMCENTER
+#Y_BEAMCENTER
+#WAVELENGTH
+#SAM2DET
+#X_PIXELSIZE
+#Y_PIXELSIZE
+#TILT_ROTATION
+#TILT_ANGLE
+0.0
+%!*\ 5) Read in all data and add them, then divide by number of files
+DO #COUNT = ##START, ##END, ##STEP
+%!*\ Get MAR_FILE by patching different variables
+I2C
+#COUNT
+NO
+##NUM_CHARS
+#CVALUE
+CONCATENATION
+##PREFIX
+#CVALUE
+#MAR_FILE
+CONCATENATION
+#MAR_FILE
+##EXTENSION
+#MAR_FILE
+%!*\ Read in the data file
+INPUT DATA
+MAR RESEARCH FORMAT
+#MAR_FILE
+%!*\ Add it to the memory
+ADD
+EXCHANGE
+END DO
+%!*\ Make the memory to be the current data
+EXCHANGE
+%!*\ Calculate number of files
+CALC
+##START
+##END
+-
+##STEP
+/
+1/X
+1
++
+VARIABLE
+#NUM_FILES
+EXIT
+CDIVIDE
+#NUM_FILES
+%!*\ 6) Using powder diffraction to integrate the data
+FIT
+%!*\ 7) Threshold masking of the data, greater than mask
+THRESHOLD MASKING
+NO
+64000.00
+POWDER
+YES
+#X_BEAMCENTER
+#Y_BEAMCENTER
+#X_PIXELSIZE
+#Y_PIXELSIZE
+#SAM2DET
+#TILT_ROTATION
+#TILT_ANGLE
+%!*\ Input polarization factor?
+YES
+#POLARIZATION_FACTOR
+%!*\ Lorentzian correction?
+PARTIAL POWDER
+%!*\ NONE
+%!*\ YES: Euqal angle pixel scan, NO: Equal radial distance
+YES
+#STEP_2THETA
+%!*\ Correct spatial distortion?
+NO
+%!*\ No to "save powder diffraction data standard file"
+NO
+%!*\ Exit fit submenu
+EXIT
+EXCHANGE
+OUTPUT
+CHI
+#CHI_FILE
+%!*\ Output rows?
+YES
+1
+OUTPUT
+GSAS
+#GSAS_FILE
+YES
+1
+EXIT
+YES
+</PRE>
+
+<P>
+Instead of passing the variable values from the keyboard, a setup file
+can be used, and is shown below. The meaning of each field is noted by
+the comments on the same line. Basically, this file contains all the
+information necessary to integrate the image plate data. We can simply
+add more and more data to the list of data to the end.
+<PRE>
+#  Setup for automation of MAR3450 file integration
+#  Format:
+#   1) You can insert comment lines at any place, starting with "#"
+#   2) NO space should be left before the parameter values
+#   3) When commenting on the same line, at least ONE space should
+#       be left between parameter value and its comment
+#  Written by Xiangyun on 07/23/2003
+3450                                # x dimension
+3450                                # y dimension
+0.126514                            # X-ray wavelength
+0.94                                # Polarization factor
+179.4899                            # Sample to detector distance
+100.0                               # X pixel size
+100.0                               # Y pixel size
+1720.870                            # X beam center
+1705.101                            # Y beam center
+7.866515                            # Tilt rotation angle
+0.0234912                           # Tilt angle
+44.0                                # Max angle
+3450                                # Number of points
+#
+CsIFR6_426_annealed3d_001.mar3450   # Start file to read
+CsIFR6_426_annealed3d_007.mar3450   # End file to read
+CsIFR6_426_annealed3d.gsa           # GSAS file to save
+CsIFR6_key_p-90.chi                 # CHI file  to save
+</PRE>
+
+<P>
+The batch FIT2D data integration is initiated by command
+<I>mar_integrate.sh <SPAN CLASS="MATH"><B>&lt;</B></SPAN> setup-file-name</I> under the directory
+containing all the raw data. The SHELL script <SPAN  CLASS="textit">mar_integrate.sh</SPAN>
+reads the setup file to extract the parameter values, then calls FIT2D
+with the macro file and proper variable values. One additional
+operation in the script is to comment out the first four lines in the
+integrated CHI files, in order to make it directly readable by the
+data visualization program KUPLOT&nbsp;[<A HREF="node101_ct.htm#proff_jac01" TARGET="contents">196</A>].
+
+<P>
+
+<HR>
+<ADDRESS>
+Xiangyun Qiu
+2005-02-18
+</ADDRESS>
+</BODY>
+</HTML>
