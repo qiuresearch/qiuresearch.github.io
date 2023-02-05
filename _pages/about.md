@@ -9,8 +9,9 @@ profile:
   image: xiangyun_qiu.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>6510 SEH</p>
-    <p>800 22nd St. NW </p>
+    <p>6510 (dry), B2200 (wet)</p>
+    <p>Science&Engineering Hall</p>
+    <p>800 22nd St. NW</p>
     <p>Washington, DC 20052</p>
 
 news: true  # includes a list of news items
@@ -37,10 +38,4 @@ document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+
 "statcounter.com/counter/counter.js'></"+"script>");
 </script>
-<noscript> 
-<div class="statcounter"><a title="hit counter"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/1576386/0/01235842/0/" alt="hit
-counter"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
