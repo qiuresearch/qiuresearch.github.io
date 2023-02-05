@@ -6,7 +6,7 @@ title: Qiu Research Website # the website title (if blank, full name will be use
 first_name: Xiangyun
 middle_name:  # No middle name 
 last_name: Qiu
-email: you@example.com
+email: xqiu@gwu.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
