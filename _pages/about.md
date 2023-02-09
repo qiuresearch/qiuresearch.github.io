@@ -2,15 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='www.gwu.edu'>George Washington University</a>
 
 profile:
   align: right
   image: xiangyun_qiu.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>6510 (dry), B2200 (wet)</p>
-    <p>Science&Engineering Hall</p>
+    <p>SEH 6510 & B2200 </p>
     <p>800 22nd St. NW</p>
     <p>Washington, DC 20052</p>
 
@@ -19,13 +18,15 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-We are a group of like-minded explorers striving to exploit collective methods of physical and informational sciences to address questions of broad scientific interests and of significant bearings on human health. Advanced x-ray and neutron scattering and spectroscopic approaches will spearhead our experimental efforts; physical and chemical theories will be put to stringent tests to uncover the fundamental principles; close collaborations across disciplines will inspire new ideas and keep us educated; special emphasis will be directed towards therapeutic guidance and invention.
+We are a team of like-minded explorers striving to exploit collective methods of physical and informational sciences to bring deep understandings and deep impacts towards the phenomena of life. 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+On the experimental front, advanced x-ray and neutron scattering and spectroscopic approaches spearhead our efforts on measuring biomolecular structures and interactions.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the data-driven research paradigm through the practice of statistical inference and machine learning. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Last and the most important, we forge close collaborations across disciplines so as to inspire new ideas and keep us educated. Please contact us if you are interested in collaborating.
+
+<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). -->
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
