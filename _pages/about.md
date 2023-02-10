@@ -24,4 +24,4 @@ On the experimental front, advanced x-ray and neutron scattering and spectroscop
 
 On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the data-driven research paradigm through the practice of statistical inference and machine learning. 
 
-Last and the most important, we forge close collaborations across disciplines so as to inspire new ideas and keep us educated. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested in collaborating.
+Crucially, we forge close collaborations across disciplines so as to inspire new ideas and keep us educated. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested in collaborating.
