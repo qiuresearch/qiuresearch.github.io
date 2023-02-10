@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <i>Biological Physics, X-ray & Neutron Scattering, Machine Learning</i>
+subtitle: <i>Physics of Life, X-ray & Neutron Scattering, Machine Learning, Nucleic Acids, Genetic Medicine</i>
 
 profile:
   align: right
@@ -23,6 +23,6 @@ We are a team of like-minded explorers striving to exploit collective methods of
 
 On the experimental front, advanced x-ray and neutron scattering and spectroscopic approaches spearhead our efforts on measuring biomolecular structures and interactions.
 
-On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the data-driven research paradigm through the practice of statistical inference and machine learning. 
+On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the emerging paradigm of data-driven discoveries through the practice of statistical modeling and machine learning. 
 
-Crucially, we forge close collaborations across disciplines so as to inspire new ideas and keep us educated. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested in collaborating.
+Crucially, we forge close collaborations across disciplines to inspire new ideas and keep us educated. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested in collaborating.
