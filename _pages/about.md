@@ -26,15 +26,20 @@ On the theoretical front, we develop and test physical models to seek fundamenta
 
 Last and the most important, we forge close collaborations across disciplines so as to inspire new ideas and keep us educated. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested in collaborating.
 
-<!-- Start of StatCounter Code for Default Guide -->
+<!-- Default Statcounter code for Xiangyun Qiu's Research Space https://qiuresearch.github.io/ -->
 <script type="text/javascript">
 var sc_project=1576386; 
 var sc_invisible=0; 
 var sc_security="01235842"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
+var scJsHost = "https://";
 document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+
 "statcounter.com/counter/counter.js'></"+"script>");
 </script>
-<!-- End of StatCounter Code for Default Guide -->
+<noscript><div class="statcounter"><a title="web counter"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/1576386/0/01235842/0/"
+alt="web counter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
