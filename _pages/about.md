@@ -25,21 +25,3 @@ On the experimental front, advanced x-ray and neutron scattering and spectroscop
 On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the data-driven research paradigm through the practice of statistical inference and machine learning. 
 
 Last and the most important, we forge close collaborations across disciplines so as to inspire new ideas and keep us educated. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested in collaborating.
-
-<!-- Default Statcounter code for Xiangyun Qiu's Research Space https://qiuresearch.github.io/ -->
-<script type="text/javascript">
-var sc_project=1576386; 
-var sc_invisible=0; 
-var sc_security="01235842"; 
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web counter"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/1576386/0/01235842/0/"
-alt="web counter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
