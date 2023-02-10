@@ -2,14 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='www.gwu.edu'>George Washington University</a>
+subtitle: <i>Biological Physics, X-ray & Neutron Scattering, Machine Learning</i>
 
 profile:
   align: right
-  image: xiangyun_qiu.jpg
+  image: dept_poster_2.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>SEH 6510 & B2200 </p>
+    <p>George Washington Univ.</p>
     <p>800 22nd St. NW</p>
     <p>Washington, DC 20052</p>
 
