@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-We are a team of like-minded explorers striving to exploit collective methods of physical and informational sciences to bring deep understandings and deep impacts towards the phenomena of life. 
+We are a team of like-minded explorers striving to exploit collective methods of physical and informational sciences to study the phenomena of life. 
 
 On the experimental front, advanced x-ray and neutron scattering and spectroscopic approaches spearhead our efforts on measuring biomolecular structures and interactions.
 
