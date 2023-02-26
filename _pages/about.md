@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <i>Nucleic Acids, Genetic Medicine, X-ray Scattering, Learning Algorithms, Physics of Life</i>
+subtitle: <i>Nucleic Acids, Genetic Medicine, Experimental Biophysics, Learning Algorithms, Science of Life</i>
 
 profile:
   align: right
-  image: dept_poster_2.jpg
+  image: xiangyun_qiu_aps.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>SEH 6510 & B2200 </p>
