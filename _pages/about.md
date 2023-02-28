@@ -6,17 +6,60 @@ subtitle: <i>Nucleic Acids, Genetic Medicine, Experimental Biophysics, Learning 
 
 profile:
   align: right
-  image: xiangyun_qiu_aps.jpg
+  image:
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>SEH 6510 & B2200 </p>
-    <p>George Washington Univ.</p>
-    <p>Washington, DC 20052</p>
+  address:
+  
+  # >
+  #   <p>SEH 6510 & B2200 </p>
+  #   <p>George Washington Univ.</p>
+  #   <p>Washington, DC 20052</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+
+<!-- Slideshow container -->
+<div class="QQslideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="QQmySlides QQfadeSlide">
+    <div class="QQnumbertext">1 / 4</div>
+      <img src="assets/img/GW-SEH1-768x461.jpg" style="width:100%">    
+    <div class="QQtext">Campus</div>
+  </div>
+
+  <div class="QQmySlides QQfadeSlide">
+    <div class="QQnumbertext">2 / 4</div>
+      <img src="assets/img/GW-Pegasus-racksOpen-2ceewmw-768x461.jpg" style="width:100%">    
+    <div class="QQtext">Dry Lab</div>
+  </div>
+
+  <div class="QQmySlides QQfadeSlide">
+    <div class="QQnumbertext">3 / 4</div>
+      <img src="assets/img/GW-SEH-B2200-768x461.png" style="width:100%">    
+    <div class="QQtext">Wet Lab</div>
+  </div>
+
+  <div class="QQmySlides QQfadeSlide">
+    <div class="QQnumbertext">4 / 4</div>
+      <img src="assets/img/GW-SEH-B2220-xray-768x461.png" style="width:100%">    
+    <div class="QQtext">Xray Lab</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="QQprev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="QQnext" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="QQdot" onclick="currentSlide(1)"></span>
+  <span class="QQdot" onclick="currentSlide(2)"></span>
+  <span class="QQdot" onclick="currentSlide(3)"></span>
+</div>
 
 We are a team of like-minded explorers exploiting collective methods of physical and informational sciences to study the phenomena of life. 
 
@@ -33,3 +76,49 @@ target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/1576386/0/01235842/0/"
 alt="Web Analytics Made Easy - Statcounter"
 referrerPolicy="no-referrer-when-downgrade"></a>
+
+<script>
+let slideIndex = 0;
+let timeout;
+autoshowSlides();
+
+function autoshowSlides() {
+  // let i;
+  // let slides = document.getElementsByClassName("QQmySlides");
+  // for (i = 0; i < slides.length; i++) {
+  //   slides[i].style.display = "none";
+  // }
+  slideIndex++;
+  // if (slideIndex > slides.length) {slideIndex = 1}
+  showSlides(slideIndex)
+  // slides[slideIndex-1].style.display = "block";
+  timeout = setTimeout(autoshowSlides, 3000); // Change image every 2 seconds
+}
+
+// showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("QQmySlides");
+  let dots = document.getElementsByClassName("QQdot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" QQactive", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " QQactive";
+  clearTimeout(timeout);
+}
+</script>
