@@ -59,6 +59,8 @@ social: true  # includes social icons at the bottom of the page
   <span class="QQdot" onclick="currentSlide(1)"></span>
   <span class="QQdot" onclick="currentSlide(2)"></span>
   <span class="QQdot" onclick="currentSlide(3)"></span>
+  <span class="QQdot" onclick="currentSlide(4)"></span>
+
 </div>
 
 We are a team of like-minded explorers exploiting collective methods of physical and informational sciences to study the phenomena of life. 
@@ -92,7 +94,7 @@ function autoshowSlides() {
   // if (slideIndex > slides.length) {slideIndex = 1}
   showSlides(slideIndex)
   // slides[slideIndex-1].style.display = "block";
-  timeout = setTimeout(autoshowSlides, 3000); // Change image every 2 seconds
+  timeout = setTimeout(autoshowSlides, 4000); // Change image every 4 seconds
 }
 
 // showSlides(slideIndex);

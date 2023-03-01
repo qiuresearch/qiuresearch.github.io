@@ -133,11 +133,22 @@ body.sticky-bottom-footer {
 
 /* Fading animation */
 .QQfadeSlide {
-  animation-name: QQfadeSlide;
-  animation-duration: 2.0s;
+  animation: QQfadeSlide 4s linear 1 forwards;
 }
 
+// from {opacity: .11}
+// to {opacity: 1}
 @keyframes QQfadeSlide {
-  from {opacity: .11}
-  to {opacity: 1}
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }  
+  100% {
+    opacity: 0;
+  }
 }
