@@ -32,7 +32,7 @@ social: true  # includes social icons at the bottom of the page
 
   <div class="QQmySlides QQfadeSlide">
     <div class="QQnumbertext">2 / 4</div>
-      <img src="assets/img/GW-Pegasus-racksOpen-2ceewmw-768x461.jpg" style="width:100%">    
+      <img src="assets/img/GWU-Pegasus-768x461.png" style="width:100%">    
     <div class="QQtext">Dry Lab</div>
   </div>
 
