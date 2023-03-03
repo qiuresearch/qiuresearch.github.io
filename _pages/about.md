@@ -25,27 +25,33 @@ social: true  # includes social icons at the bottom of the page
 
   <!-- Full-width images with number and caption text -->
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">1 / 4</div>
+    <div class="QQnumbertext">1 / 5</div>
       <img src="assets/img/GW-SEH1-768x461.jpg" style="width:100%">    
-    <div class="QQtext">Campus</div>
+    <div class="QQtext">Home@SEH</div>
   </div>
 
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">2 / 4</div>
+    <div class="QQnumbertext">2 / 5</div>
       <img src="assets/img/GWU-Pegasus-768x461.png" style="width:100%">    
     <div class="QQtext">Dry Lab</div>
   </div>
 
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">3 / 4</div>
+    <div class="QQnumbertext">3 / 5</div>
       <img src="assets/img/GW-SEH-B2200-768x461.png" style="width:100%">    
     <div class="QQtext">Wet Lab</div>
   </div>
 
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">4 / 4</div>
+    <div class="QQnumbertext">4 / 5</div>
       <img src="assets/img/GW-SEH-B2220-xray-768x461.png" style="width:100%">    
     <div class="QQtext">Xray Lab</div>
+  </div>
+
+  <div class="QQmySlides QQfadeSlide">
+    <div class="QQnumbertext">5 / 5</div>
+      <img src="assets/img/GW-SEH6510-768x461.png" style="width:100%">    
+    <div class="QQtext">Keyboard Lab</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -60,7 +66,7 @@ social: true  # includes social icons at the bottom of the page
   <span class="QQdot" onclick="currentSlide(2)"></span>
   <span class="QQdot" onclick="currentSlide(3)"></span>
   <span class="QQdot" onclick="currentSlide(4)"></span>
-
+  <span class="QQdot" onclick="currentSlide(5)"></span>
 </div>
 
 We are a team of like-minded explorers exploiting collective methods of physical and informational sciences to study the phenomena of life. 
@@ -94,7 +100,7 @@ function autoshowSlides() {
   // if (slideIndex > slides.length) {slideIndex = 1}
   showSlides(slideIndex)
   // slides[slideIndex-1].style.display = "block";
-  timeout = setTimeout(autoshowSlides, 4000); // Change image every 4 seconds
+  timeout = setTimeout(autoshowSlides, 4500); // Change image every 4 seconds
 }
 
 // showSlides(slideIndex);
