@@ -87,8 +87,11 @@ referrerPolicy="no-referrer-when-downgrade"></a>
 
 <script>
 let slideIndex = 0;
-let timeout;
-autoshowSlides();
+let slides = document.getElementsByClassName("QQmySlides");
+let dots = document.getElementsByClassName("QQdot");
+let timeout = setTimeout(autoshowSlides, 300);
+
+// autoshowSlides();
 
 function autoshowSlides() {
   // let i;
@@ -100,23 +103,31 @@ function autoshowSlides() {
   // if (slideIndex > slides.length) {slideIndex = 1}
   showSlides(slideIndex)
   // slides[slideIndex-1].style.display = "block";
+  clearTimeout(timeout);
   timeout = setTimeout(autoshowSlides, 4500); // Change image every 4 seconds
 }
 
+function noAutoshow() {
+  let i;
+  clearTimeout(timeout)
+  for (i = 0; i < slides.length; i++) {
+    slides[i].className = slides[slideIndex-1].className.replace(" QQfadeSlide", "");  
+  }  
+}
 // showSlides(slideIndex);
 
 function plusSlides(n) {
+  noAutoshow()
   showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
+  noAutoshow()
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("QQmySlides");
-  let dots = document.getElementsByClassName("QQdot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -127,6 +138,5 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " QQactive";
-  clearTimeout(timeout);
 }
 </script>
