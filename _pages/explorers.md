@@ -3,7 +3,7 @@ layout: page
 permalink: /explorers/
 title: explorers
 description: 
-nav: true
+nav: false
 nav_order: 1
 ---
 
