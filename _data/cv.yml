@@ -71,12 +71,12 @@
   contents:
     - title: Experimental Biophysics
       items: 
-        - Structures of macromolecular assemblies
-        - Interactions between biomolecules
+        - Macromolecular assemblies
+        - Biomolecular forces
 
     - title: Computational Biology
       items:
-        - RNA structure and function
+        - Genetic medicine
         - Evolutional dynamics
 
 - title: Other Interests
