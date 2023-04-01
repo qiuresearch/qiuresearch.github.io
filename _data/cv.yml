@@ -1,12 +1,14 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Xiangyun Qiu
-    - name: Contact
-      value: xqiu@gwu.edu
     - name: Pronouns
       value: he, him, his 
+    - name: Email
+      value: xqiu@gwu.edu
+    - name: Lab
+      value: SEH B2200
+    - name: Office
+      value: SEH 4680
 
 - title: Education
   type: time_table
@@ -53,8 +55,12 @@
   contents:
     - title: <a href="https://github.com/qiuresearch/SeqFold2D">SeqFold2D</a>
       year: 2022-now
-      description: A <i>de novo</i> model for RNA secondary structure prediction
+      description: A <i>de novo</i> statistical model for RNA secondary structure prediction
 
+    - title: <a href="https://github.com/qiuresearch/matlib">MatLib</a>
+      year: 2004-2021
+      description: Various Matlab scripts for experimental biophysics research
+      
 # - title: Honors and Awards
 #   type: time_table
 #   contents:
