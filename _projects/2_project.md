@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Experimental Biophysics
-description: a project with a background image
-img: assets/img/3.jpg
-importance: 2
+description: X-ray and Neutron Scattering
+img: assets/img/dept_poster_2.jpg
+importance: 1
 category: work
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Computational Biology
 description: a project with a background image
 img: assets/img/12.jpg
-importance: 1
+importance: 2
 category: work
 ---
 
