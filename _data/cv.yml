@@ -3,14 +3,14 @@
   contents:
     - name: Pronouns
       value: he, him, his 
-    - name: Email
-      value: xqiu@gwu.edu
     - name: Lab
       value: SEH B2200
     - name: Office
       value: SEH 4680
+    - name: Email
+      value: xqiu@gwu.edu
     - name: Snail
-      value: 800 22nd St NW, Suite 4000, Washington DC 20052
+      value: 800 22nd St NW, Rm 4000, Washington DC 20052
 
 - title: Education
   type: time_table
