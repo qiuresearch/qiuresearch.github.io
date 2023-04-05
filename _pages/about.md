@@ -32,20 +32,20 @@ social: true  # includes social icons at the bottom of the page
 
   <div class="QQmySlides QQfadeSlide">
     <div class="QQnumbertext">2 / 5</div>
-      <img src="assets/img/GWU-Pegasus-768x461.png" style="width:100%">    
-    <div class="QQtext">Dry Lab</div>
-  </div>
-
-  <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">3 / 5</div>
       <img src="assets/img/GW-SEH-B2200-768x461.png" style="width:100%">    
     <div class="QQtext">Wet Lab</div>
   </div>
 
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">4 / 5</div>
+    <div class="QQnumbertext">3 / 5</div>
       <img src="assets/img/GW-SEH-B2220-xray-768x461.png" style="width:100%">    
     <div class="QQtext">Xray Lab</div>
+  </div>
+
+  <div class="QQmySlides QQfadeSlide">
+    <div class="QQnumbertext">4 / 5</div>
+      <img src="assets/img/GWU-Pegasus-768x461.png" style="width:100%">    
+    <div class="QQtext">Dry Lab</div>
   </div>
 
   <div class="QQmySlides QQfadeSlide">
