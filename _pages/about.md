@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <i>Nucleic Acids, Genetic Medicine, Experimental Biophysics, Learning Algorithms, Science of Life</i>
+subtitle: <i>Nucleic Acids, Genetic Medicine, Experimental Biophysics, Learning Algorithms</i>
 
 profile:
   align: right
@@ -69,7 +69,7 @@ social: true  # includes social icons at the bottom of the page
   <span class="QQdot" onclick="currentSlide(5)"></span>
 </div>
 
-We are a team of like-minded explorers exploiting collective methods of physical and informational sciences to study the phenomena of life. 
+We are a team of like-minded explorers exploiting collective methods of physical and statistical sciences to study the phenomena of life. 
 
 On the experimental front, advanced x-ray and neutron scattering and spectroscopic approaches spearhead our efforts on measuring biomolecular structures and interactions.
 
@@ -78,7 +78,6 @@ On the theoretical front, we develop and test physical models to seek fundamenta
 Crucially, we collaborate across disciplines to educate ourselves and inspire new ideas. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested.
 
 The website is under construction...
-
 <a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/"
 target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/1576386/0/01235842/0/"
