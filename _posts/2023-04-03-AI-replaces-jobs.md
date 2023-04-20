@@ -4,7 +4,7 @@ title: Too close to call - AI is emerging as the first true challenger to human!
 date: 2023-04-03 11:59:00-0400
 description: Freeing up human labor to create more jobs or terminate jobs for good?
 categories: careless-thoughts science
-disqus_comments: true
+giscus_comments: true
 ---
 
 The consequences of the AI revolution have been the subject of much debate lately. 
