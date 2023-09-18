@@ -6,3 +6,4 @@ description: Biology may just be the "Goldilocks" system to study the physics of
 categories: careless-thoughts science
 giscus_comments: true
 ---
+AI for science is uniquely positioned to study the physics of AI, whether through pinpointed data collection, integration of scientific principles, or yet-to-be-discovered novel strategies.
