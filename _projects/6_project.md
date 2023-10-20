@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Learner and Creator
-description: Hallucination to be a learner and content creator one day...
+description: Daydream of becoming a learner and content creator one day...
 img: assets/img/12.jpg
 importance: 6
 category: fun

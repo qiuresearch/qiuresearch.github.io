@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RNA Structural Biology
+title: RNA Physical Biology
 description: Predict RNA Structure, Function, and Dynamics
 img: assets/img/RNA-structure-prediction.jpg
 importance: 2
