@@ -2,7 +2,7 @@
 layout: page
 title: Learner and Creator
 description: Daydream of becoming a learner and content creator one day...
-img: assets/img/12.jpg
+img: assets/img/9.jpg
 importance: 6
 category: fun
 ---

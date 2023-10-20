@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Experimental Biophysics
-description: X-ray and Neutron Scattering
+description: Macromolecular assemblies animated by physical forces
 img: assets/img/dept_poster_2.jpg
 importance: 1
 category: work
