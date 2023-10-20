@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Computational Biology
-description: a project with a background image
-img: assets/img/12.jpg
+title: RNA Structural Biology
+description: Predict RNA Structure, Function, and Dynamics
+img: assets/img/RNA-structure-prediction.jpg
 importance: 2
 category: work
 ---

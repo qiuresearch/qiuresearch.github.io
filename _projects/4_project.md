@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
+title: Evolutional Dynamics
+description: Genetic and epigenetic evolution of viruses
+img: assets/img/RNA-evolution.jpg
+importance: 4
 category: fun
 ---
 

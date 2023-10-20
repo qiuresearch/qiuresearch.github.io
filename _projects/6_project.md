@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
+title: Learner and Creator
+description: Hallucination to be a learner and content creator one day...
+img: assets/img/12.jpg
+importance: 6
 category: fun
 ---
 

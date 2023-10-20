@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: Nucleic Acids Aging
+description: Genetics and epigenetics of aging
+img: assets/img/RNA-epigenetic-aging.jpg
 importance: 3
 category: fun
 ---

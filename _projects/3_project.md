@@ -1,9 +1,8 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Physics of Deep Learning 
+description: Generalization, adaptation, memorization, and privacy
+img: assets/img/AI-generalization.jpg
 importance: 3
 category: work
 ---
