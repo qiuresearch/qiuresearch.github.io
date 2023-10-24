@@ -3,7 +3,7 @@ layout: page
 title: Physics of Deep Learning 
 description: Generalization, adaptation, memorization, and privacy
 img: assets/img/AI-generalization.jpg
-importance: 3
+importance: 2
 category: work
 ---
 
