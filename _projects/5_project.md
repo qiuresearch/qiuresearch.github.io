@@ -3,6 +3,7 @@ layout: page
 title: Nucleic Acids Aging
 description: Genetics and epigenetics of aging
 img: assets/img/RNA-epigenetic-aging.jpg
+redirect: https://github.com/qiuresearch/QuantAge
 importance: 5
 category: fun
 ---

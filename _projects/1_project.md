@@ -1,8 +1,9 @@
 ---
 layout: page
-title: RNA Physical Biology
-description: Predict RNA Structure, Function, and Dynamics
+title: Integrative Nucleic Acid Frameworks
+description: Insights from Physical Theories and Biological Experiments
 img: assets/img/RNA-structure-prediction.jpg
+redirect: https://github.com/qiuresearch/Infinite
 importance: 3
 category: work
 ---

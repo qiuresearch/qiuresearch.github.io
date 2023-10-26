@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Experimental Biophysics
+title: Biophysical Measurement
 description: Macromolecular assemblies animated by physical forces
 img: assets/img/dept_poster_2.jpg
+redirect: https://github.com/qiuresearch/molforce
 importance: 1
 category: work
 ---

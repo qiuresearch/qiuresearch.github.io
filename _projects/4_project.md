@@ -3,6 +3,7 @@ layout: page
 title: Evolutional Dynamics
 description: Genetic and epigenetic evolution of viruses
 img: assets/img/RNA-evolution.jpg
+redirect: https://github.com/qiuresearch/evoRNA
 importance: 4
 category: fun
 ---
