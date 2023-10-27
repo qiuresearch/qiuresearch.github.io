@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Integrative Nucleic Acid Frameworks
+title: Nucleic Acids Medicine
 description: Insights from Physical Theories and Biological Experiments
 img: assets/img/RNA-structure-prediction.jpg
 redirect: https://github.com/qiuresearch/Infinite
