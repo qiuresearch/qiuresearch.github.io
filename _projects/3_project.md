@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Physics of Deep Learning 
-description: Generalization, adaptation, memorization, and privacy
+description: Artifical physical biology, generalization and privacy
 img: assets/img/AI-generalization.jpg
 redirect: https://github.com/qiuresearch/aiConfidential
 importance: 2
