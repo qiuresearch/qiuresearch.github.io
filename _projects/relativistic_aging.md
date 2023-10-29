@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Relativistic Aging
-description: Genetics and epigenetics of aging
+description: Genetics and epigenetics of quantitative aging
 img: assets/img/RNA-epigenetic-aging.jpg
 redirect: https://github.com/qiuresearch/QuantAge
 importance: 5
