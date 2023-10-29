@@ -2,5 +2,12 @@ github_users:
   - qiuresearch
 
 github_repos:
-  - qiuresearch/SeqFold2D
   - qiuresearch/matlib
+  - qiuresearch/molforce
+  - qiuresearch/SeqFold2D
+  - qiuresearch/Infinite
+  - qiuresearch/sassie_0_dna
+  - qiuresearch/QuantAge
+  - qiuresearch/evoRNA
+  - qiuresearch/aiConfidential
+  
