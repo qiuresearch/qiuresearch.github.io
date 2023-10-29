@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Nucleic Acids Medicine
+title: Nucleic Acids Biophysics
 description: Insights from Physical Theories and Biological Experiments
 img: assets/img/RNA-structure-prediction.jpg
 redirect: https://github.com/qiuresearch/Infinite

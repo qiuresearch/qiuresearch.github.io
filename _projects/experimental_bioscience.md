@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Nucleic Acids Aging
-description: Genetics and epigenetics of aging
-img: assets/img/RNA-epigenetic-aging.jpg
-redirect: https://github.com/qiuresearch/QuantAge
-importance: 5
-category: fun
+title: Experimental Bioscience
+description: Macromolecular assemblies animated by physical forces
+img: assets/img/dept_poster_2.jpg
+redirect: https://github.com/qiuresearch/molforce
+importance: 1
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
