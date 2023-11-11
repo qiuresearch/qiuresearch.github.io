@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Nucleic Acids Biophysics
-description: Insights from Physical Theories and Biological Experiments
+title: Curious Nucleic Acids
+description: Insights from Theories, Experiments, and Statistics
 img: assets/img/RNA-structure-prediction.jpg
 redirect: https://github.com/qiuresearch/Infinite
 importance: 3
