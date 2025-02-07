@@ -8,7 +8,7 @@ giscus_comments: true
 ---
 In the arena of deep learning, double descent or grokking seems to insinuate a moment of sudden realization, a glimpse of wisdom sublimed from tiredless learning, and a hope of enlightenment at last. 
 
-The learning dynamics of artificial neural networks (ANN) is necessarily distinct from that of human learning. Just think about it and you will appreiciate the difference.
+The learning dynamics of artificial neural networks (ANN) is necessarily distinct from that of human learning.
 
 However, the workings of ANNs may more resemble that of our human brain, particulary at the physiological level.
 
