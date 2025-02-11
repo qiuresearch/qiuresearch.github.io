@@ -90,6 +90,39 @@ ninja.data = [{
           window.location.href = "/blog/2024/photo-gallery/";
         
       },
+    },{id: "post-double-descent-grokking-enlightenment-wisdom-aging",
+      
+        title: "Double descent, grokking, enlightenment, wisdom, aging, ...",
+      
+      description: "Is there a universal rule to explain them all?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/grokking-aging/";
+        
+      },
+    },{id: "post-structure-of-intelligence",
+      
+        title: "Structure of Intelligence",
+      
+      description: "Does the structure of articifical intelligence resemble that of human intelligence?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/intelligence-structure/";
+        
+      },
+    },{id: "post-makeshift-operation",
+      
+        title: "Makeshift Operation",
+      
+      description: "The entire world is a makeshift operation, including the Nobel Committee!",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/makeshift-operation/";
+        
+      },
     },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
       
         title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -211,6 +244,28 @@ ninja.data = [{
           window.location.href = "/blog/2024/chartjs/";
         
       },
+    },{id: "post-genome-length-in-seconds-predicts-lifespan",
+      
+        title: "Genome length in seconds predicts lifespan?",
+      
+      description: "Human with 3 billion genome length has a lifespan ~3 billion seconds (~93 years). Also &quot;true&quot; for e. coli.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/lifespan/";
+        
+      },
+    },{id: "post-when-machine-intelligence-surpasses-human-brain-human-not-robots-is-the-tools-in-the-age-of-machines",
+      
+        title: "When machine intelligence surpasses human brain, human, not robots, is the tools in...",
+      
+      description: "Human is particularly advantageous...",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/Human-as-tools-of-AI/";
+        
+      },
     },{id: "post-a-post-with-tikzjax",
       
         title: "a post with TikZJax",
@@ -220,6 +275,61 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2023/tikzjax/";
+        
+      },
+    },{id: "post-shockwaves-in-the-metaverse",
+      
+        title: "Shockwaves in the Metaverse",
+      
+      description: "Highlight of a recent article by a colleague of mine (Physical Review Letters, vol. 130, 237401)",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/Shockwaves-Metaverse/";
+        
+      },
+    },{id: "post-structure-biology-has-laid-out-a-blueprint-for-success-in-ai-for-science",
+      
+        title: "Structure Biology has laid out a blueprint for success in AI for science...",
+      
+      description: "Do more stamp-collecting, and/or community-building?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/Structure-Biology/";
+        
+      },
+    },{id: "post-biology-is-ai-39-s-next-physics-only-better",
+      
+        title: "Biology is AI&#39;s next Physics, only better",
+      
+      description: "Biology may just be the &quot;Goldilocks&quot; system to study the physics of AI",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/AI-physics/";
+        
+      },
+    },{id: "post-ai-is-biology-39-s-next-mathematics-only-better",
+      
+        title: "AI is Biology&#39;s next Mathematics, only better",
+      
+      description: "AI is becoming general-purpose tools to overcome complexity",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/AI-biology/";
+        
+      },
+    },{id: "post-a-few-quot-clouds-quot-on-the-horizon-of-ai",
+      
+        title: "A few &quot;Clouds&quot; on the horizon of AI",
+      
+      description: "an omni-purpose interpolator and a stochastic extrapolator?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/AI-Clouds/";
         
       },
     },{id: "post-a-post-with-bibliography",
@@ -288,6 +398,39 @@ ninja.data = [{
           window.location.href = "/blog/2023/videos/";
         
       },
+    },{id: "post-generative-ai-a-pseudo-science",
+      
+        title: "Generative AI a pseudo-science?",
+      
+      description: "Should it even be called a &quot;science&quot; at all?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/AI-pseudo-science/";
+        
+      },
+    },{id: "post-too-close-to-call-ai-is-emerging-as-the-first-true-challenger-to-human",
+      
+        title: "Too close to call - AI is emerging as the first true challenger...",
+      
+      description: "Freeing up human labor to create more jobs or terminate jobs for good?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/AI-replaces-jobs/";
+        
+      },
+    },{id: "post-better-yet-ai-powered-learning-machine-for-instant-mastery",
+      
+        title: "Better yet, AI-powered learning machine for instant mastery!",
+      
+      description: "Are we inching closer to &quot;Matrix&quot;-like human learning with a &quot;plugin&quot;?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/Matrix-moments/";
+        
+      },
     },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
       
         title: "displaying beautiful tables with Bootstrap Tables",
@@ -308,6 +451,17 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2023/table-of-contents/";
+        
+      },
+    },{id: "post-the-dawn-of-ai-directed-human-evolution",
+      
+        title: "The dawn of AI-directed human evolution",
+      
+      description: "Can AI unleash the untapped potentials in us as human beings?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/AI-human-evolution/";
         
       },
     },{id: "post-a-post-with-giscus-comments",
@@ -376,6 +530,17 @@ ninja.data = [{
           window.location.href = "/blog/2020/twitter/";
         
       },
+    },{id: "post-expedition-to-one-39-s-own-science",
+      
+        title: "Expedition to one&#39;s own science",
+      
+      description: "A reflection of internal struggles in research",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2016/expedition-to-science/";
+        
+      },
     },{id: "post-a-post-with-disqus-comments",
       
         title: "a post with disqus comments",
@@ -431,16 +596,25 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+    },{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-new-github-website-is-kind-of-alive-sparkles-smile",
+          title: 'New github website is (kind of) alive! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-our-research-on-seqfold2d-60-pages-was-published-by-plos-computational-biology-smile",
+          title: 'Our research on SeqFold2D (60 pages!) was published by PLOS Computational Biology! :smile:...',
+          description: "",
+          section: "News",},{id: "news-journal-of-chemical-theory-and-computation-has-just-accepted-our-collabatative-work-on-cation-dynamics-in-sequence-directed-dna-dna-interactions-smile",
+          title: 'Journal of Chemical Theory and Computation has just accepted our collabatative work on...',
+          description: "",
+          section: "News",},{id: "news-qiu-spoke-at-the-google-s-algorithm-seminars-mountain-view-presented-his-views-on-ai-and-biology-and-his-research-on-deep-learning-generalization-and-learned-a-lot-himself-smile",
+          title: 'Qiu spoke at the Google’s Algorithm Seminars (Mountain View), presented his views on...',
+          description: "",
+          section: "News",},{id: "news-mixture-of-experts-our-research-on-moefold2d-60-pages-was-published-by-biology-methods-amp-amp-protocols-smile",
+          title: 'Mixture of Experts! Our research on MoEFold2D (60 pages!) was published by Biology...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
