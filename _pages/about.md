@@ -92,7 +92,12 @@ On the experimental front, advanced x-ray and neutron scattering and spectroscop
 
 On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the emerging paradigm of data-driven discoveries through the practice of mechanistic machine learning. 
 
-Crucially, we collaborate across disciplines to educate ourselves and inspire new ideas. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested.
+Crucially, we collaborate across disciplines to educate ourselves and inspire new ideas. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested. :smile: <a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/1576386/0/01235842/0/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a>
+
 
 <script>
 let slideIndex = 0;
