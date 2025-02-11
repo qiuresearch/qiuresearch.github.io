@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <i>Nucleic Acids, Genetic Medicine, Experimental Biophysics, Learning Algorithms</i>
+subtitle: <i>Nucleic Acids, Genetic Medicine, Education Research, Experimental Biophysics, Learning Algorithms</i>
 
 profile:
   align: right
@@ -27,6 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 <style>
+.QQtext {
+    font-size: 20px; /* Adjust size as needed */
+    font-weight: bold; /* Makes text bold */
+}
 .QQdot {
     display: inline-block;
     width: 10px; /* Adjust size */
@@ -43,33 +47,33 @@ latest_posts:
 
   <!-- Full-width images with number and caption text -->
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">1 / 5</div>
-      <img src="assets/img/GW-SEH1-768x461.jpg" style="width:100%">    
+    <!-- <div class="QQnumbertext">1 / 5</div> -->
     <div class="QQtext">Home@SEH</div>
+      <img src="assets/img/GW-SEH1-768x461.jpg" style="width:100%">    
   </div>
 
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">2 / 5</div>
-      <img src="assets/img/GW-SEH-B2200-768x461.png" style="width:100%">    
+    <!-- <div class="QQnumbertext">2 / 5</div> -->
     <div class="QQtext">Wet Lab</div>
+      <img src="assets/img/GW-SEH-B2200-768x461.png" style="width:100%">    
   </div>
 
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">3 / 5</div>
-      <img src="assets/img/GW-SEH-B2220-xray-768x461.png" style="width:100%">    
+    <!-- <div class="QQnumbertext">3 / 5</div> -->
     <div class="QQtext">Xray Lab</div>
+      <img src="assets/img/GW-SEH-B2220-xray-768x461.png" style="width:100%">    
   </div>
 
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">4 / 5</div>
-      <img src="assets/img/GWU-Pegasus-768x461.png" style="width:100%">    
+    <!-- <div class="QQnumbertext">4 / 5</div> -->
     <div class="QQtext">Dry Lab</div>
+      <img src="assets/img/GWU-Pegasus-768x461.png" style="width:100%">    
   </div>
 
   <div class="QQmySlides QQfadeSlide">
-    <div class="QQnumbertext">5 / 5</div>
-      <img src="assets/img/GW-SEH6510-768x461.png" style="width:100%">    
+    <!-- <div class="QQnumbertext">5 / 5</div> -->
     <div class="QQtext">Keyboard Lab</div>
+      <img src="assets/img/GW-SEH6510-768x461.png" style="width:100%">    
   </div>
 
 </div>
