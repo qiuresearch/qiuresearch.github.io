@@ -27,20 +27,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 <style>
-.QQtext {
-    font-size: 20px; /* Adjust size as needed */
-    font-weight: bold; /* Makes text bold */
-}
-.QQdot {
-    display: inline-block;
-    width: 10px; /* Adjust size */
-    height: 10px;
-    background-color: black; /* Adjust color */
-    border-radius: 10%; /* Makes it a circle */
-    cursor: pointer; /* Optional: makes it look clickable */
-    margin: 10px;
-    vertical-align: middle;
-}
+  .QQtext {
+      font-size: 20px; /* Adjust size as needed */
+      font-weight: bold; /* Makes text bold */
+  }
+  .QQdot {
+      display: inline-block;
+      width: 10px; /* Adjust size */
+      height: 10px;
+      background-color: black; /* Adjust color */
+      border-radius: 10%; /* Makes it a circle */
+      cursor: pointer; /* Optional: makes it look clickable */
+      margin: 10px;
+      vertical-align: middle;
+  }
 </style>
 <!-- Slideshow container -->
 <div class="QQslideshow-container" style="text-align:center">
@@ -90,71 +90,68 @@ latest_posts:
   <a class="QQnext" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
-We are a team of like-minded explorers exploiting collective methods of physical and statistical sciences to study the phenomena of life. 
+We are a team of like-minded explorers exploiting scientific methods to study the phenomena of life. 
 
 On the experimental front, advanced x-ray and neutron scattering and spectroscopic approaches spearhead our efforts on measuring biomolecular structures and interactions.
 
 On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the emerging paradigm of data-driven discoveries through the practice of mechanistic machine learning. 
 
-Crucially, we collaborate across disciplines to educate ourselves and inspire new ideas. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested. :smile: <a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/1576386/0/01235842/0/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a>
+Crucially, we collaborate across disciplines to educate ourselves and inspire new ideas. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested in collaboration or conversation. :smile: <a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter" src="https://c.statcounter.com/1576386/0/01235842/0/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade"></a>
 
 
 <script>
-let slideIndex = 0;
-let slides = document.getElementsByClassName("QQmySlides");
-let dots = document.getElementsByClassName("QQdot");
-let timeout = setTimeout(autoshowSlides, 300);
+  let slideIndex = 0;
+  let slides = document.getElementsByClassName("QQmySlides");
+  let dots = document.getElementsByClassName("QQdot");
+  let timeout = setTimeout(autoshowSlides, 300);
 
-// autoshowSlides();
+  // autoshowSlides();
 
-function autoshowSlides() {
-  // let i;
-  // let slides = document.getElementsByClassName("QQmySlides");
-  // for (i = 0; i < slides.length; i++) {
-  //   slides[i].style.display = "none";
-  // }
-  slideIndex++;
-  // if (slideIndex > slides.length) {slideIndex = 1}
-  showSlides(slideIndex)
-  // slides[slideIndex-1].style.display = "block";
-  clearTimeout(timeout);
-  timeout = setTimeout(autoshowSlides, 4500); // Change image every 4 seconds
-}
-
-function noAutoshow() {
-  let i;
-  clearTimeout(timeout)
-  for (i = 0; i < slides.length; i++) {
-    slides[i].className = slides[slideIndex-1].className.replace(" QQfadeSlide", "");  
-  }  
-}
-// showSlides(slideIndex);
-
-function plusSlides(n) {
-  noAutoshow()
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  noAutoshow()
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function autoshowSlides() {
+    // let i;
+    // let slides = document.getElementsByClassName("QQmySlides");
+    // for (i = 0; i < slides.length; i++) {
+    //   slides[i].style.display = "none";
+    // }
+    slideIndex++;
+    // if (slideIndex > slides.length) {slideIndex = 1}
+    showSlides(slideIndex)
+    // slides[slideIndex-1].style.display = "block";
+    clearTimeout(timeout);
+    timeout = setTimeout(autoshowSlides, 4500); // Change image every 4 seconds
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" QQactive", "");
+
+  function noAutoshow() {
+    let i;
+    clearTimeout(timeout)
+    for (i = 0; i < slides.length; i++) {
+      slides[i].className = slides[slideIndex-1].className.replace(" QQfadeSlide", "");  
+    }  
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " QQactive";
-}
+  // showSlides(slideIndex);
+
+  function plusSlides(n) {
+    noAutoshow()
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    noAutoshow()
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" QQactive", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " QQactive";
+  }
 </script>
