@@ -15,8 +15,8 @@ cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
 email: xqiu@gwu.edu # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-# github_username: # your GitHub user name
-# gitlab_username: # your GitLab user name
+github_username: qiuresearch # your GitHub user name
+# gitlab_username: qiuresearch # your GitLab user name
 # hal_id: # your HAL id (https://hal.science/)
 # ieee_id: # your ieeexplore.ieee.org/author/id
 # inspirehep_id:  # Inspire HEP author ID
@@ -35,7 +35,7 @@ linkedin_username: xiangyun-qiu-38b5ba7 # your LinkedIn user name
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
-rss_icon: true # comment this line to hide the RSS icon
+rss_icon: false # comment this line to hide the RSS icon
 scholar_userid: PosEkHAAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
