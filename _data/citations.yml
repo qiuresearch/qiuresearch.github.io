@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2025-12-24'
+  last_updated: '2025-12-29'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -26,7 +26,7 @@ papers:
     title: 'DNA under Force: Mechanics, Electrostatics, and Hydration'
     year: '2015'
   PosEkHAAAAAJ:9VeumLvkZSQC:
-    citations: 38
+    citations: 39
     title: Touch-Spun Nanofibers for Nerve Regeneration
     year: '2019'
   PosEkHAAAAAJ:9tXw7Op4-u0C:
@@ -50,7 +50,7 @@ papers:
     title: Reconstructing three-dimensional shape envelopes from time-resolved small-angle X-ray scattering data
     year: '2008'
   PosEkHAAAAAJ:HKviVsUxM5wC:
-    citations: 181
+    citations: 182
     title: 'Achieving uniform mixing in a microfluidic device: hydrodynamic focusing prior to mixing'
     year: '2006'
   PosEkHAAAAAJ:IyxfXMz2bNAC:
@@ -98,7 +98,7 @@ papers:
     title: Elucidating internucleosome interactions and the roles of histone tails
     year: '2013'
   PosEkHAAAAAJ:VjBpw8Hezy4C:
-    citations: 225
+    citations: 226
     title: Orbital correlations in the pseudocubic O and rhombohedral R phases of LaMnO 3
     year: '2005'
   PosEkHAAAAAJ:XeErXHja3Z8C:
@@ -130,7 +130,7 @@ papers:
     title: Study of temperature dependent atomic correlations in MgB2
     year: '2006'
   PosEkHAAAAAJ:h1pkognVyKwC:
-    citations: 305
+    citations: 309
     title: 'Development of 3D printable conductive hydrogel with crystallized PEDOT: PSS for neural tissue engineering'
     year: '2019'
   PosEkHAAAAAJ:hEXC_dOfxuUC:
@@ -146,7 +146,7 @@ papers:
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1274
+    citations: 1276
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
