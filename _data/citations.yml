@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-02'
+  last_updated: '2026-01-12'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -38,7 +38,7 @@ papers:
     title: Ion competition in condensed DNA arrays in the attractive regime
     year: '2013'
   PosEkHAAAAAJ:DGzKIA18-3YC:
-    citations: 147
+    citations: 146
     title: Inter-DNA attraction mediated by divalent counterions
     year: '2007'
   PosEkHAAAAAJ:FQ36aI_S1AEC:
@@ -110,7 +110,7 @@ papers:
     title: Divalent counterion-induced condensation of triple-strand DNA
     year: '2010'
   PosEkHAAAAAJ:cF7EPgIk0B4C:
-    citations: 745
+    citations: 744
     title: Rapid-acquisition pair distribution function (RA-PDF) analysis
     year: '2003'
   PosEkHAAAAAJ:dFKc6_kCK1wC:
@@ -142,11 +142,11 @@ papers:
     title: "Sequence-Dependent Orientational Coupling and Electrostatic Attraction in Cation-Mediated DNA\u2013DNA Interactions"
     year: '2023'
   PosEkHAAAAAJ:kvJssbFybhEC:
-    citations: 52
+    citations: 53
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1276
+    citations: 1274
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
