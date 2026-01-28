@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-12'
+  last_updated: '2026-01-28'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -42,7 +42,7 @@ papers:
     title: Inter-DNA attraction mediated by divalent counterions
     year: '2007'
   PosEkHAAAAAJ:FQ36aI_S1AEC:
-    citations: 20
+    citations: 21
     title: Sequence similarity governs generalizability of de novo deep learning models for RNA secondary structure prediction
     year: '2023'
   PosEkHAAAAAJ:GHsHDPAyICYC:
@@ -98,7 +98,7 @@ papers:
     title: Elucidating internucleosome interactions and the roles of histone tails
     year: '2013'
   PosEkHAAAAAJ:VjBpw8Hezy4C:
-    citations: 227
+    citations: 228
     title: Orbital correlations in the pseudocubic O and rhombohedral R phases of LaMnO 3
     year: '2005'
   PosEkHAAAAAJ:XeErXHja3Z8C:
@@ -110,7 +110,7 @@ papers:
     title: Divalent counterion-induced condensation of triple-strand DNA
     year: '2010'
   PosEkHAAAAAJ:cF7EPgIk0B4C:
-    citations: 744
+    citations: 745
     title: Rapid-acquisition pair distribution function (RA-PDF) analysis
     year: '2003'
   PosEkHAAAAAJ:dFKc6_kCK1wC:
@@ -130,7 +130,7 @@ papers:
     title: Study of temperature dependent atomic correlations in MgB2
     year: '2006'
   PosEkHAAAAAJ:h1pkognVyKwC:
-    citations: 311
+    citations: 312
     title: 'Development of 3D printable conductive hydrogel with crystallized PEDOT: PSS for neural tissue engineering'
     year: '2019'
   PosEkHAAAAAJ:hEXC_dOfxuUC:
@@ -138,15 +138,15 @@ papers:
     title: Measuring inter-DNA potentials in solution
     year: '2006'
   PosEkHAAAAAJ:jq04SsiGh3QC:
-    citations: 14
+    citations: 16
     title: "Sequence-Dependent Orientational Coupling and Electrostatic Attraction in Cation-Mediated DNA\u2013DNA Interactions"
     year: '2023'
   PosEkHAAAAAJ:kvJssbFybhEC:
-    citations: 53
+    citations: 55
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1274
+    citations: 1277
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
@@ -178,6 +178,6 @@ papers:
     title: Local structure study of disordered crystalline materials with the atomic pair distribution function method
     year: '2004'
   PosEkHAAAAAJ:za7pDTvVV8kC:
-    citations: 58
+    citations: 59
     title: Solution scattering and FRET studies on nucleosomes reveal DNA unwrapping effects of H3 and H4 tail removal
     year: '2013'
