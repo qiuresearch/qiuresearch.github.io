@@ -1,7 +1,18 @@
 github_users:
   - qiuresearch
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
+  - qiuresearch/aiConfidential
+  - qiuresearch/AmbiSplice
+  - qiuresearch/evoRNA
+  - qiuresearch/Infinitium
+  - qiuresearch/IntronFlow
+  - qiuresearch/matlib
+  - qiuresearch/MetaClust2D
+  - qiuresearch/MoEFold2D
+  - qiuresearch/molforce
   - qiuresearch/qiuresearch.github.io
+  - qiuresearch/sassie_0_dna
+  - qiuresearch/SeqFold2D
