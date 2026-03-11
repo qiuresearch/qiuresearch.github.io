@@ -411,18 +411,12 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-new-github-website-is-kind-of-alive-sparkles-smile",
+            },},{id: "news-new-github-website-is-kind-of-alive-sparkles-smile",
           title: 'New github website is (kind of) alive! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "news-our-research-on-seqfold2d-60-pages-was-published-by-plos-computational-biology-smile",
@@ -433,6 +427,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-qiu-spoke-at-the-google-s-algorithm-seminars-mountain-view-presented-his-views-on-ai-and-biology-and-his-research-on-deep-learning-generalization-and-learned-a-lot-himself-smile",
           title: 'Qiu spoke at the Google’s Algorithm Seminars (Mountain View), presented his views on...',
+          description: "",
+          section: "News",},{id: "news-mixture-of-experts-our-research-on-moefold2d-was-published-by-biology-methods-amp-amp-protocols-smile",
+          title: 'Mixture of Experts! Our research on MoEFold2D was published by Biology Methods &amp;amp;amp;...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
