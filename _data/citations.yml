@@ -1,3 +1,183 @@
 metadata:
-  last_updated: "2026-03-09"
-papers: {}
+  last_updated: '2026-03-27'
+papers:
+  PosEkHAAAAAJ:2Q0AJrNhS-QC:
+    citations: 66
+    title: Abrupt transition from a free, repulsive to a condensed, attractive DNA phase, induced by multivalent polyamine cations
+    year: '2008'
+  PosEkHAAAAAJ:37Fl7vPTsUIC:
+    citations: 18
+    title: Combined Monte Carlo/torsion-angle molecular dynamics for ensemble modeling of proteins, nucleic acids and carbohydrates
+    year: '2017'
+  PosEkHAAAAAJ:4E1Y8I9HL1wC:
+    citations: 17
+    title: Local structural aspects of the orthorhombic to pseudo-cubic phase transformation in La1-xCaxMnO3
+    year: '2006'
+  PosEkHAAAAAJ:5VjbC5aozO0C:
+    citations: 67
+    title: "Structure and Interaction of Graphene Oxide\u2013Cetyltrimethylammonium Bromide Complexation"
+    year: '2015'
+  PosEkHAAAAAJ:5rMqqAh47xYC:
+    citations: 91
+    title: Both helix topology and counterion distribution contribute to the more effective charge screening in dsRNA compared with dsDNA
+    year: '2009'
+  PosEkHAAAAAJ:8gBurD7jEYQC:
+    citations: 36
+    title: 'DNA under Force: Mechanics, Electrostatics, and Hydration'
+    year: '2015'
+  PosEkHAAAAAJ:9VeumLvkZSQC:
+    citations: 41
+    title: Touch-Spun Nanofibers for Nerve Regeneration
+    year: '2019'
+  PosEkHAAAAAJ:9tXw7Op4-u0C:
+    citations: 3
+    title: Robust RNA secondary structure prediction with a mixture of deep learning and physics-based experts
+    year: '2025'
+  PosEkHAAAAAJ:BCdnXsLIVDwC:
+    citations: 20
+    title: Ion competition in condensed DNA arrays in the attractive regime
+    year: '2013'
+  PosEkHAAAAAJ:DGzKIA18-3YC:
+    citations: 150
+    title: Inter-DNA attraction mediated by divalent counterions
+    year: '2007'
+  PosEkHAAAAAJ:FQ36aI_S1AEC:
+    citations: 24
+    title: Sequence similarity governs generalizability of de novo deep learning models for RNA secondary structure prediction
+    year: '2023'
+  PosEkHAAAAAJ:GHsHDPAyICYC:
+    citations: 31
+    title: Reconstructing three-dimensional shape envelopes from time-resolved small-angle X-ray scattering data
+    year: '2008'
+  PosEkHAAAAAJ:HKviVsUxM5wC:
+    citations: 182
+    title: 'Achieving uniform mixing in a microfluidic device: hydrodynamic focusing prior to mixing'
+    year: '2006'
+  PosEkHAAAAAJ:IyxfXMz2bNAC:
+    citations: 4
+    title: Structural and genetic analysis of X-ray scattering by spores of Bacillus subtilis
+    year: '2009'
+  PosEkHAAAAAJ:J4E9jCG1tHUC:
+    citations: 118
+    title: Reciprocal-space instrumental effects on the real-space neutron atomic pair distribution function
+    year: '2004'
+  PosEkHAAAAAJ:KqnX2w3egDsC:
+    citations: 21
+    title: Focusing capillary optics for use in solution small-angle X-ray scattering
+    year: '2007'
+  PosEkHAAAAAJ:KsTgnNRry18C:
+    citations: 11
+    title: Dosimetric Feasibility of Lattice Radiotherapy for Breast Cancer Using GammaPod
+    year: '2020'
+  PosEkHAAAAAJ:L7vk9XBBNxgC:
+    citations: 79
+    title: DNA methylation regulated nucleosome dynamics
+    year: '2013'
+  PosEkHAAAAAJ:MNNNGtAgD4EC:
+    citations: 27
+    title: "Ionic switch controls the DNA state in phage \u03BB"
+    year: '2015'
+  PosEkHAAAAAJ:PZE8UkGerEcC:
+    citations: 3
+    title: Additive Modulation of DNA-DNA Interactions by Interstitial Ions
+    year: '2020'
+  PosEkHAAAAAJ:QtA78RmWg5MC:
+    citations: 10
+    title: "Monte Carlo simulation algorithm for B\u2010DNA"
+    year: '2016'
+  PosEkHAAAAAJ:TeJ9juy8vcMC:
+    citations: 6
+    title: "In-situ time resolved powder diffraction studies in heterogenous catalysis; coupling the study of long range and local structural changes. Commission on Powder Diffraction \u2026"
+    year: '2003'
+  PosEkHAAAAAJ:U5uP8zs9lfgC:
+    citations: 24
+    title: Electrostatically driven interactions between hybrid DNA-carbon nanotubes
+    year: '2013'
+  PosEkHAAAAAJ:Ul_CLA4dPeMC:
+    citations: 21
+    title: Elucidating internucleosome interactions and the roles of histone tails
+    year: '2013'
+  PosEkHAAAAAJ:VjBpw8Hezy4C:
+    citations: 224
+    title: Orbital correlations in the pseudocubic O and rhombohedral R phases of LaMnO 3
+    year: '2005'
+  PosEkHAAAAAJ:XeErXHja3Z8C:
+    citations: 7
+    title: "Nanoscale structure and interaction of condensed phases of DNA\u2013carbon nanotube hybrids"
+    year: '2015'
+  PosEkHAAAAAJ:_IsBomjs8bsC:
+    citations: 68
+    title: Divalent counterion-induced condensation of triple-strand DNA
+    year: '2010'
+  PosEkHAAAAAJ:cF7EPgIk0B4C:
+    citations: 750
+    title: Rapid-acquisition pair distribution function (RA-PDF) analysis
+    year: '2003'
+  PosEkHAAAAAJ:dFKc6_kCK1wC:
+    citations: 58
+    title: "Heat induced capsid disassembly and DNA release of bacteriophage \u03BB"
+    year: '2012'
+  PosEkHAAAAAJ:e3CVSTJ63dQC:
+    citations: 79
+    title: Salt-Dependent DNA-DNA Spacings in Intact Bacteriophage  Reflect Relative Importance <?format ?>of DNA Self-Repulsion and Bending Energies
+    year: '2011'
+  PosEkHAAAAAJ:ehoypfNsBj8C:
+    citations: 25
+    title: Planar nets of Ti atoms comprising squares and rhombs in the new binary antimonide Ti2Sb
+    year: '2004'
+  PosEkHAAAAAJ:feST4K8J0scC:
+    citations: 37
+    title: Study of temperature dependent atomic correlations in MgB2
+    year: '2006'
+  PosEkHAAAAAJ:h1pkognVyKwC:
+    citations: 323
+    title: 'Development of 3D printable conductive hydrogel with crystallized PEDOT: PSS for neural tissue engineering'
+    year: '2019'
+  PosEkHAAAAAJ:hEXC_dOfxuUC:
+    citations: 85
+    title: Measuring inter-DNA potentials in solution
+    year: '2006'
+  PosEkHAAAAAJ:jq04SsiGh3QC:
+    citations: 17
+    title: "Sequence-Dependent Orientational Coupling and Electrostatic Attraction in Cation-Mediated DNA\u2013DNA Interactions"
+    year: '2023'
+  PosEkHAAAAAJ:kvJssbFybhEC:
+    citations: 58
+    title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
+    year: '2020'
+  PosEkHAAAAAJ:rpSJNIKeXWsC:
+    citations: 1289
+    title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
+    year: '2004'
+  PosEkHAAAAAJ:rzmi0EmCOGEC:
+    citations: 5
+    title: Local lattice dynamics in the Mg0. 5Al0. 5B2 superconductor
+    year: '2007'
+  PosEkHAAAAAJ:s2G-WRnXBicC:
+    citations: 17
+    title: "Attractive Interactions between DNA\u2013Carbon Nanotube Hybrids in Monovalent Salts"
+    year: '2016'
+  PosEkHAAAAAJ:uoRD4RTSUPoC:
+    citations: 85
+    title: "Probing local and long-range structure simultaneously: An in situ study of the high-temperature phase transition of \u03B1-AlF3"
+    year: '2004'
+  PosEkHAAAAAJ:vjZqxyZ7hS4C:
+    citations: 75
+    title: 'Mono-and trivalent ions around DNA: a small-angle scattering study of competition and interactions'
+    year: '2008'
+  PosEkHAAAAAJ:vofGIMt6cyEC:
+    citations: 0
+    title: Capsules with a hierarchical shell structure assembled by aminoglycosides and DNA via the kinetic path
+    year: '2014'
+  PosEkHAAAAAJ:x2hKVfJWtf0C:
+    citations: 3
+    title: Utilizing total scattering to study the Jahn-Teller transition in La1-xCaxMnO3
+    year: '2007'
+  PosEkHAAAAAJ:ynsZFq2pu0MC:
+    citations: 3
+    title: Local structure study of disordered crystalline materials with the atomic pair distribution function method
+    year: '2004'
+  PosEkHAAAAAJ:za7pDTvVV8kC:
+    citations: 58
+    title: Solution scattering and FRET studies on nucleosomes reveal DNA unwrapping effects of H3 and H4 tail removal
+    year: '2013'
