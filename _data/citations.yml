@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-27'
+  last_updated: '2026-04-01'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -42,7 +42,7 @@ papers:
     title: Inter-DNA attraction mediated by divalent counterions
     year: '2007'
   PosEkHAAAAAJ:FQ36aI_S1AEC:
-    citations: 24
+    citations: 25
     title: Sequence similarity governs generalizability of de novo deep learning models for RNA secondary structure prediction
     year: '2023'
   PosEkHAAAAAJ:GHsHDPAyICYC:
@@ -178,6 +178,6 @@ papers:
     title: Local structure study of disordered crystalline materials with the atomic pair distribution function method
     year: '2004'
   PosEkHAAAAAJ:za7pDTvVV8kC:
-    citations: 58
+    citations: 59
     title: Solution scattering and FRET studies on nucleosomes reveal DNA unwrapping effects of H3 and H4 tail removal
     year: '2013'
