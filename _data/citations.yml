@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-01'
+  last_updated: '2026-04-08'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -14,7 +14,7 @@ papers:
     title: Local structural aspects of the orthorhombic to pseudo-cubic phase transformation in La1-xCaxMnO3
     year: '2006'
   PosEkHAAAAAJ:5VjbC5aozO0C:
-    citations: 67
+    citations: 68
     title: "Structure and Interaction of Graphene Oxide\u2013Cetyltrimethylammonium Bromide Complexation"
     year: '2015'
   PosEkHAAAAAJ:5rMqqAh47xYC:
@@ -70,7 +70,7 @@ papers:
     title: Dosimetric Feasibility of Lattice Radiotherapy for Breast Cancer Using GammaPod
     year: '2020'
   PosEkHAAAAAJ:L7vk9XBBNxgC:
-    citations: 79
+    citations: 80
     title: DNA methylation regulated nucleosome dynamics
     year: '2013'
   PosEkHAAAAAJ:MNNNGtAgD4EC:
@@ -146,7 +146,7 @@ papers:
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1289
+    citations: 1290
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
@@ -158,7 +158,7 @@ papers:
     title: "Attractive Interactions between DNA\u2013Carbon Nanotube Hybrids in Monovalent Salts"
     year: '2016'
   PosEkHAAAAAJ:uoRD4RTSUPoC:
-    citations: 85
+    citations: 86
     title: "Probing local and long-range structure simultaneously: An in situ study of the high-temperature phase transition of \u03B1-AlF3"
     year: '2004'
   PosEkHAAAAAJ:vjZqxyZ7hS4C:
