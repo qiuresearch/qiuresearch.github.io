@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-13'
+  last_updated: '2026-04-22'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -70,7 +70,7 @@ papers:
     title: Dosimetric Feasibility of Lattice Radiotherapy for Breast Cancer Using GammaPod
     year: '2020'
   PosEkHAAAAAJ:L7vk9XBBNxgC:
-    citations: 81
+    citations: 82
     title: DNA methylation regulated nucleosome dynamics
     year: '2013'
   PosEkHAAAAAJ:MNNNGtAgD4EC:
@@ -98,7 +98,7 @@ papers:
     title: Elucidating internucleosome interactions and the roles of histone tails
     year: '2013'
   PosEkHAAAAAJ:VjBpw8Hezy4C:
-    citations: 224
+    citations: 226
     title: Orbital correlations in the pseudocubic O and rhombohedral R phases of LaMnO 3
     year: '2005'
   PosEkHAAAAAJ:XeErXHja3Z8C:
@@ -146,7 +146,7 @@ papers:
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1291
+    citations: 1294
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
@@ -178,6 +178,6 @@ papers:
     title: Local structure study of disordered crystalline materials with the atomic pair distribution function method
     year: '2004'
   PosEkHAAAAAJ:za7pDTvVV8kC:
-    citations: 59
+    citations: 58
     title: Solution scattering and FRET studies on nucleosomes reveal DNA unwrapping effects of H3 and H4 tail removal
     year: '2013'
