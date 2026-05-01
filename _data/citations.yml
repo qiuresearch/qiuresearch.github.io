@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-22'
+  last_updated: '2026-05-01'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -70,7 +70,7 @@ papers:
     title: Dosimetric Feasibility of Lattice Radiotherapy for Breast Cancer Using GammaPod
     year: '2020'
   PosEkHAAAAAJ:L7vk9XBBNxgC:
-    citations: 82
+    citations: 83
     title: DNA methylation regulated nucleosome dynamics
     year: '2013'
   PosEkHAAAAAJ:MNNNGtAgD4EC:
@@ -110,7 +110,7 @@ papers:
     title: Divalent counterion-induced condensation of triple-strand DNA
     year: '2010'
   PosEkHAAAAAJ:cF7EPgIk0B4C:
-    citations: 752
+    citations: 753
     title: Rapid-acquisition pair distribution function (RA-PDF) analysis
     year: '2003'
   PosEkHAAAAAJ:dFKc6_kCK1wC:
@@ -130,7 +130,7 @@ papers:
     title: Study of temperature dependent atomic correlations in MgB2
     year: '2006'
   PosEkHAAAAAJ:h1pkognVyKwC:
-    citations: 323
+    citations: 324
     title: 'Development of 3D printable conductive hydrogel with crystallized PEDOT: PSS for neural tissue engineering'
     year: '2019'
   PosEkHAAAAAJ:hEXC_dOfxuUC:
@@ -146,7 +146,7 @@ papers:
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1294
+    citations: 1296
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
