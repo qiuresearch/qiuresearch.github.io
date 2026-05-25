@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-04'
+  last_updated: '2026-05-25'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -14,7 +14,7 @@ papers:
     title: Local structural aspects of the orthorhombic to pseudo-cubic phase transformation in La1-xCaxMnO3
     year: '2006'
   PosEkHAAAAAJ:5VjbC5aozO0C:
-    citations: 68
+    citations: 70
     title: "Structure and Interaction of Graphene Oxide\u2013Cetyltrimethylammonium Bromide Complexation"
     year: '2015'
   PosEkHAAAAAJ:5rMqqAh47xYC:
@@ -30,7 +30,7 @@ papers:
     title: Touch-Spun Nanofibers for Nerve Regeneration
     year: '2019'
   PosEkHAAAAAJ:9tXw7Op4-u0C:
-    citations: 3
+    citations: 4
     title: Robust RNA secondary structure prediction with a mixture of deep learning and physics-based experts
     year: '2025'
   PosEkHAAAAAJ:BCdnXsLIVDwC:
@@ -58,7 +58,7 @@ papers:
     title: Structural and genetic analysis of X-ray scattering by spores of Bacillus subtilis
     year: '2009'
   PosEkHAAAAAJ:J4E9jCG1tHUC:
-    citations: 118
+    citations: 119
     title: Reciprocal-space instrumental effects on the real-space neutron atomic pair distribution function
     year: '2004'
   PosEkHAAAAAJ:KqnX2w3egDsC:
@@ -98,7 +98,7 @@ papers:
     title: Elucidating internucleosome interactions and the roles of histone tails
     year: '2013'
   PosEkHAAAAAJ:VjBpw8Hezy4C:
-    citations: 226
+    citations: 227
     title: Orbital correlations in the pseudocubic O and rhombohedral R phases of LaMnO 3
     year: '2005'
   PosEkHAAAAAJ:XeErXHja3Z8C:
@@ -110,11 +110,11 @@ papers:
     title: Divalent counterion-induced condensation of triple-strand DNA
     year: '2010'
   PosEkHAAAAAJ:cF7EPgIk0B4C:
-    citations: 752
+    citations: 753
     title: Rapid-acquisition pair distribution function (RA-PDF) analysis
     year: '2003'
   PosEkHAAAAAJ:dFKc6_kCK1wC:
-    citations: 58
+    citations: 59
     title: "Heat induced capsid disassembly and DNA release of bacteriophage \u03BB"
     year: '2012'
   PosEkHAAAAAJ:e3CVSTJ63dQC:
@@ -130,7 +130,7 @@ papers:
     title: Study of temperature dependent atomic correlations in MgB2
     year: '2006'
   PosEkHAAAAAJ:h1pkognVyKwC:
-    citations: 323
+    citations: 331
     title: 'Development of 3D printable conductive hydrogel with crystallized PEDOT: PSS for neural tissue engineering'
     year: '2019'
   PosEkHAAAAAJ:hEXC_dOfxuUC:
@@ -142,11 +142,11 @@ papers:
     title: "Sequence-Dependent Orientational Coupling and Electrostatic Attraction in Cation-Mediated DNA\u2013DNA Interactions"
     year: '2023'
   PosEkHAAAAAJ:kvJssbFybhEC:
-    citations: 58
+    citations: 59
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1294
+    citations: 1299
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
@@ -178,6 +178,6 @@ papers:
     title: Local structure study of disordered crystalline materials with the atomic pair distribution function method
     year: '2004'
   PosEkHAAAAAJ:za7pDTvVV8kC:
-    citations: 58
+    citations: 59
     title: Solution scattering and FRET studies on nucleosomes reveal DNA unwrapping effects of H3 and H4 tail removal
     year: '2013'
