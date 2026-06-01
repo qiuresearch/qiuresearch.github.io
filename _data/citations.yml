@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-27'
+  last_updated: '2026-06-01'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -66,7 +66,7 @@ papers:
     title: Focusing capillary optics for use in solution small-angle X-ray scattering
     year: '2007'
   PosEkHAAAAAJ:KsTgnNRry18C:
-    citations: 11
+    citations: 12
     title: Dosimetric Feasibility of Lattice Radiotherapy for Breast Cancer Using GammaPod
     year: '2020'
   PosEkHAAAAAJ:L7vk9XBBNxgC:
@@ -82,7 +82,7 @@ papers:
     title: Additive Modulation of DNA-DNA Interactions by Interstitial Ions
     year: '2020'
   PosEkHAAAAAJ:QtA78RmWg5MC:
-    citations: 10
+    citations: 11
     title: "Monte Carlo simulation algorithm for B\u2010DNA"
     year: '2016'
   PosEkHAAAAAJ:TeJ9juy8vcMC:
@@ -98,7 +98,7 @@ papers:
     title: Elucidating internucleosome interactions and the roles of histone tails
     year: '2013'
   PosEkHAAAAAJ:VjBpw8Hezy4C:
-    citations: 227
+    citations: 228
     title: Orbital correlations in the pseudocubic O and rhombohedral R phases of LaMnO 3
     year: '2005'
   PosEkHAAAAAJ:XeErXHja3Z8C:
@@ -110,7 +110,7 @@ papers:
     title: Divalent counterion-induced condensation of triple-strand DNA
     year: '2010'
   PosEkHAAAAAJ:cF7EPgIk0B4C:
-    citations: 753
+    citations: 752
     title: Rapid-acquisition pair distribution function (RA-PDF) analysis
     year: '2003'
   PosEkHAAAAAJ:dFKc6_kCK1wC:
@@ -130,7 +130,7 @@ papers:
     title: Study of temperature dependent atomic correlations in MgB2
     year: '2006'
   PosEkHAAAAAJ:h1pkognVyKwC:
-    citations: 334
+    citations: 333
     title: 'Development of 3D printable conductive hydrogel with crystallized PEDOT: PSS for neural tissue engineering'
     year: '2019'
   PosEkHAAAAAJ:hEXC_dOfxuUC:
@@ -146,7 +146,7 @@ papers:
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1300
+    citations: 1301
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
@@ -158,7 +158,7 @@ papers:
     title: "Attractive Interactions between DNA\u2013Carbon Nanotube Hybrids in Monovalent Salts"
     year: '2016'
   PosEkHAAAAAJ:uoRD4RTSUPoC:
-    citations: 86
+    citations: 87
     title: "Probing local and long-range structure simultaneously: An in situ study of the high-temperature phase transition of \u03B1-AlF3"
     year: '2004'
   PosEkHAAAAAJ:vjZqxyZ7hS4C:
