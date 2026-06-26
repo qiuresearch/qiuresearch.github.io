@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-15'
+  last_updated: '2026-06-26'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -18,11 +18,11 @@ papers:
     title: "Structure and Interaction of Graphene Oxide\u2013Cetyltrimethylammonium Bromide Complexation"
     year: '2015'
   PosEkHAAAAAJ:5rMqqAh47xYC:
-    citations: 91
+    citations: 92
     title: Both helix topology and counterion distribution contribute to the more effective charge screening in dsRNA compared with dsDNA
     year: '2009'
   PosEkHAAAAAJ:8gBurD7jEYQC:
-    citations: 36
+    citations: 37
     title: 'DNA under Force: Mechanics, Electrostatics, and Hydration'
     year: '2015'
   PosEkHAAAAAJ:9VeumLvkZSQC:
@@ -38,7 +38,7 @@ papers:
     title: Ion competition in condensed DNA arrays in the attractive regime
     year: '2013'
   PosEkHAAAAAJ:DGzKIA18-3YC:
-    citations: 150
+    citations: 151
     title: Inter-DNA attraction mediated by divalent counterions
     year: '2007'
   PosEkHAAAAAJ:FQ36aI_S1AEC:
@@ -70,7 +70,7 @@ papers:
     title: Dosimetric Feasibility of Lattice Radiotherapy for Breast Cancer Using GammaPod
     year: '2020'
   PosEkHAAAAAJ:L7vk9XBBNxgC:
-    citations: 83
+    citations: 84
     title: DNA methylation regulated nucleosome dynamics
     year: '2013'
   PosEkHAAAAAJ:MNNNGtAgD4EC:
@@ -142,11 +142,11 @@ papers:
     title: "Sequence-Dependent Orientational Coupling and Electrostatic Attraction in Cation-Mediated DNA\u2013DNA Interactions"
     year: '2023'
   PosEkHAAAAAJ:kvJssbFybhEC:
-    citations: 59
+    citations: 61
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1303
+    citations: 1304
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
@@ -162,7 +162,7 @@ papers:
     title: "Probing local and long-range structure simultaneously: An in situ study of the high-temperature phase transition of \u03B1-AlF3"
     year: '2004'
   PosEkHAAAAAJ:vjZqxyZ7hS4C:
-    citations: 75
+    citations: 76
     title: 'Mono-and trivalent ions around DNA: a small-angle scattering study of competition and interactions'
     year: '2008'
   PosEkHAAAAAJ:vofGIMt6cyEC:
