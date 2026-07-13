@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-07-13'
 papers:
   PosEkHAAAAAJ:2Q0AJrNhS-QC:
     citations: 66
@@ -26,7 +26,7 @@ papers:
     title: 'DNA under Force: Mechanics, Electrostatics, and Hydration'
     year: '2015'
   PosEkHAAAAAJ:9VeumLvkZSQC:
-    citations: 42
+    citations: 43
     title: Touch-Spun Nanofibers for Nerve Regeneration
     year: '2019'
   PosEkHAAAAAJ:9tXw7Op4-u0C:
@@ -118,7 +118,7 @@ papers:
     title: "Heat induced capsid disassembly and DNA release of bacteriophage \u03BB"
     year: '2012'
   PosEkHAAAAAJ:e3CVSTJ63dQC:
-    citations: 79
+    citations: 80
     title: Salt-Dependent DNA-DNA Spacings in Intact Bacteriophage  Reflect Relative Importance <?format ?>of DNA Self-Repulsion and Bending Energies
     year: '2011'
   PosEkHAAAAAJ:ehoypfNsBj8C:
@@ -146,7 +146,7 @@ papers:
     title: "Structure-guided DNA\u2013DNA attraction mediated by divalent cations"
     year: '2020'
   PosEkHAAAAAJ:rpSJNIKeXWsC:
-    citations: 1308
+    citations: 1309
     title: 'PDFgetX2: a GUI-driven program to obtain the pair distribution function from X-ray powder diffraction data'
     year: '2004'
   PosEkHAAAAAJ:rzmi0EmCOGEC:
