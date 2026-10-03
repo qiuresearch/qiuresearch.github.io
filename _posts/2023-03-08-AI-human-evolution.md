@@ -6,6 +6,7 @@ description: Can AI unleash the untapped potentials in us as human beings?
 categories: careless-thoughts science
 giscus_comments: true
 ---
+
 The emergence of "intelligence" out of large machine learning models may serve as an ideal "model" system to reflect on the reality of what we call intelligence!
 
 Is it just the "natural" consequence of the non-linear dynamics of a very complex system of enormous size?

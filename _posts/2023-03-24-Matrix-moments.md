@@ -6,4 +6,5 @@ description: Are we inching closer to "Matrix"-like human learning with a "plugi
 categories: careless-thoughts science
 giscus_comments: true
 ---
+
 It seems we only need to train algorithms to learn how to activate human neurons for learning...

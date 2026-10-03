@@ -11,12 +11,14 @@ nav_order: 4
 ## [Google Scholar](https://scholar.google.com/citations?user=PosEkHAAAAAJ&hl=en)
 
 ---
+
 ## Selected Peer-Reviewed Articles
 
 <!-- _pages/publications.md -->
 <div class="publications">
 
 {%- for y in page.years %}
+
   <h2 class="year">{{y}}</h2>
   {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}

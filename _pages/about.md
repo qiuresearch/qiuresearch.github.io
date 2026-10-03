@@ -9,7 +9,7 @@ profile:
   align: right
   image:
   image_circular: false # crops the image to make it circular
-  more_info: 
+  more_info:
   # >
   # <p>555 your office number</p>
   # <p>123 your address street</p>
@@ -39,7 +39,7 @@ latest_posts:
     <a class="QQlabel" onclick="currentSlide(3)" style="background-color: white;">X-ray Lab</a>
     <a class="QQlabel" onclick="currentSlide(4)" style="background-color: white;">Dry Lab</a>
     <a class="QQlabel" onclick="currentSlide(5)" style="background-color: white;">Keyboard Lab</a>
-    <a class="QQnext" onclick="plusSlides(1)">&#10095;</a></div> 
+    <a class="QQnext" onclick="plusSlides(1)">&#10095;</a></div>
 
   <!-- Full-width images with number and caption text -->
   <div class="QQmySlides QQfadeSlide">
@@ -106,11 +106,11 @@ latest_posts:
   <span class="QQdot" onclick="currentSlide(5)"></span>
 </div> -->
 
-We are a team of like-minded explorers exploiting collective methods of physical and statistical sciences to study the phenomena of life. 
+We are a team of like-minded explorers exploiting collective methods of physical and statistical sciences to study the phenomena of life.
 
 On the experimental front, advanced x-ray and neutron scattering and spectroscopic approaches spearhead our efforts on measuring biomolecular structures and interactions.
 
-On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the emerging paradigm of data-driven discoveries through the practice of mechanistic machine learning. 
+On the theoretical front, we develop and test physical models to seek fundamental principles. And we embrace the emerging paradigm of data-driven discoveries through the practice of mechanistic machine learning.
 
 Crucially, we collaborate across disciplines to educate ourselves and inspire new ideas. Be sure to [contact us](mailto:xqiu@gwu.edu) if you are interested. (The website is under construction...)
 <a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" target="_blank">

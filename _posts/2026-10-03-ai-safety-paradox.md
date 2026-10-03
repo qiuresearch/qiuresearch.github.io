@@ -13,9 +13,9 @@ At first glance, this has a seductive internal logic. It is the ultimate delegat
 
 But there are several reasons this reasoning is dangerous.
 
-First, the capability-safety gap is not guaranteed to close automatically. There is no law of physics saying that a system smart enough to solve alignment will *choose* to solve alignment, or that the path to superintelligence necessarily passes through a "solve alignment first" checkpoint. Capability and alignment are orthogonal dimensions—you can be arbitrarily capable while being catastrophically misaligned. (Does this make enough sense? Maybe there actually is a way...)
+First, the capability-safety gap is not guaranteed to close automatically. There is no law of physics saying that a system smart enough to solve alignment will _choose_ to solve alignment, or that the path to superintelligence necessarily passes through a "solve alignment first" checkpoint. Capability and alignment are orthogonal dimensions—you can be arbitrarily capable while being catastrophically misaligned. (Does this make enough sense? Maybe there actually is a way...)
 
-Second, the "AI solves AI safety" argument assumes the AI is already aligned enough to *want* to solve AI safety. If it is not, it has no incentive to work on the problem. This is circular: we need aligned AI to get aligned AI.
+Second, the "AI solves AI safety" argument assumes the AI is already aligned enough to _want_ to solve AI safety. If it is not, it has no incentive to work on the problem. This is circular: we need aligned AI to get aligned AI.
 
 Third, irreversibility. If we bet everything on "the AI will figure it out" and we are wrong, there is no undo button. The stakes are existential; the cost of a false positive (working on safety unnecessarily) is tiny compared to the cost of a false negative (not working on safety when it was needed).
 
