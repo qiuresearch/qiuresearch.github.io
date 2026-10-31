@@ -3,7 +3,7 @@ layout: post
 title: AI in mathematics may be less like a calculator and more like a tractor
 date: 2026-10-18 09:00:00-0400
 description: A few sloppy analogies for how AI is doing to mathematics
-categories: careless-thoughts science
+categories: careless-thoughts science LLM-assisted
 giscus_comments: true
 ---
 

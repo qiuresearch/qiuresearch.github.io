@@ -3,7 +3,7 @@ layout: post
 title: Training an agent that outgrows you is a false proposition
 date: 2026-10-25 09:00:00-0400
 description: A few sloppy analogies for why "training" stops making sense once the agent is smarter than the trainer
-categories: careless-thoughts science
+categories: careless-thoughts science LLM-assisted
 giscus_comments: true
 ---
 
