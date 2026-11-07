@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Economy of information: the age of AI agents
+title: Economy of information--the age of AI agents
 date: 2026-11-02 17:00:00-0400
 description: Entering a new era of information economy
 categories: careless-thoughts science LLM-assisted
